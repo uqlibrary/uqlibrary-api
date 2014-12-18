@@ -46,20 +46,27 @@ Element providing facilities availability.
          * args is optional parameter (as per facilities availability API):
          *  date - specify availability date DD-MM-YYYY
          *  id - specify user id, ptype - specify user type
-         *
+         *  nocache - set to true to avoid using cached data
          * @method get
          */
         get: function (args) {
+          var url = this.baseUri;
 
           if (args && args.date){
-            this.$.facilities.uri = this.baseUri + "?date=" + args.date;
+            url = this.baseUri + "?date=" + args.date;
           } else if (args && args.id && args.ptype) {
-            this.$.facilities.uri = this.baseUri + "?id=" + args.id + "&ptype=" + args.ptype;
+            url = this.baseUri + "?id=" + args.id + "&ptype=" + args.ptype;
           } else {
-            this.$.facilities.uri = this.baseUri;
+            url = this.baseUri;
           }
 
-          this.$.facilities.get();
+          if (args && args.nocache) {
+            url += (url.indexOf('?') >= 0 ? '&' : '?');
+            url += 'nocache=true';
+          }
+
+          this.$.facilities.uri = url;
+          this.$.facilities.get({ addTimestamp: args && args.nocache});
         }
       });
     })();

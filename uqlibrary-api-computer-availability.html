@@ -28,6 +28,9 @@ Element providing computer availability.
          *
          * @event uqlibrary-api-computer-availability-loaded
          */
+
+        baseUri : '/computer_availability',
+
         created: function () {
         },
 
@@ -45,6 +48,7 @@ Element providing computer availability.
          * @method get
          */
         get: function () {
+          this.$.computers.uri = this.baseUri;
           this.$.computers.get();
         }
       });

@@ -39,12 +39,21 @@ Element providing access to UQ Library's API.
 
         /**
          * Gets the user account.
-         *
+         * args = {
+         *  addTimestamp : true //to avoid browser cache
+         * }
          * @method get
          */
-        get: function () {
+        get: function (args) {
           this.setHeaders();
-          this.url = 'https://app.library.uq.edu.au/api' + this.uri;
+          var url = 'https://app.library.uq.edu.au/api' + this.uri;
+
+          if (args && args.addTimestamp) {
+            url += (url.indexOf('?') >= 0 ? '&' : '?');
+            url += "timestamp=" + (new Date()).getTime();
+          }
+
+          this.url = url;
           this.$.ajax.go();
         },
 
