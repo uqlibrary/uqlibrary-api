@@ -59,6 +59,7 @@ Element providing access to a user account.
 
         ready: function () {
           var that = this;
+          this.$.account.mockDataFileUrl = this.tagName.toLowerCase();
           this.$.account.addEventListener('uqlibrary-api', function(e) {
             that.account = e.detail;
             that.fire('uqlibrary-api-account-loaded', that.account);
