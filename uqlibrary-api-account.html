@@ -64,7 +64,7 @@ Element providing access to a user account.
 
             //Check is mocked data is loaded
             if(e.detail.hasOwnProperty('mock')){
-              that.account = e.account.data;
+              that.account = e.detail.data;
             }
             else {
               that.account = e.detail;
