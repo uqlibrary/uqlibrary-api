@@ -61,7 +61,16 @@ Element providing access to a user account.
           var that = this;
           this.$.account.mockDataFileUrl = this.tagName.toLowerCase();
           this.$.account.addEventListener('uqlibrary-api', function(e) {
-            that.account = e.detail;
+
+            //Check is mocked data is loaded
+            if(e.detail.hasOwnProperty('mock')){
+              that.account = e.account.data;
+            }
+            else {
+              that.account = e.detail;
+            }
+
+
             that.fire('uqlibrary-api-account-loaded', that.account);
           });
         },

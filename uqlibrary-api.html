@@ -65,11 +65,9 @@ Element providing access to UQ Library's API.
         get: function (args) {
           var url = '';
           //Check if mock data should be returned
-          if(window.location.protocol + '//' + window.location.hostname != this.appProductionBaseUrl) {
-            if(this.mockDataFileUrl != '') {
-              url = this.resolvePath('mock/' + this.mockDataFileUrl +'.json');
-              this.mockDataLoaded = true;
-            }
+          if(((window.location.protocol + '//' + window.location.hostname) != this.appProductionBaseUrl) && this.mockDataFileUrl != ''  ) {
+            url = this.resolvePath('mock/' + this.mockDataFileUrl +'.json');
+            this.mockDataLoaded = true;
           }
           else {
             this.setHeaders();
