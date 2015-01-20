@@ -2,6 +2,7 @@ uqlibrary-api
 ================
 
 Web components for UQ Library API
+See [component page](http://uqlibrary.github.io/uqlibrary-api/components/uqlibrary-api/) for more information.
 
 ## Configuration
 
@@ -9,6 +10,11 @@ uqlibrary-api elements can be used with live API and with mock data.
 baseApiUrl - base API url 
 To use mock data set cookie value UQLMockData to true
 
+```sh
+      //add a cookie to indicate usage of mock data
+      document.cookie="UQLMockData=true";
+```
+      
 ### Mock files
 mock files contain data in json format in same format as live API 
 file names should be created based on API call with method [_get/_post/_delete], eg
@@ -18,8 +24,6 @@ API path to /facilities_availability mock file should be /mock/facilities_availa
 
 
 ## Testing Element
-
-
 
 ### web-component-tester
 
