@@ -1,0 +1,35 @@
+[
+  {
+    "id": "sc154b889de4d365",
+    "from": 1421415000,
+    "to": 1421416800,
+    "resource": {
+      "id": "sc149bdef7bb3d8c",
+      "machid": "sc149bdab1f0dc91",
+      "title": "Locker 25",
+      "location": "Lockers - Level 4"
+    }
+  },
+  {
+    "id": "sc154b889de4d366",
+    "from": 1421415000,
+    "to": 1421416800,
+    "resource": {
+      "id": "sc149bdef7bb3d8c",
+      "machid": "sc149bdab1f0dc91",
+      "title": "Locker 25",
+      "location": "Lockers - Level 4"
+    }
+  },
+  {
+    "id": "sc154b889de4d367",
+    "from": 1421415000,
+    "to": 1421416800,
+    "resource": {
+      "id": "sc149bdef7bb3d8c",
+      "machid": "sc149bdab1f0dc91",
+      "title": "Locker 25",
+      "location": "Lockers - Level 4"
+    }
+  }
+]

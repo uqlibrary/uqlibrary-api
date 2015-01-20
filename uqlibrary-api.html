@@ -36,29 +36,44 @@ Element providing access to UQ Library's API.
 
         method: 'GET',
         auto: false,
-        appProductionBaseUrl: 'https://app.library.uq.edu.au',
         baseApiUrl: 'https://app.library.uq.edu.au/api',
-        mockDataFileUrl: '', // defines what mock data file to load if not on production
-        mock: false,
+        useMockData: false,
+
+        ready: function() {
+          var cookie = this.getCookie('UQLMockData');
+          if (cookie !== "undefined") {
+            this.useMockData = cookie === 'true';
+          }
+        },
 
         handleResponse: function (e) {
-          var data = this.$.ajax.response;
-          if(this.mock) {
-            data = {mock : true, data: this.$.ajax.response};
-          }
-          this.fire('uqlibrary-api', data);
+          this.fire('uqlibrary-api', this.$.ajax.response);
         },
 
         handleError: function (event, object, sender) {
           this.fire('uqlibrary-api', object.xhr);
         },
 
-        ready: function() {
-          // Check if mock data must be loaded
-          //if(((window.location.protocol + '//' + window.location.hostname) != this.appProductionBaseUrl) && this.mockDataFileUrl != ''  ) {
-          //  this.mock = true;
-          //}
+        loadMockData: function() {
+          var that = this;
 
+          var xobj = new XMLHttpRequest();
+          xobj.overrideMimeType("application/json");
+
+          var substringTo = this.uri.indexOf('?') > 0 ? this.uri.indexOf('?') : this.uri.length;
+          var fileName = 'mock/' + this.uri.substring(1, substringTo).replace(/([^a-z]\/)/gi, '_') + '_' + this.method.toLowerCase() + '.json';
+
+
+          console.log(this.uri);
+          console.log(fileName);
+
+          xobj.open('GET', fileName, true);
+          xobj.onreadystatechange = function () {
+            if (xobj.readyState == 4 && xobj.status == "200") {
+              that.fire('uqlibrary-api', JSON.parse(xobj.responseText));
+            }
+          };
+          xobj.send(null);
         },
 
         /**
@@ -71,12 +86,9 @@ Element providing access to UQ Library's API.
          * @method get
          */
         get: function (args) {
-          var url = '';
-          //Check if mock data should be returned
-          if(this.mock) {
-            url = this.resolvePath('mock/' + this.mockDataFileUrl +'.json');
-          }
-          else {
+          if (this.useMockData) {
+            this.loadMockData();
+          } else {
             this.setHeaders();
             url = this.baseApiUrl + this.uri;
 
@@ -86,13 +98,13 @@ Element providing access to UQ Library's API.
             }
 
             if (args && args.body) {
-              this.$.ajax.contentType="application/json";
+              this.$.ajax.contentType = "application/json";
               this.$.ajax.body = JSON.stringify(args.body);
             }
-          }
 
-          this.url = url;
-          this.$.ajax.go();
+            this.url = url;
+            this.$.ajax.go();
+          }
         },
 
         /**
