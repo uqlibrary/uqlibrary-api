@@ -61,7 +61,7 @@ Element providing access to UQ Library's API.
           xobj.overrideMimeType("application/json");
 
           var substringTo = this.uri.indexOf('?') > 0 ? this.uri.indexOf('?') : this.uri.length;
-          var fileName = 'mock/' + this.uri.substring(1, substringTo).replace(/([^a-z]\/)/gi, '_') + '_' + this.method.toLowerCase() + '.json';
+          var fileName = '../uqlibrary-api/mock/' + this.uri.substring(1, substringTo).replace(/([^a-z]\/)/gi, '_') + '_' + this.method.toLowerCase() + '.json';
 
           console.log(this.uri);
           console.log(fileName);
@@ -69,7 +69,28 @@ Element providing access to UQ Library's API.
           xobj.open('GET', fileName, true);
           xobj.onreadystatechange = function () {
             if (xobj.readyState == 4 && xobj.status == "200") {
-              that.fire('uqlibrary-api', JSON.parse(xobj.responseText));
+              var response = xobj.responseText;
+
+              if (fileName.match(/facilities_availability/)) {
+                var now = new Date();
+
+                var startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+
+                var availableFrom = startOfDay / 1000 + 7 * 60 * 60;
+                var availableTo = startOfDay / 1000 + 20 * 60 * 60;
+
+                var bookingFrom = startOfDay / 1000 + 10 * 60 * 60;
+                var bookingTo = startOfDay / 1000 + 11 * 60 * 60;
+
+
+                response = response.replace('"{AVAILABLE_FROM}"', availableFrom);
+                response = response.replace('"{AVAILABLE_TO}"', availableTo);
+
+                response = response.replace('"{BOOKING_START_TIME}"', bookingFrom);
+                response = response.replace('"{BOOKING_END_TIME}"', bookingTo);
+              }
+
+              that.fire('uqlibrary-api', JSON.parse(response));
             }
           };
           xobj.send(null);
