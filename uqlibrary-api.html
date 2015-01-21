@@ -83,11 +83,11 @@ Element providing access to UQ Library's API.
                 var bookingTo = startOfDay / 1000 + 11 * 60 * 60;
 
 
-                response = response.replace('"{AVAILABLE_FROM}"', availableFrom);
-                response = response.replace('"{AVAILABLE_TO}"', availableTo);
+                response = response.replace(/"{AVAILABLE_FROM}"/g, availableFrom);
+                response = response.replace(/"{AVAILABLE_TO}"/g, availableTo);
 
-                response = response.replace('"{BOOKING_START_TIME}"', bookingFrom);
-                response = response.replace('"{BOOKING_END_TIME}"', bookingTo);
+                response = response.replace(/"{BOOKING_START_TIME}"/g, bookingFrom);
+                response = response.replace(/"{BOOKING_END_TIME}"/g, bookingTo);
               }
 
               that.fire('uqlibrary-api', JSON.parse(response));
