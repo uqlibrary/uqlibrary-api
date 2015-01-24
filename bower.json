@@ -10,10 +10,10 @@
     "/tests/"
   ],
   "dependencies": {
-    "polymer": "Polymer/polymer#0.5.3",
-    "core-ajax": "Polymer/core-ajax#0.5.3"
+    "polymer": "Polymer/polymer#0.5.4",
+    "core-ajax": "Polymer/core-ajax#0.5.4"
   },
   "devDependencies": {
-    "web-component-tester": "Polymer/web-component-tester#1.6.1"
+    "web-component-tester": "Polymer/web-component-tester#2.0.5"
   }
 }
