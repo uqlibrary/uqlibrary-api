@@ -36,9 +36,9 @@ Element providing computer availability.
 
         ready: function () {
           var that = this;
-          this.$.computers.addEventListener('uqlibrary-api', function(e) {
-            that.computers = e.detail;
-            that.fire('uqlibrary-api-papercut-loaded', that.computers);
+          this.$.papercut.addEventListener('uqlibrary-api', function(e) {
+            that.papercut = e.detail;
+            that.fire('uqlibrary-api-papercut-loaded', that.papercut);
           });
         },
 
@@ -48,8 +48,8 @@ Element providing computer availability.
          * @method get
          */
         get: function () {
-          this.$.computers.uri = this.baseUri;
-          this.$.computers.get();
+          this.$.papercut.uri = this.baseUri;
+          this.$.papercut.get();
         }
       });
     })();
