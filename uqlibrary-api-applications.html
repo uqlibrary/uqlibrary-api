@@ -14,7 +14,10 @@ Element providing access to a list of applications based on user PType.
 @status alpha
 @homepage https://github.com/uqlibrary/uqlibrary-api
 
-data is stored in /data/applications.json in following format (order is important for displaying menue)
+@param - user - user details as returned by account api - required
+@param - app - application name to check if user has permissions - optional
+@param - checkDate - current date (or specific date) required to check current semestre enrollment for research students, optional, defaults to current date
+data is stored in /data/applications.json in following format (order is important for displaying menu)
 
 [
   {
