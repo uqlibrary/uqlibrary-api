@@ -63,9 +63,10 @@ Element that gets term dates
         },
 
         /**
-         * Gets term dates
+         *  Initiates request to get term dates
          *
-         * @method get
+         *  @param args.codes - array of term codes,
+         *  @param args.date - terms will be returned for this date only  Date()
          */
         get: function (args) {
           this.date = null;
