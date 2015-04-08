@@ -22,50 +22,50 @@
 </head>
 <body>
 
-  <!-- You use the document as a place to set up your fixtures. -->
-  <uqlibrary-api-academic-stats></uqlibrary-api-academic-stats>
+<!-- You use the document as a place to set up your fixtures. -->
+<uqlibrary-api-academic-stats></uqlibrary-api-academic-stats>
 
-  <script>
-    window.addEventListener('polymer-ready', function() {
-      var parent = document.querySelector('uqlibrary-api-academic-stats');
+<script>
+  window.addEventListener('polymer-ready', function () {
+    var parent = document.querySelector('uqlibrary-api-academic-stats');
 
-      suite('uqlibrary-api-academic-stats tests', function() {
+    suite('uqlibrary-api-academic-stats tests', function () {
 
-        afterEach(function () {
-        });
+      afterEach(function () {
+      });
 
-        test('url should return the mock data', function (done) {
-            var appLoaded = function(result) {
-                var expected = {
-                    stats : {
-                      stats_fields : {
-                        thomson_citation_count_i: {
-                          sum: 6736
-                        }
-                      }
-                    }
-                };
+      test('url should return the mock data', function (done) {
+        var appLoaded = function (result) {
+          var expected = {
+            stats: {
+              stats_fields: {
+                thomson_citation_count_i: {
+                  sum: 6736
+                }
+              }
+            }
+          };
 
-                assert.equal(expected.stats.stats_fields.thomson_citation_count_i.sum, result.detail.stats.stats_fields.thomson_citation_count_i.sum);
+          assert.equal(expected.stats.stats_fields.thomson_citation_count_i.sum,
+              result.detail.stats.stats_fields.thomson_citation_count_i.sum);
 
-                done();
-            };
+          done();
+        };
 
-            setTimeout(function(){
+        setTimeout(function () {
 
-                parent.addEventListener('uqlibrary-api-academic-stats-loaded', appLoaded);
+          parent.addEventListener('uqlibrary-api-academic-stats-loaded', appLoaded);
 
-                parent.get({username: 's1234567'});
+          parent.get({username: 's1234567'});
 
-            }, 100);
-
-        });
-
-
+        }, 100);
 
       });
+
+
     });
-  </script>
+  });
+</script>
 
 </body>
 </html>
