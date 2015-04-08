@@ -18,39 +18,42 @@
   <script src="../../web-component-tester/browser.js"></script>
 
   <!-- Step 1: import the element to test -->
-  <link rel="import" href="../uqlibrary-api-academic-hindex.html">
+  <link rel="import" href="../uqlibrary-api-academic-stats.html">
 </head>
 <body>
 
   <!-- You use the document as a place to set up your fixtures. -->
-  <uqlibrary-api-academic-hindex></uqlibrary-api-academic-hindex>
+  <uqlibrary-api-academic-stats></uqlibrary-api-academic-stats>
 
   <script>
     window.addEventListener('polymer-ready', function() {
-      var parent = document.querySelector('uqlibrary-api-academic-hindex');
+      var parent = document.querySelector('uqlibrary-api-academic-stats');
 
-      suite('uqlibrary-api-academic-hindex tests', function() {
+      suite('uqlibrary-api-academic-stats tests', function() {
 
         afterEach(function () {
         });
 
         test('url should return the mock data', function (done) {
             var appLoaded = function(result) {
-
                 var expected = {
-                    'hindex_scopus': 22,
-                    'hindex_incites': 23
+                    stats : {
+                      stats_fields : {
+                        thomson_citation_count_i: {
+                          sum: 6736
+                        }
+                      }
+                    }
                 };
 
-                assert.equal(expected.hindex_scopus, result.detail.hindex_scopus);
-                assert.equal(expected.hindex_incites, result.detail.hindex_incites);
+                assert.equal(expected.stats.stats_fields.thomson_citation_count_i.sum, result.detail.stats.stats_fields.thomson_citation_count_i.sum);
 
                 done();
             };
 
             setTimeout(function(){
 
-                parent.addEventListener('uqlibrary-api-academic-hindex-loaded', appLoaded);
+                parent.addEventListener('uqlibrary-api-academic-stats-loaded', appLoaded);
 
                 parent.get({username: 's1234567'});
 
