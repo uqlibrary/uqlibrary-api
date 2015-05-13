@@ -46,9 +46,9 @@ Element providing search suggestions.
          *
          * @method get
          */
-        get: function () {
-          if(this.type != '') {
-            this.$.suggestions.uri = this.baseUri + '?type='+this.type;
+        get: function (text) {
+          if(this.type != '' && typeof(text) !== 'undefined' && text.trim() != '' ) {
+            this.$.suggestions.uri = this.baseUri + '?type='+this.type+'&prefix=' + text;
             this.$.suggestions.get();
           }
         }
