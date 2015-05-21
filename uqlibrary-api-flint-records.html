@@ -73,8 +73,8 @@ Element providing list of records for Flint language survey based on language/vo
             uri = this.baseUri.voice.replace('{{KEYWORD}}', args.voice);
           }
 
-          uri = this.baseUri.voice.replace('{{START}}', args.start ? args.start : this.start);
-          uri = this.baseUri.voice.replace('{{ROWS}}', args.rows ? args.rows : this.rows);
+          uri = uri.replace('{{START}}', args.start ? args.start : this.start);
+          uri = uri.replace('{{ROWS}}', args.rows ? args.rows : this.rows);
 
           this.$.list.uri = uri;
 
