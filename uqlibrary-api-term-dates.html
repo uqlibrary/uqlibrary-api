@@ -1,5 +1,5 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../core-ajax/core-ajax.html">
+<link rel="import" href="../iron-ajax/iron-ajax.html">
 <link rel="import" href="uqlibrary-api.html">
 
 <!--
@@ -14,7 +14,7 @@ Element that gets term dates
 @status alpha
 @homepage https://github.com/uqlibrary/uqlibrary-api
 -->
-<polymer-element name="uqlibrary-api-term-dates" extends="uqlibrary-api">
+<dom-module id="uqlibrary-api-term-dates">
 
   <template>
     <uqlibrary-api id="list"></uqlibrary-api>
@@ -22,11 +22,20 @@ Element that gets term dates
 
   <script>
     (function() {
-      Polymer('uqlibrary-api-term-dates', {
+      Polymer({
 
+        is: 'uqlibrary-api-term-dates',
+
+        properties: {
+          date: {
+            type: Date,
+            value: null
+          }
+        },
+
+        inherits: 'uqlibrary-api',
 
         baseUri : '/term_dates',
-        date: null,
         startBuffer : 1000 * 60 * 60 * 24 * 7 * 3,  // 3 weeks
         endBuffer : 1000 * 60 * 60 * 24 * 7,    // 1 week
 
@@ -130,4 +139,4 @@ Element that gets term dates
     })();
   </script>
 
-</polymer-element>
+</dom-module>

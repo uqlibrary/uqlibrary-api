@@ -33,7 +33,7 @@ Element providing access to a user account.
 @status alpha
 @homepage https://github.com/uqlibrary/uqlibrary-api
 -->
-<polymer-element name="uqlibrary-api-account" extends="uqlibrary-api">
+<dom-module id="uqlibrary-api-account">
 
   <template>
     <uqlibrary-api id="account" uri="{{uri}}"></uqlibrary-api>
@@ -41,15 +41,23 @@ Element providing access to a user account.
 
   <script>
     (function() {
-      Polymer('uqlibrary-api-account', {
-        uri: '',
+      Polymer({
 
+        is: 'uqlibrary-api-account',
+
+        properties: {
+          uri: {
+            type: String,
+            value: ''
+          }
+
+        },
         /**
          * Fired when the user account object has loaded.
          *
          * @event uqlibrary-api-account-loaded
          */
-        created: function () {
+        attached: function () {
           this.account = {
             hasSession: false
           };
@@ -86,4 +94,4 @@ Element providing access to a user account.
     })();
   </script>
 
-</polymer-element>
+</dom-module>

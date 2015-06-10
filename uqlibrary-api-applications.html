@@ -1,5 +1,5 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../core-ajax/core-ajax.html">
+<link rel="import" href="../iron-ajax/iron-ajax.html">
 <link rel="import" href="uqlibrary-api-term-dates.html">
 
 <!--
@@ -35,7 +35,7 @@ data is stored in /data/applications.json in following format (order is importan
 ]
 -->
 
-<polymer-element name="uqlibrary-api-applications" attributes="user url app checkDate">
+<dom-module id="uqlibrary-api-applications">
 
   <template>
     <uqlibrary-api-term-dates id="termDates"></uqlibrary-api-term-dates>
@@ -43,7 +43,32 @@ data is stored in /data/applications.json in following format (order is importan
 
   <script>
     (function() {
-      Polymer('uqlibrary-api-applications', {
+      Polymer({
+
+        is: 'uqlibrary-api-applications',
+
+        properties: {
+          user: {
+            type: Object,
+            value: {}
+          },
+
+          url: {
+            type: String,
+            value: ''
+          },
+
+          app: {
+            type: String,
+            value: ''
+          },
+
+          checkDate: {
+            type: Date,
+            value: null
+          }
+
+        },
 
         method: 'GET',
         auto: false,
@@ -91,7 +116,7 @@ data is stored in /data/applications.json in following format (order is importan
           var that = this;
 
           var xobj = new XMLHttpRequest();
-          xobj.open('GET', this.resolvePath(this.baseApiUrl + this.url), true);
+          xobj.open('GET', this.url, true);
 
           xobj.onreadystatechange = function () {
             if (xobj.readyState == 4 && xobj.status == "200") {
@@ -145,4 +170,4 @@ data is stored in /data/applications.json in following format (order is importan
     })();
   </script>
 
-</polymer-element>
+</dom-module>
