@@ -72,8 +72,6 @@ data is stored in /data/applications.json in following format (order is importan
 
         method: 'GET',
         auto: false,
-        baseApiUrl: 'data/',
-        url: 'applications.json',
         checkDate: null,
 
         ready: function() {
@@ -91,7 +89,6 @@ data is stored in /data/applications.json in following format (order is importan
          */
         get: function() {
           var that = this;
-
           if (this.user)
             this.ptype = this.user.type;
 
