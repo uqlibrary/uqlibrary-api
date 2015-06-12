@@ -12,5 +12,15 @@
     "icon": "dashboard",
     "link": "https://app.library.uq.edu.au/v1/home",
     "ga": "UQ My Library"
+  },
+  {
+    "isDivider": true
+  },
+  {
+    "title": "About this collection",
+    "description": "Learn about the Flint Collection",
+    "icon": "info",
+    "link": "#about",
+    "ga": "About"
   }
 ]
