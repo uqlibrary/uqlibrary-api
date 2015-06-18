@@ -88,6 +88,7 @@ data is stored in /data/applications.json in following format (order is importan
          * @method get
          */
         get: function() {
+
           var that = this;
           if (this.user)
             this.ptype = this.user.type;
@@ -113,9 +114,11 @@ data is stored in /data/applications.json in following format (order is importan
           var that = this;
 
           var xobj = new XMLHttpRequest();
-          xobj.open('GET', this.url, true);
+
+          xobj.open('GET', this.resolveUrl(this.url), true);
 
           xobj.onreadystatechange = function () {
+
             if (xobj.readyState == 4 && xobj.status == "200") {
               var response = xobj.responseText;
               var apps = JSON.parse(response);
