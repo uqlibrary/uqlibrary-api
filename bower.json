@@ -13,6 +13,7 @@
     "iron-ajax": "PolymerElements/iron-ajax#^1.0.0"
   },
   "devDependencies": {
-    "web-component-tester": "*"
+    "web-component-tester": "*",
+    "test-fixture": "PolymerElements/test-fixture#^1.0.0"
   }
 }
