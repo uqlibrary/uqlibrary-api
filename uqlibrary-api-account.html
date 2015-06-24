@@ -23,6 +23,9 @@ Element providing access to a user account.
             alert('Not logged in');
           }
         });
+
+        account.get();
+
       });
 
     }());
@@ -44,32 +47,13 @@ Element providing access to a user account.
       Polymer({
 
         is: 'uqlibrary-api-account',
-
-        properties: {
-          uri: {
-            type: String,
-            value: ''
-          }
-
-        },
-        /**
-         * Fired when the user account object has loaded.
-         *
-         * @event uqlibrary-api-account-loaded
-         */
-        attached: function () {
-          this.account = {
-            hasSession: false
-          };
-          var now = new Date().getTime();
-          this.uri = '/account?' + now;
-        },
+        uri: '/account',
 
         ready: function () {
           var that = this;
+
           this.$.account.addEventListener('uqlibrary-api', function(e) {
-            that.account = e.detail;
-            that.fire('uqlibrary-api-account-loaded', that.account);
+            that.fire('uqlibrary-api-account-loaded', e.detail);
           });
         },
 
@@ -79,6 +63,9 @@ Element providing access to a user account.
          * @method get
          */
         get: function () {
+          var now = new Date().getTime();
+          this.uri = '/account?' + now;
+
           this.$.account.get();
         },
 
