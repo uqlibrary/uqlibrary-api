@@ -3,7 +3,7 @@
     "title": "My Library",
     "description": "Return to My Library",
     "icon": "dashboard",
-    "link": "../home"
+    "link": "/home"
   },
   {
     "title": "UQ Library Home",
@@ -19,7 +19,7 @@
     "title": "Ask Us",
     "description": "Ask the library for help",
     "icon": "question-answer",
-    "link": "../chat",
+    "link": "/chat",
     "ga": "chat"
   },
   {
@@ -27,7 +27,7 @@
     "title": "Booking",
     "description": "View or manage my library bookings",
     "icon": "event",
-    "link": "../booking",
+    "link": "/booking",
     "ptypes": [1, 31, 11, 21, 2, 22, 17, 18],
     "ga": "FBS"
   },
@@ -36,7 +36,7 @@
     "title": "Borrowing",
     "description": "View or manage my library loans, holds, and fines",
     "icon": "maps:local-library",
-    "link": "../borrowing",
+    "link": "/borrowing",
     "ptypes": [1, 31, 11, 21, 2, 22, 3, 32, 17, 18, 25, 14, 4, 9, 13, 10, 12, 27, 7, 15, 5, 8],
     "ga": "Borrowing",
     "subApplications": [
@@ -62,7 +62,7 @@
     "title": "Computers",
     "description": "View library computers availability",
     "icon": "hardware:desktop-mac",
-    "link": "../computers",
+    "link": "/computers",
     "ga": "Computers"
   },
   {
@@ -70,7 +70,7 @@
     "title": "Hours",
     "description": "View library opening hours",
     "icon": "schedule",
-    "link": "../hours",
+    "link": "/hours",
     "ga": "Hours"
   },
   {
@@ -78,7 +78,7 @@
     "title": "Courses",
     "description": "View course learning resources",
     "icon": "social:school",
-    "link": "../courses",
+    "link": "/courses",
     "ga": "Courses",
     "ptypes": [1, 3, 31, 11, 21, 17, 18, 2, 22]
   },
@@ -87,7 +87,7 @@
     "title": "Research",
     "description": "View my research progress",
     "icon": "assessment",
-    "link": "../research",
+    "link": "/research",
     "ga": "Research",
     "ptypes": [2, 22, 3, 17, 18]
   },
@@ -96,7 +96,7 @@
     "title": "Printing",
     "description": "Manage my printing balance",
     "icon": "print",
-    "link": "../papercut",
+    "link": "/papercut",
     "ga": "papercut",
     "ptypes": [1, 31, 11, 21, 2, 22, 14, 4, 13, 5, 8, 17, 18]
   },
@@ -105,7 +105,7 @@
     "title": "Masquerade",
     "description": "Masquerade as another library user",
     "icon": "perm-identity",
-    "link": "../masquerade",
+    "link": "/masquerade",
     "ga": "masquerade",
     "ptypes": [17,18]
   },
@@ -117,7 +117,7 @@
     "title": "Feedback",
     "description": "Leave feedback for my library",
     "icon": "communication:comment",
-    "link": "../feedback",
+    "link": "/feedback",
     "ga": "Feedback"
   }
 ]
