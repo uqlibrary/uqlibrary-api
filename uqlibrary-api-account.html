@@ -74,6 +74,15 @@ Element providing access to a user account.
          */
         login: function (url) {
           document.location.href = "https://www.library.uq.edu.au/uqlais/login?return=" + window.btoa(url);
+        },
+
+        /**
+         * Redirect to login with a URL to return to.
+         *
+         * @param url
+         */
+        logout: function () {
+          document.location.href = "https://www.library.uq.edu.au/logout";
         }
       });
     })();
