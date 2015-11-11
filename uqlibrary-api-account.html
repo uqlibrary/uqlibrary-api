@@ -37,7 +37,7 @@ Element providing access to a user account.
 <dom-module id="uqlibrary-api-account">
 
   <template>
-    <uqlibrary-api id="account" uri="{{uri}}"></uqlibrary-api>
+    <uqlibrary-api id="account" uri="{{uri}}" auto="{{auto}}"></uqlibrary-api>
   </template>
 
   <script>
@@ -46,6 +46,7 @@ Element providing access to a user account.
 
         is: 'uqlibrary-api-account',
         uri: '/account',
+        auto: false,
 
         ready: function () {
           var that = this;
@@ -53,6 +54,9 @@ Element providing access to a user account.
           this.$.account.addEventListener('uqlibrary-api', function(e) {
             that.fire('uqlibrary-api-account-loaded', e.detail);
           });
+
+          if (this.auto)
+            this.get();
         },
 
         /**
