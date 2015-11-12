@@ -25,6 +25,7 @@ Element providing access to UQ Library's API.
       handleAs="json"
       on-response="handleResponse"
       on-error="handleError"></iron-ajax>
+
   </template>
 
   <script>
@@ -34,6 +35,7 @@ Element providing access to UQ Library's API.
         is: 'uqlibrary-api',
 
         properties: {
+
           uri: {
             type: String,
             value: ''
@@ -163,12 +165,10 @@ Element providing access to UQ Library's API.
          */
         setHeaders: function () {
           var cookie = this.getCookie('UQLID');
-          if (cookie !== "undefined") {
+          if (cookie) {
             this.headers = {
               "X-Uql-Token": cookie
             };
-          } else {
-            return '';
           }
         },
 
