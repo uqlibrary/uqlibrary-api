@@ -46,15 +46,14 @@ Element providing access to a user account.
 
         is: 'uqlibrary-api-account',
 
-        uri: {
-          type: String,
-          value: '/account'
+        properties: {
+          auto: {
+            type: Boolean,
+            value: false
+          }
         },
 
-        auto: {
-          type: Boolean,
-          value: false
-        },
+        uri: '/account',
 
         ready: function () {
           var that = this;
