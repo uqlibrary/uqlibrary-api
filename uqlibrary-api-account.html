@@ -45,8 +45,16 @@ Element providing access to a user account.
       Polymer({
 
         is: 'uqlibrary-api-account',
-        uri: '/account',
-        auto: false,
+
+        uri: {
+          type: String,
+          value: '/account'
+        },
+
+        auto: {
+          type: Boolean,
+          value: false
+        },
 
         ready: function () {
           var that = this;
@@ -55,8 +63,8 @@ Element providing access to a user account.
             that.fire('uqlibrary-api-account-loaded', e.detail);
           });
 
-          if (this.auto)
-            this.get();
+//          if (this.auto)
+//            this.get();
         },
 
         /**
