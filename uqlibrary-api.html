@@ -65,8 +65,8 @@ Element providing access to UQ Library's API.
           }
         },
 
-        handleResponse: function (e) {
-          this.fire('uqlibrary-api', this.$.ajax.response);
+        handleResponse: function (event) {
+          this.fire('uqlibrary-api', event.detail.response);
         },
 
         handleError: function (event, object, sender) {
