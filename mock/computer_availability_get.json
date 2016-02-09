@@ -4,8 +4,8 @@
     "buildingNumber": 51,
     "availability": {
       "Level 3": {
-        "Available": 41,
-        "Occupied": 2
+        "Available": 34,
+        "Occupied": 9
       }
     }
   },
@@ -15,19 +15,19 @@
     "availability": {
       "Level 1": {
         "Available": 13,
-        "Occupied": 15
+        "Occupied": 16
       },
       "Level 2": {
-        "Available": 60,
-        "Occupied": 24
+        "Available": 59,
+        "Occupied": 25
       },
       "Level 3": {
-        "Available": 25,
-        "Occupied": 12
+        "Available": 24,
+        "Occupied": 11
       },
       "Level 4": {
-        "Available": 26,
-        "Occupied": 14
+        "Available": 25,
+        "Occupied": 20
       }
     }
   },
@@ -35,9 +35,21 @@
     "library": "D.H. Engineering &amp; Sciences Library",
     "buildingNumber": 50,
     "availability": {
-      "Level 2": {
-        "Available": 15,
+      "Level 1": {
+        "Available": 19,
         "Occupied": 0
+      },
+      "Level 2": {
+        "Available": 54,
+        "Occupied": 6
+      },
+      "Level 3": {
+        "Available": 24,
+        "Occupied": 5
+      },
+      "Level 4": {
+        "Available": 1,
+        "Occupied": 1
       }
     }
   },
@@ -45,17 +57,13 @@
     "library": "Duhig Building",
     "buildingNumber": 2,
     "availability": {
-      "Postgraduate Study Centre": {
-        "Available": 14,
-        "Occupied": 6
-      },
       "Level 1": {
-        "Available": 30,
-        "Occupied": 3
+        "Available": 2,
+        "Occupied": 0
       },
       "Level 2": {
-        "Available": 69,
-        "Occupied": 24
+        "Available": 72,
+        "Occupied": 32
       }
     }
   },
@@ -64,8 +72,8 @@
     "buildingNumber": 39,
     "availability": {
       "Level 2": {
-        "Available": 25,
-        "Occupied": 1
+        "Available": 35,
+        "Occupied": 0
       }
     }
   },
@@ -74,11 +82,11 @@
     "buildingNumber": 8102,
     "availability": {
       "Level 1": {
-        "Available": 64,
-        "Occupied": 1
+        "Available": 60,
+        "Occupied": 7
       },
       "Level 2": {
-        "Available": 16,
+        "Available": 17,
         "Occupied": 1
       }
     }
@@ -88,26 +96,8 @@
     "buildingNumber": null,
     "availability": {
       "Level 6": {
-        "Available": 36,
-        "Occupied": 4
-      }
-    }
-  },
-  {
-    "library": "Law Library",
-    "buildingNumber": 1,
-    "availability": {
-      "Level 2": {
-        "Available": 10,
+        "Available": 35,
         "Occupied": 8
-      },
-      "Level 3": {
-        "Available": 8,
-        "Occupied": 1
-      },
-      "Level 4": {
-        "Available": 6,
-        "Occupied": 0
       }
     }
   },
@@ -116,8 +106,8 @@
     "buildingNumber": null,
     "availability": {
       "Level 1": {
-        "Available": 19,
-        "Occupied": 2
+        "Available": 23,
+        "Occupied": 3
       }
     }
   },
@@ -126,18 +116,8 @@
     "buildingNumber": null,
     "availability": {
       "Level 6": {
-        "Available": 41,
-        "Occupied": 1
-      }
-    }
-  },
-  {
-    "library": "Princess Alexandra Hospital Library",
-    "buildingNumber": null,
-    "availability": {
-      "Level 1": {
-        "Available": 19,
-        "Occupied": 4
+        "Available": 48,
+        "Occupied": 6
       }
     }
   },
@@ -146,24 +126,20 @@
     "buildingNumber": 12,
     "availability": {
       "Level 1 Entry": {
-        "Available": 31,
-        "Occupied": 21
-      },
-      "Level 1": {
-        "Available": 1,
-        "Occupied": 1
+        "Available": 32,
+        "Occupied": 23
       },
       "Level 2": {
-        "Available": 19,
+        "Available": 20,
         "Occupied": 4
       },
       "Level 3": {
-        "Available": 21,
+        "Available": 17,
         "Occupied": 4
       },
       "Level 4": {
-        "Available": 19,
-        "Occupied": 0
+        "Available": 14,
+        "Occupied": 1
       }
     }
   }
