@@ -45,8 +45,9 @@ Element providing computer availability.
               var index = names.indexOf(item.library);
               if (index >=0) {
                 item.abbr = abbrs[index];
+              } else {
+                item.abbr = item.library.replace(/[a-z];/g, '');
               }
-
             });
 
             that.fire('uqlibrary-api-computer-availability-loaded', that.computers);
