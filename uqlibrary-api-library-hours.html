@@ -1,6 +1,4 @@
-<link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../core-ajax/core-ajax.html">
-<link rel="import" href="uqlibrary-api.html">
+<link rel="import" href="elements.html">
 
 <!--
 Element providing library hours
@@ -14,20 +12,24 @@ Element providing library hours
 @status alpha
 @homepage https://github.com/uqlibrary/uqlibrary-api
 -->
-<polymer-element name="uqlibrary-api-library-hours" extends="uqlibrary-api">
-
+<dom-module id="uqlibrary-api-library-hours">
   <template>
     <uqlibrary-api id="list"></uqlibrary-api>
   </template>
-
   <script>
-    (function() {
-      Polymer('uqlibrary-api-library-hours', {
-
-
-        baseUri : '/library_hours',
-        mode : 'day',
-
+    (function () {
+      Polymer({
+        is: 'uqlibrary-api-library-hours',
+        properties: {
+          baseUri: {
+            type: String,
+            value: '/library_hours'
+          },
+          mode: {
+            type: String,
+            value: 'day'
+          }
+        },
         /**
          * Fired when the object has loaded.
          *
@@ -35,32 +37,26 @@ Element providing library hours
          */
         created: function () {
         },
-
         ready: function () {
           var that = this;
-          this.$.list.addEventListener('uqlibrary-api', function(e) {
+          this.$.list.addEventListener('uqlibrary-api', function (e) {
             that.list = e.detail;
             that.fire('uqlibrary-api-library-hours', that.list);
           });
         },
-
         /**
          * Gets learning resources.
          *
          * @method get
          */
         get: function (args) {
-
-          if (args && args.mode){
+          if (args && args.mode) {
             this.mode = args.code;
           }
-
-          this.$.list.uri = this.baseUri + "/" + this.mode;
+          this.set('$.list.uri', this.baseUri + '/' + this.mode);
           this.$.list.get();
-
         }
       });
-    })();
+    }());
   </script>
-
-</polymer-element>
+</dom-module>
