@@ -5,7 +5,7 @@
     "end": "2016-02-21 23:59:59",
     "title": "Library services for researchers",
     "url": "https:\/\/www.library.uq.edu.au\/",
-    "img_url": "https:\/\/www.library.uq.edu.au\/_\/\/filething\/images\/get\/spotlight\/ResearchHigherDegreeStudents.jpg",
+    "img_url": "http://lorempixel.com/800/300/abstract",
     "img_alt": "Library services for researchers",
     "weight": 1,
     "active": 1
@@ -16,7 +16,7 @@
     "end": "2016-12-31 23:59:59",
     "title": "UQ Research Staff",
     "url": "https:\/\/www.library.uq.edu.au\/library-services\/services-for-researchers",
-    "img_url": "https:\/\/www.library.uq.edu.au\/_\/\/filething\/images\/get\/spotlight\/NewStaff-spotlight-researchers.jpg",
+    "img_url": "http://lorempixel.com/g/800/300/city",
     "img_alt": "UQ Research Staff - Learn more about Library services & programs to assist you",
     "weight": 1,
     "active": 1
@@ -27,7 +27,7 @@
     "end": "2016-12-31 23:59:59",
     "title": "Fryer Fellowship",
     "url": "https:\/\/www.library.uq.edu.au\/locations-hours\/fryer-library-fellowship",
-    "img_url": "https:\/\/www.library.uq.edu.au\/_\/\/filething\/images\/get\/spotlight\/FryerFellowship.png",
+    "img_url": "http://lorempixel.com/800/300/people",
     "img_alt": "UQ Research Staff - Learn more about Library services & programs to assist you",
     "weight": 2,
     "active": 1
@@ -38,7 +38,7 @@
     "end": "2016-12-31 23:59:59",
     "title": "UQ Teaching Staff",
     "url": "https:\/\/www.library.uq.edu.au\/locations-hours\/fryer-library-fellowship",
-    "img_url": "https:\/\/www.library.uq.edu.au\/_\/\/filething\/images\/get\/spotlight\/NewStaff-spotlight-researchers.jpg",
+    "img_url": "http://lorempixel.com/g/800/300/nightlife",
     "img_alt": "UQ Teaching Staff - Learn more about how the Library can support you in your teaching role",
     "weight": 3,
     "active": 1
@@ -49,7 +49,7 @@
     "end": "2016-12-31 23:59:59",
     "title": "Need IT help?",
     "url": "https:\/\/www.library.uq.edu.au\/blog\/2016\/01\/27\/need-it-help-ask-us",
-    "img_url": "https:\/\/www.library.uq.edu.au\/_\/\/filething\/images\/get\/spotlight\/IThelp-spotlight2.jpg",
+    "img_url": "http://lorempixel.com/800/300/technics",
     "img_alt": "All the support IT you could want",
     "weight": 4,
     "active": 1
