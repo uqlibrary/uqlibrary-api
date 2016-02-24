@@ -38,7 +38,7 @@ Element providing library alerts
                     this.$.list.addEventListener('uqlibrary-api', function (e) {
                         that.list = e.detail;
                         
-                        //TODO: update result when alert link is added
+                        //TODO: update result when alert link is added .linkTitle .url
 
                         that.fire('uqlibrary-api-alerts', that.list);
                     });
@@ -52,7 +52,7 @@ Element providing library alerts
                     if (args && args.mode) {
                         this.mode = args.code;
                     }
-                    this.set('$.list.uri', this.baseUri);
+                    this.set('$.list.uri', this.baseUri + '/current');
                     this.$.list.get();
                 }
             });
