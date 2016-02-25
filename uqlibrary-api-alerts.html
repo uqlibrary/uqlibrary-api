@@ -36,10 +36,12 @@ Element providing library alerts
                 ready: function () {
                     var that = this;
                     this.$.list.addEventListener('uqlibrary-api', function (e) {
-                        that.list = e.detail;
-                        
-                        //TODO: update result when alert link is added .linkTitle .url
+                        that.list = [];
 
+                        if (Object.prototype.toString.call(e.detail) === '[object Array]') {
+                            //TODO: update result when alert link is added .linkTitle .url
+                            that.list = e.detail;
+                        }
                         that.fire('uqlibrary-api-alerts', that.list);
                     });
                 },
