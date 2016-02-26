@@ -44,8 +44,8 @@ Element providing library alerts
                             that.list.forEach(function(item){
                                 var link = item.body.match(/\[([^\]]+)\]\(([^)]+)\)/);
                                 if (link) {
-                                    item.url = link[1];
-                                    item.urlTitle = link[2];
+                                    item.url = link[2];
+                                    item.urlTitle = link[1];
                                     item.body = item.body.replace(link[0], '');
                                 }
                             });
