@@ -39,8 +39,16 @@ Element providing library alerts
                         that.list = [];
 
                         if (Object.prototype.toString.call(e.detail) === '[object Array]') {
-                            //TODO: update result when alert link is added .linkTitle .url
                             that.list = e.detail;
+
+                            that.list.forEach(function(item){
+                                var link = item.body.match(/\[([^\]]+)\]\(([^)]+)\)/);
+                                if (link) {
+                                    item.url = link[1];
+                                    item.urlTitle = link[2];
+                                    item.body = item.body.replace(link[0], '');
+                                }
+                            });
                         }
                         that.fire('uqlibrary-api-alerts', that.list);
                     });
