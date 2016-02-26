@@ -4,8 +4,8 @@
     "buildingNumber": 51,
     "availability": {
       "Level 3": {
-        "Available": 34,
-        "Occupied": 9
+        "Available": 33,
+        "Occupied": 11
       }
     }
   },
@@ -15,19 +15,19 @@
     "availability": {
       "Level 1": {
         "Available": 13,
-        "Occupied": 16
+        "Occupied": 17
       },
       "Level 2": {
-        "Available": 59,
+        "Available": 57,
         "Occupied": 25
       },
       "Level 3": {
-        "Available": 24,
-        "Occupied": 11
+        "Available": 28,
+        "Occupied": 5
       },
       "Level 4": {
-        "Available": 25,
-        "Occupied": 20
+        "Available": 34,
+        "Occupied": 12
       }
     }
   },
@@ -40,12 +40,12 @@
         "Occupied": 0
       },
       "Level 2": {
-        "Available": 54,
-        "Occupied": 6
+        "Available": 48,
+        "Occupied": 12
       },
       "Level 3": {
-        "Available": 24,
-        "Occupied": 5
+        "Available": 23,
+        "Occupied": 4
       },
       "Level 4": {
         "Available": 1,
@@ -62,8 +62,8 @@
         "Occupied": 0
       },
       "Level 2": {
-        "Available": 72,
-        "Occupied": 32
+        "Available": 48,
+        "Occupied": 54
       }
     }
   },
@@ -72,8 +72,8 @@
     "buildingNumber": 39,
     "availability": {
       "Level 2": {
-        "Available": 35,
-        "Occupied": 0
+        "Available": 33,
+        "Occupied": 1
       }
     }
   },
@@ -82,12 +82,12 @@
     "buildingNumber": 8102,
     "availability": {
       "Level 1": {
-        "Available": 60,
-        "Occupied": 7
+        "Available": 63,
+        "Occupied": 4
       },
       "Level 2": {
-        "Available": 17,
-        "Occupied": 1
+        "Available": 15,
+        "Occupied": 2
       }
     }
   },
@@ -96,8 +96,8 @@
     "buildingNumber": null,
     "availability": {
       "Level 6": {
-        "Available": 35,
-        "Occupied": 8
+        "Available": 32,
+        "Occupied": 10
       }
     }
   },
@@ -116,8 +116,8 @@
     "buildingNumber": null,
     "availability": {
       "Level 6": {
-        "Available": 48,
-        "Occupied": 6
+        "Available": 42,
+        "Occupied": 11
       }
     }
   },
@@ -126,20 +126,20 @@
     "buildingNumber": 12,
     "availability": {
       "Level 1 Entry": {
-        "Available": 32,
-        "Occupied": 23
+        "Available": 24,
+        "Occupied": 32
       },
       "Level 2": {
-        "Available": 20,
-        "Occupied": 4
+        "Available": 11,
+        "Occupied": 11
       },
       "Level 3": {
-        "Available": 17,
-        "Occupied": 4
+        "Available": 15,
+        "Occupied": 5
       },
       "Level 4": {
-        "Available": 14,
-        "Occupied": 1
+        "Available": 11,
+        "Occupied": 0
       }
     }
   }

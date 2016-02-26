@@ -31,30 +31,31 @@
     "code": "duh",
     "name": "Study Areas in the Duhig Library Building",
     "abbr": "DuhigStudy",
-    "url": "http://www.library.uq.edu.au/locations/social-sciences-humanities-library",
-    "open": "08:00:00",
-    "close": "17:00:00",
+    "url": "http://www.library.uq.edu.au/locations/duhig-tower",
+    "open": "00:00:00",
+    "close": "24:00:00",
     "rev": "0",
-    "notes": "During Summer Semester, study spaces are only open while SS&amp;H Library is open."
+    "notes": "UQ ID card necessary."
   },
   {
     "code": "eco",
-    "name": "Graduate Economics &amp; Business Library",
+    "name": "Graduate Economics & Business Library",
     "abbr": "GradEcoBus",
     "url": "http://www.library.uq.edu.au/locations/graduate-economics-and-business-library",
     "open": "00:00:00",
     "close": "24:00:00",
     "rev": "0",
-    "notes": "Access is 24 hours. It is limited to the use of Business, Economics and Tourism postgraduate students.\r\nUQ ID card necessary"
+    "notes": "Access is 24 hours. Access is limited to the use of Business, Economics and Tourism postgraduate students.\r\nUQ ID card necessary."
   },
   {
     "code": "fry",
     "name": "Fryer Library",
     "abbr": "Fryer",
     "url": "http://www.library.uq.edu.au/fryer/",
-    "open": "10:00:00",
+    "open": "09:00:00",
     "close": "17:00:00",
-    "rev": "0"
+    "rev": "0",
+    "notes": "Summer Semester"
   },
   {
     "code": "gat",
@@ -81,28 +82,20 @@
     "name": "RCS Library - Hervey Bay",
     "abbr": "HerveyBay",
     "url": "http://www.library.uq.edu.au/locations/rural-clinical-school-rcs-library",
-    "open": "09:00:00",
-    "close": "16:00:00",
-    "rev": "0"
-  },
-  {
-    "code": "ips",
-    "name": "Ipswich Library",
-    "abbr": "Ipswich",
-    "url": "http://www.library.uq.edu.au/locations/uq-ipswich-library",
-    "open": "00:00:00",
-    "close": "00:00:00",
-    "rev": "0"
+    "open": "08:30:00",
+    "close": "16:30:00",
+    "rev": "0",
+    "notes": "24x7 Swipe-card access for RCS Hervey Bay medical students."
   },
   {
     "code": "law",
     "name": "Law Library",
     "abbr": "Law",
     "url": "http://www.library.uq.edu.au/locations/walter-harrison-law-library",
-    "open": "09:00:00",
-    "close": "17:00:00",
+    "open": "00:00:00",
+    "close": "00:00:00",
     "rev": "0",
-    "notes": "24x7 Study Space is available when the Library is closed. After hours entry is off the Great Court near the Michie Building. UQ ID card necessary."
+    "notes": "Law Library Closed for refurbishment, 27th November 2015 to January 3rd, 2017."
   },
   {
     "code": "mat",
@@ -114,33 +107,23 @@
     "rev": "0"
   },
   {
-    "code": "pah",
-    "name": "Princess Alexandra Hospital Library",
-    "abbr": "PA Hosp",
-    "url": "http://www.library.uq.edu.au/locations/pace-health-sciences-library-joint-princess-alexandra-hospitaluq-library",
-    "open": "10:00:00",
-    "close": "16:00:00",
-    "rev": "0",
-    "notes": "24x7 Study Space - Princess Alexandra Hospital proxy card access only"
-  },
-  {
     "code": "phs",
     "name": "PACE Health Sciences Library",
     "abbr": "PACE",
-    "url": "http://www.library.uq.edu.au/locations/pace-health-sciences-library-joint-princess-alexandra-hospitaluq-library",
+    "url": "http://www.library.uq.edu.au/locations/pace-health-sciences-library",
     "open": "09:00:00",
     "close": "17:00:00",
-    "rev": "0"
+    "rev": "0",
+    "notes": "Library study space available from 7am weekdays."
   },
   {
     "code": "pse",
-    "name": "Dorothy Hill Engineering &amp; Sciences Library",
+    "name": "Dorothy Hill Engineering & Sciences Library",
     "abbr": "DHEngSci",
     "url": "http://www.library.uq.edu.au/locations/dorothy-hill-engineering-and-sciences-library",
     "open": "09:00:00",
     "close": "17:00:00",
-    "rev": "0",
-    "notes": "During Summer Semester, study spaces are only open while the Library is open."
+    "rev": "0"
   },
   {
     "code": "roc",
@@ -150,17 +133,17 @@
     "open": "08:30:00",
     "close": "16:30:00",
     "rev": "0",
-    "notes": "Swipe card access after hours and public holidays"
+    "notes": "Swipe card access after hours and public holidays\r\n\r\n"
   },
   {
     "code": "ssh",
-    "name": "Social Sciences &amp; Humanities Library",
+    "name": "Social Sciences & Humanities Library",
     "abbr": "SSAH",
     "url": "http://www.library.uq.edu.au/locations/social-sciences-humanities-library",
     "open": "08:00:00",
     "close": "17:00:00",
     "rev": "0",
-    "notes": "Membership &amp; Payments desk closes at 30 minutes before Library closing, Loans desk closes at 15 minutes &amp; Autoloans close at 5 minutes to the closing hour."
+    "notes": "24x7 Study Space is available when the Library is closed. UQ ID card required for entry."
   },
   {
     "code": "tba",
