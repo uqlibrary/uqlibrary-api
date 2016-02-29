@@ -40,7 +40,18 @@ Element providing computer availability.
 
             var abbrs = ["Arch Music", "Biol Sci", "DHEngSci","DuhigStudy","GradEcoBus","Gatton","Herston","Mater", "PACE", "SSAH" ];
 
-            var campuses = [ "St. Lucia", "St. Lucia", "St. Lucia", "St. Lucia", "St. Lucia", "Gatton", "Herston", "Mater", "PA Hospital", "St. Lucia"];
+            var campusImages = {
+                'Arch Music': 'https://app.library.uq.edu.au/assets/images/uq-buildings/st_lucia/zelman_cowan_bldg_51.jpg',
+                'Biol Sci': 'https://app.library.uq.edu.au/assets/images/uq-buildings/st_lucia/biological_sciences_library_94.jpg',
+                'DHEngSci': 'https://app.library.uq.edu.au/assets/images/uq-buildings/st_lucia/hawken_bldg_50.jpg',
+                'DuhigStudy': 'https://app.library.uq.edu.au/assets/images/uq-buildings/st_lucia/duhig_bldg_2.jpg',
+                'GradEcoBus': 'https://app.library.uq.edu.au/assets/images/uq-buildings/st_lucia/colin_clark_bldg_39.jpg',
+                'Gatton': 'https://app.library.uq.edu.au/assets/images/uq-buildings/gatton/gatton_campus_bldg_8102.jpg',
+                'Herston': 'https://app.library.uq.edu.au/assets/images/uq-buildings/herston/clinical_bldg_block_6.jpg',
+                'Mater': 'https://app.library.uq.edu.au/assets/images/uq-buildings/mater/mater_hospital_bldg.jpg',
+                'PACE': '',
+                'SSAH': 'https://app.library.uq.edu.au/assets/images/uq-buildings/st_lucia/duhig_bldg_2.jpg'
+            };
 
             //add abbreviations to response
             that.computers.forEach(function(item){
@@ -48,7 +59,7 @@ Element providing computer availability.
               var index = names.indexOf(item.library);
               if (index >=0) {
                 item.abbr = abbrs[index];
-                item.campus = campuses[index];
+                item.campus = campusImages[item.abbr];
               } else {
                 item.abbr = item.library.replace(/[a-z];/g, '');
                 item.campus = item.library.replace(/[a-z];/g, '');
