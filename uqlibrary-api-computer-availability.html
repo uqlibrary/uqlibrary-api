@@ -59,10 +59,10 @@ Element providing computer availability.
               var index = names.indexOf(item.library);
               if (index >=0) {
                 item.abbr = abbrs[index];
-                item.campus = campusImages[item.abbr];
+                item.image = campusImages[item.abbr];
               } else {
                 item.abbr = item.library.replace(/[a-z];/g, '');
-                item.campus = item.library.replace(/[a-z];/g, '');
+                item.image = item.library.replace(/[a-z];/g, '');
               }
             });
 
