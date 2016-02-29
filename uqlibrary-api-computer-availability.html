@@ -40,14 +40,18 @@ Element providing computer availability.
 
             var abbrs = ["Arch Music", "Biol Sci", "DHEngSci","DuhigStudy","GradEcoBus","Gatton","Herston","Mater", "PACE", "SSAH" ];
 
+            var campuses = [ "St. Lucia", "St. Lucia", "St. Lucia", "St. Lucia", "St. Lucia", "Gatton", "Herston", "Mater", "PA Hospital", "St. Lucia"];
+
             //add abbreviations to response
             that.computers.forEach(function(item){
 
               var index = names.indexOf(item.library);
               if (index >=0) {
                 item.abbr = abbrs[index];
+                item.campus = campuses[index];
               } else {
                 item.abbr = item.library.replace(/[a-z];/g, '');
+                item.campus = item.library.replace(/[a-z];/g, '');
               }
             });
 
