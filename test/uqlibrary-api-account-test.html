@@ -37,22 +37,26 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
       var app;
 
       setup(function () {
+        document.cookie="UQLMockData=enabled";
+
         app = fixture('basic');
       });
 
       test('load account', function (done) {
+        flush(function () {
 
-        var apiLoaded = function(result) {
-          assert.equal('s1234567', result.detail.id);
-          done();
-        };
+          var apiLoaded = function(result) {
+            assert.equal('s1234567', result.detail.id);
+            done();
+          };
 
-        setTimeout(function(){
+          setTimeout(function(){
 
-          app.addEventListener('uqlibrary-api-account-loaded', apiLoaded);
-          app.get();
+            app.addEventListener('uqlibrary-api-account-loaded', apiLoaded);
+            app.get();
 
-        }, 100);
+          }, 100);
+        });
 
       });
 
