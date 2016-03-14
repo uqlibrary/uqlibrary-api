@@ -1,5 +1,5 @@
 <link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../core-ajax/core-ajax.html">
+<link rel="import" href="../iron-ajax/iron-ajax.html">
 <link rel="import" href="uqlibrary-api.html">
 
 <!--
@@ -14,45 +14,45 @@ Element providing computer availability.
 @status alpha
 @homepage https://github.com/uqlibrary/uqlibrary-api
 -->
-<polymer-element name="uqlibrary-api-papercut" extends="uqlibrary-api">
-
+<dom-module id="uqlibrary-api-papercut">
   <template>
     <uqlibrary-api id="papercut" uri="/papercut/balance"></uqlibrary-api>
   </template>
-
   <script>
-    (function() {
-      Polymer('uqlibrary-api-papercut', {
-        /**
-         * Fired when the object has loaded.
-         *
-         * @event uqlibrary-api-computer-availability-loaded
-         */
-
-        baseUri : '/papercut/balance',
-
+    (function () {
+      Polymer({
+        is: 'uqlibrary-api-papercut',
+        properties: {
+          /**
+           * Fired when the object has loaded.
+           *
+           * @event uqlibrary-api-computer-availability-loaded
+           */
+          baseUri: {
+            type: String,
+            value: '/papercut/balance'
+          }
+        },
         created: function () {
         },
-
         ready: function () {
           var that = this;
-          this.$.papercut.addEventListener('uqlibrary-api', function(e) {
+          this.$.papercut.addEventListener('uqlibrary-api', function (e) {
             that.papercut = e.detail;
             that.fire('uqlibrary-api-papercut-loaded', that.papercut);
           });
         },
-
         /**
          * Gets the computer availability.
          *
          * @method get
          */
         get: function () {
-          this.$.papercut.uri = this.baseUri;
+          this.set('$.papercut.uri', this.baseUri);
           this.$.papercut.get();
-        }
+        },
+        extends: 'uqlibrary-api'
       });
-    })();
+    }());
   </script>
-
-</polymer-element>
+</dom-module>
