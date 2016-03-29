@@ -7,57 +7,41 @@ The complete set of contributors may be found at http://polymer.github.io/CONTRI
 Code distributed by Google as part of the polymer project is also
 subject to an additional IP rights grant found at http://polymer.github.io/PATENTS.txt
 -->
-
 <!doctype html>
 <html>
 <head>
   <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
-  <title>api applications testing</title>
+  <title>api testing</title>
 
   <script src="../bower_components/webcomponentsjs/webcomponents-lite.min.js"></script>
-  <script src="../bower_components/web-component-tester/browser.js"></script>
   <script src="../bower_components/test-fixture/test-fixture-mocha.js"></script>
+  <script src="../bower_components/web-component-tester/browser.js"></script>
   <link rel="import" href="../bower_components/test-fixture/test-fixture.html">
 
   <!-- Import the element to test -->
-  <link rel="import" href="../uqlibrary-api-account.html">
+  <link rel="import" href="../uqlibrary-api.html">
 
 </head>
 <body>
 
-<test-fixture id="basic">
+<test-fixture id="element">
   <template>
-    <uqlibrary-api-account id="app"></uqlibrary-api-account>
+    <uqlibrary-api id="app"></uqlibrary-api>
   </template>
 </test-fixture>
 
 <script>
-    suite('uqlibrary-api-account tests', function () {
+    suite('uqlibrary-api tests', function () {
 
-      var app;
+      var element;
 
       setup(function () {
         document.cookie="UQLMockData=enabled";
-
-        app = fixture('basic');
+        element = fixture('element');
       });
 
-      test('load account', function (done) {
-        flush(function () {
-
-          var apiLoaded = function(result) {
-            assert.equal('s1234567', result.detail.id);
-            done();
-          };
-
-          setTimeout(function(){
-
-            app.addEventListener('uqlibrary-api-account-loaded', apiLoaded);
-            app.get();
-
-          }, 100);
-        });
-
+      test('element loads', function () {
+        expect(element).to.not.be.null;
       });
 
     });

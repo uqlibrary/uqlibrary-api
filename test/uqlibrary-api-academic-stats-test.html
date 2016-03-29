@@ -20,47 +20,50 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
   <link rel="import" href="../bower_components/test-fixture/test-fixture.html">
 
   <!-- Import the element to test -->
-  <link rel="import" href="../uqlibrary-api-account.html">
+  <link rel="import" href="../uqlibrary-api-academic-stats.html">
 
 </head>
 <body>
 
-<test-fixture id="basic">
+<test-fixture id="element">
   <template>
-    <uqlibrary-api-account id="app"></uqlibrary-api-account>
+    <uqlibrary-api-academic-stats id="app"></uqlibrary-api-academic-stats>
   </template>
 </test-fixture>
 
 <script>
-    suite('uqlibrary-api-account tests', function () {
+  suite('uqlibrary-api-academic-stats tests', function () {
 
-      var app;
+    var element;
 
-      setup(function () {
-        document.cookie="UQLMockData=enabled";
+    setup(function () {
+      document.cookie = "UQLMockData=enabled";
 
-        app = fixture('basic');
-      });
+      element = fixture('element');
+    });
 
-      test('load account', function (done) {
-        flush(function () {
+    test('element present', function () {
+      expect(element).to.not.be.null;
+    });
 
-          var apiLoaded = function(result) {
-            assert.equal('s1234567', result.detail.id);
-            done();
-          };
+    test('load stats', function (done) {
+      flush(function () {
+        var apiLoaded = function (result) {
+          assert.equal('627', result.detail.stats.stats_fields.thomson_citation_count_i.max);
+          done();
+        };
 
-          setTimeout(function(){
-
-            app.addEventListener('uqlibrary-api-account-loaded', apiLoaded);
-            app.get();
-
-          }, 100);
-        });
-
+        setTimeout(function () {
+          element.addEventListener('uqlibrary-api-academic-stats-loaded', apiLoaded);
+          element.get({
+            username: "uqjsmith"
+          });
+        }, 100);
       });
 
     });
+
+  });
 
 </script>
 
