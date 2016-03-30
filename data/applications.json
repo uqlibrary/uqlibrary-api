@@ -15,12 +15,12 @@
     "isDivider": true
   },
   {
-    "app": "uqlibrary-chat",
+    "app": "uqlibrary-contacts",
     "title": "Ask Us",
     "description": "Ask the library for help",
     "icon": "question-answer",
-    "link": "/contacts",
-    "ga": "contacts"
+    "link": "/contact",
+    "ga": "ask-us"
   },
   {
     "app": "uqlibrary-booking",
