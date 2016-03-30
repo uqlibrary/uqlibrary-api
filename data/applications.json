@@ -19,8 +19,8 @@
     "title": "Ask Us",
     "description": "Ask the library for help",
     "icon": "question-answer",
-    "link": "/chat",
-    "ga": "chat"
+    "link": "/contacts",
+    "ga": "contacts"
   },
   {
     "app": "uqlibrary-booking",
