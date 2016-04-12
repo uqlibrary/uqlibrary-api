@@ -1,42 +1,40 @@
 [
   {
-    "name": "Getting Started",
-    "description": "Getting Started",
-    "link": "http://www.library.uq.edu.au/training/index.phtml#Getting Started",
-    "items": [
-      {
-        "name": "Library 101",
-        "description": "Library 101",
-        "link": "http://www.library.uq.edu.au/training/index.phtml#TAL038"
-      }
-    ]
-  },
-  {
-    "name": "EndNote",
-    "description": "EndNote",
-    "link": "http://www.library.uq.edu.au/training/index.phtml#EndNote",
-    "items": [
-      {
-        "name": "EndNote",
-        "description": "EndNote",
-        "link": "http://www.library.uq.edu.au/training/index.phtml#END13"
-      }
-    ]
-  },
-  {
-    "name": "Other UQ Classes",
-    "description": "Other UQ Classes",
+    "name": "Online training",
+    "description": "Access online resources",
     "link": "",
     "items": [
       {
-        "name": "UQ Graduate School Skills Training",
-        "description": "UQ Graduate School Skills Training",
-        "link": "http://www.uq.edu.au/grad-school/events-skills-training-students"
+        "name": "Library 101",
+        "description": "LIBRARY 101 Library skills tutorial",
+        "link": "https://learn.uq.edu.au/webapps/login/?new_loc=/webapps/blackboard/execute/enrollCourse?context=Course%26course_id=_13002_1"
       },
       {
-        "name": "Student Services Learning",
-        "description": "Student Services Learning",
-        "link": "http://www.uq.edu.au/student-services/Learning"
+        "name": "lynda.com",
+        "description": "lynda.com online software and skills training Library classes",
+        "link": "http://www.lynda.com/"
+      }
+    ]
+  },
+  {
+    "name": "Library classes",
+    "description": "Book into in person training offered by the Library",
+    "link": "",
+    "items": [
+      {
+        "name": "Research skills & training",
+        "description": "Research skills & training",
+        "link": "https://www.library.uq.edu.au/training/#Research Skills"
+      },
+      {
+        "name": "EndNote",
+        "description": "EndNote",
+        "link": "https://www.library.uq.edu.au/training/#EndNote"
+      },
+      {
+        "name": "I.T./Software training",
+        "description": "I.T./Software training",
+        "link": "https://www.library.uq.edu.au/training/#General Classes"
       }
     ]
   }
