@@ -13,6 +13,11 @@
         "name": "lynda.com",
         "description": "lynda.com online software and skills training Library classes",
         "link": "http://www.lynda.com/"
+      },
+      {
+        "name": "Law online tutorial",
+        "description": "",
+        "link": "https://web.library.uq.edu.au/library-services/training/law-online-tutorial"
       }
     ]
   },
@@ -22,19 +27,31 @@
     "link": "",
     "items": [
       {
-        "name": "Research skills & training",
-        "description": "Research skills & training",
+        "name": "Research skills",
+        "description": "",
         "link": "https://www.library.uq.edu.au/training/#Research Skills"
       },
       {
         "name": "EndNote",
-        "description": "EndNote",
+        "description": "",
         "link": "https://www.library.uq.edu.au/training/#EndNote"
       },
       {
-        "name": "I.T./Software training",
-        "description": "I.T./Software training",
+        "name": "IT Training",
+        "description": "",
         "link": "https://www.library.uq.edu.au/training/#General Classes"
+      }
+    ]
+  },
+  {
+    "name": "Other UQ classes",
+    "description": "",
+    "link": "",
+    "items": [
+      {
+        "name": "UQ Student Services",
+        "description": "",
+        "link": "http://www.uq.edu.au/student-services/learning"
       }
     ]
   }
