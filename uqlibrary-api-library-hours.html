@@ -50,11 +50,25 @@ Element providing library hours
          * @method get
          */
         get: function (args) {
-          if (args && args.mode) {
-            this.mode = args.code;
-          }
-          this.set('$.list.uri', this.baseUri + '/' + this.mode);
-          this.$.list.get();
+          // Temporary
+          var that = this;
+
+          var xobj = new XMLHttpRequest();
+          var fileName = this.resolveUrl('mock/library_hours/day_get.json');
+          xobj.open('GET', fileName, true);
+          xobj.onreadystatechange = function () {
+            if (xobj.readyState == 4 && xobj.status == "200") {
+              var response =  JSON.parse(xobj.responseText);
+              that.fire('uqlibrary-api-library-hours', response);
+            }
+          };
+          xobj.send(null);
+
+//          if (args && args.mode) {
+//            this.mode = args.code;
+//          }
+//          this.set('$.list.uri', this.baseUri + '/' + this.mode);
+//          this.$.list.get();
         }
       });
     }());
