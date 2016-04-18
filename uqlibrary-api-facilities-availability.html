@@ -42,36 +42,47 @@ Element providing facilities availability.
          * Cleans up the data from the API
          */
         _processData: function (data) {
-          var buildingReplacements = {
-            "94": "Biological Sciences Library (#94)",
-            "Hawken Building 50": "Hawken Building (#50)",
-            "2, Duhig Tower": "Duhig Bldg (#2)",
-            "Duhig North (12)": "Duhig North Bldg (#12)",
-            "Duhig North 12": "Duhig North Bldg (#12)",
-            "Duhig North": "Duhig North Bldg (#12)",
-            "Duhig North12": "Duhig North Bldg (#12)",
-            "Duhig Bldg (#12)": "Duhig North Bldg (#12)",
-            "": "Duhig North Bldg (#12)"
-          };
-
-          var campusReplacements = {
-            "ST LUCIA": "St Lucia"
-          };
-
           var s = JSON.stringify(data);
-          var key;
 
-          // Iterate over building replacements
-          for (key in buildingReplacements) {
-            if (buildingReplacements.hasOwnProperty(key)) {
-              s = s.replace('"building":"' + key + '"', '"building":"' + buildingReplacements[key] + '"');
+          var buildingReplacements = [
+            {
+              replace: [ "94" ],
+              with: "Biological Sciences Library (#94)"
+            },
+            {
+              replace: [ "Hawken Building 50" ],
+              with: "Hawken Building (#50)"
+            },
+            {
+              replace: [ "2, Duhig Tower" ],
+              with: "Duhig Bldg (#2)"
+            },
+            {
+              replace: [ "Duhig North (12)", "Duhig North 12", "Duhig North", "Duhig North12", "Duhig Bldg (#12)", "" ],
+              with: "Duhig North Bldg (#12)"
+            }
+          ];
+
+          // Replace building names
+          for (var i = 0; i < buildingReplacements.length; i++) {
+            var rightName = buildingReplacements[i].with;
+            for (var j = 0; j < buildingReplacements[i].replace; j++) {
+              s = s.replace('"building":"' + buildingReplacements[i].replace[j] + '"', '"building:"'+rightName+'"');
             }
           }
 
-          // Iterate over campus replacements
-          for (key in campusReplacements) {
-            if (campusReplacements.hasOwnProperty(key)) {
-              s = s.replace('"campus":"' + key + '"', '"campus":"' + campusReplacements[key] + '"');
+          var campusReplacements = [
+            {
+              replace: [ "ST LUCIA" ],
+              with: "St Lucia"
+            }
+          ];
+
+          // Replace campus names
+          for (i = 0; i < campusReplacements.length; i++) {
+            rightName = campusReplacements[i].with;
+            for (j = 0; j < campusReplacements[i].replace; j++) {
+              s = s.replace('"campus":"' + campusReplacements[i].replace[j] + '"', '"campus:"'+rightName+'"');
             }
           }
 
