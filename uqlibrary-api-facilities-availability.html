@@ -34,9 +34,48 @@ Element providing facilities availability.
         ready: function () {
           var that = this;
           this.$.facilities.addEventListener('uqlibrary-api', function (e) {
-            that.facilities = e.detail;
+            that.facilities = that._processData(e.detail);
             that.fire('uqlibrary-api-facilities-availability-loaded', that.facilities);
           });
+        },
+        /**
+         * Cleans up the data from the API
+         */
+        _processData: function (data) {
+          var buildingReplacements = {
+            "94": "Biological Sciences Library (#94)",
+            "Hawken Building 50": "Hawken Building (#50)",
+            "2, Duhig Tower": "Duhig Bldg (#2)",
+            "Duhig North (12)": "Duhig North Bldg (#12)",
+            "Duhig North 12": "Duhig North Bldg (#12)",
+            "Duhig North": "Duhig North Bldg (#12)",
+            "Duhig North12": "Duhig North Bldg (#12)",
+            "Duhig Bldg (#12)": "Duhig North Bldg (#12)",
+            "": "Duhig North Bldg (#12)"
+          };
+
+          var campusReplacements = {
+            "ST LUCIA": "St Lucia"
+          };
+
+          var s = JSON.stringify(data);
+          var key;
+
+          // Iterate over building replacements
+          for (key in buildingReplacements) {
+            if (buildingReplacements.hasOwnProperty(key)) {
+              s = s.replace('"building":"' + key + '"', '"building":"' + buildingReplacements[key] + '"');
+            }
+          }
+
+          // Iterate over campus replacements
+          for (key in campusReplacements) {
+            if (campusReplacements.hasOwnProperty(key)) {
+              s = s.replace('"campus":"' + key + '"', '"campus":"' + campusReplacements[key] + '"');
+            }
+          }
+
+          return JSON.parse(s);
         },
         constructUrl: function (args, baseUrl) {
           var url = baseUrl;
