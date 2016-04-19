@@ -34,59 +34,9 @@ Element providing facilities availability.
         ready: function () {
           var that = this;
           this.$.facilities.addEventListener('uqlibrary-api', function (e) {
-            that.facilities = that._processData(e.detail);
+            that.facilities = e.detail;
             that.fire('uqlibrary-api-facilities-availability-loaded', that.facilities);
           });
-        },
-        /**
-         * Cleans up the data from the API
-         */
-        _processData: function (data) {
-          var s = JSON.stringify(data);
-
-          var buildingReplacements = [
-            {
-              replace: [ "94" ],
-              with: "Biological Sciences Library (#94)"
-            },
-            {
-              replace: [ "Hawken Building 50" ],
-              with: "Hawken Building (#50)"
-            },
-            {
-              replace: [ "2, Duhig Tower" ],
-              with: "Duhig Bldg (#2)"
-            },
-            {
-              replace: [ "Duhig North (12)", "Duhig North 12", "Duhig North", "Duhig North12", "Duhig Bldg (#12)", "" ],
-              with: "Duhig North Bldg (#12)"
-            }
-          ];
-
-          // Replace building names
-          for (var i = 0; i < buildingReplacements.length; i++) {
-            var rightName = buildingReplacements[i].with;
-            for (var j = 0; j < buildingReplacements[i].replace; j++) {
-              s = s.replace('"building":"' + buildingReplacements[i].replace[j] + '"', '"building:"'+rightName+'"');
-            }
-          }
-
-          var campusReplacements = [
-            {
-              replace: [ "ST LUCIA" ],
-              with: "St Lucia"
-            }
-          ];
-
-          // Replace campus names
-          for (i = 0; i < campusReplacements.length; i++) {
-            rightName = campusReplacements[i].with;
-            for (j = 0; j < campusReplacements[i].replace; j++) {
-              s = s.replace('"campus":"' + campusReplacements[i].replace[j] + '"', '"campus:"'+rightName+'"');
-            }
-          }
-
-          return JSON.parse(s);
         },
         constructUrl: function (args, baseUrl) {
           var url = baseUrl;
