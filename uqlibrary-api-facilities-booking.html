@@ -1,7 +1,4 @@
-<link rel="import" href="../polymer/polymer.html">
-<link rel="import" href="../core-ajax/core-ajax.html">
-<link rel="import" href="uqlibrary-api.html">
-
+<link rel="import" href="elements.html">
 <!--
 Element providing functionality to create/update/delete facilities booking.
 
@@ -14,21 +11,22 @@ Element providing functionality to create/update/delete facilities booking.
 @status alpha
 @homepage https://github.com/uqlibrary/uqlibrary-api
 -->
-<polymer-element name="uqlibrary-api-facilities-booking" extends="uqlibrary-api">
-
+<dom-module id="uqlibrary-api-facilities-booking">
   <template>
     <uqlibrary-api id="booking" uri="/booking" auto="false"></uqlibrary-api>
   </template>
-
   <script>
-    (function() {
-      Polymer('uqlibrary-api-facilities-booking', {
-
-        baseUri : '/booking',
-
+    (function () {
+      Polymer({
+        is: 'uqlibrary-api-facilities-booking',
+        properties: {
+          baseUri: {
+            type: String,
+            value: '/booking'
+          }
+        },
         created: function () {
         },
-
         /**
          * Fired when response has been received from server
          *
@@ -36,11 +34,10 @@ Element providing functionality to create/update/delete facilities booking.
          */
         ready: function () {
           var that = this;
-          this.$.booking.addEventListener('uqlibrary-api', function(e) {
+          this.$.booking.addEventListener('uqlibrary-api', function (e) {
             that.fire('uqlibrary-api-facilities-booking-executed', e.detail);
           });
         },
-
         /**
          * Send a new booking request or update booking
          * args is not optional parameter, contains booking details
@@ -58,12 +55,11 @@ Element providing functionality to create/update/delete facilities booking.
          */
         post: function (args) {
           if (args && args.booking) {
-            this.$.booking.uri = this.baseUri;
-            this.$.booking.method = "POST";
-            this.$.booking.get({ body : args.booking });
-            }
-          },
-
+            this.set('$.booking.uri', this.baseUri);
+            this.set('$.booking.method', 'POST');
+            this.$.booking.get({ body: args.booking });
+          }
+        },
         /**
          * Send a delete booking request
          * args is not optional parameter, contains booking details
@@ -76,14 +72,12 @@ Element providing functionality to create/update/delete facilities booking.
          */
         delete: function (args) {
           if (args && args.booking) {
-            this.$.booking.uri = this.baseUri;
-            this.$.booking.method = "DELETE";
-            this.$.booking.get({ body : args.booking });
+            this.set('$.booking.uri', this.baseUri);
+            this.set('$.booking.method', 'DELETE');
+            this.$.booking.get({ body: args.booking });
           }
         }
-
       });
-    })();
+    }());
   </script>
-
-</polymer-element>
+</dom-module>
