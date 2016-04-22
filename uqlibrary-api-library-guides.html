@@ -13,7 +13,7 @@ Element providing library guides
 -->
 <dom-module id="uqlibrary-api-library-guides">
   <template>
-    <uqlibrary-api id="list"></uqlibrary-api>
+    <uqlibrary-api id="list" on-uqlibrary-api="fireResponse"></uqlibrary-api>
   </template>
   <script>
     (function () {
@@ -34,14 +34,9 @@ Element providing library guides
          *
          * @event uqlibrary-api-library-guides
          */
-        created: function () {
-        },
-        ready: function () {
-          var that = this;
-          this.$.list.addEventListener('uqlibrary-api', function (e) {
-            that.list = e.detail;
-            that.fire('uqlibrary-api-library-guides', that.list);
-          });
+        fireResponse: function (e) {
+          this.list = e.detail;
+          this.fire('uqlibrary-api-library-guides', this.list);
         },
         /**
          * Gets learning resources.

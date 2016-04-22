@@ -14,7 +14,7 @@ Element providing learning resources.
 -->
 <dom-module id="uqlibrary-api-learning-resources">
   <template>
-    <uqlibrary-api id="list"></uqlibrary-api>
+    <uqlibrary-api id="list" on-uqlibrary-api="fireResponse"></uqlibrary-api>
   </template>
   <script>
     (function () {
@@ -37,12 +37,9 @@ Element providing learning resources.
          */
         created: function () {
         },
-        ready: function () {
-          var that = this;
-          this.$.list.addEventListener('uqlibrary-api', function (e) {
-            that.list = e.detail;
-            that.fire('uqlibrary-api-learning-resources', that.list);
-          });
+        fireResponse: function (e) {
+          this.list = e.detail;
+          this.fire('uqlibrary-api-learning-resources', this.list);
         },
         /**
          * Gets learning resources.

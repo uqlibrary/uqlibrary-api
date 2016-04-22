@@ -16,7 +16,7 @@ Element providing computer availability.
 -->
 <dom-module id="uqlibrary-api-papercut">
   <template>
-    <uqlibrary-api id="papercut" uri="/papercut/balance"></uqlibrary-api>
+    <uqlibrary-api id="papercut" uri="/papercut/balance" on-uqlibrary-api="fireResponse"></uqlibrary-api>
   </template>
   <script>
     (function () {
@@ -35,12 +35,9 @@ Element providing computer availability.
         },
         created: function () {
         },
-        ready: function () {
-          var that = this;
-          this.$.papercut.addEventListener('uqlibrary-api', function (e) {
-            that.papercut = e.detail;
-            that.fire('uqlibrary-api-papercut-loaded', that.papercut);
-          });
+        fireResponse: function (e) {
+          this.papercut = e.detail;
+          this.fire('uqlibrary-api-papercut-loaded', this.papercut);
         },
         /**
          * Gets the computer availability.

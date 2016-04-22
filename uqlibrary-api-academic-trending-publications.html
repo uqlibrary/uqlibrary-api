@@ -14,7 +14,7 @@ Element providing trending publications for an academic
 -->
 <dom-module id="uqlibrary-api-academic-trending-publications">
   <template>
-    <uqlibrary-api id="list"></uqlibrary-api>
+    <uqlibrary-api id="list" on-uqlibrary-api="fireResponse"></uqlibrary-api>
   </template>
   <script>
     (function () {
@@ -35,14 +35,9 @@ Element providing trending publications for an academic
          *
          * @event uqlibrary-api-learning-resources
          */
-        created: function () {
-        },
-        ready: function () {
-          var that = this;
-          this.$.list.addEventListener('uqlibrary-api', function (e) {
-            that.data = e.detail;
-            that.fire('uqlibrary-api-academic-trending-publication', that.data);
-          });
+        fireResponse: function (e) {
+          this.data = e.detail;
+          this.fire('uqlibrary-api-academic-trending-publication', this.data);
         },
         /**
          * Gets learning resources.

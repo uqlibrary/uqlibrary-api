@@ -14,7 +14,7 @@ Element that gets term dates
 -->
 <dom-module id="uqlibrary-api-term-dates">
   <template>
-    <uqlibrary-api id="list"></uqlibrary-api>
+    <uqlibrary-api id="list" on-uqlibrary-api="fireResponse"></uqlibrary-api>
   </template>
   <script>
     (function () {
@@ -44,31 +44,23 @@ Element that gets term dates
          *
          * @event uqlibrary-api-term-dates
          */
-        created: function () {
-        },
+        fireResponse: function (e) {
+          var results = e.detail;
+          var resultsForDate = {};
 
-        ready: function () {
-          var that = this;
+          for (var property in results) {
+            var semesterData = this.getYearSemesterByCode(results[property].code);
+            results[property].semester = semesterData.semester;
+            results[property].year = semesterData.year;
 
-          this.$.list.addEventListener('uqlibrary-api', function (e) {
-            var results = e.detail;
-            var resultsForDate = {};
-
-            for (var property in results) {
-              var semesterData = that.getYearSemesterByCode(results[property].code);
-              results[property].semester = semesterData.semester;
-              results[property].year = semesterData.year;
-
-              //find a list of terms for specified date only
-              if (that.date && that.isTermDate(results[property], that.date)) {
-                resultsForDate[results[property].code] = results[property];
-              }
+            //find a list of terms for specified date only
+            if (this.date && this.isTermDate(results[property], this.date)) {
+              resultsForDate[results[property].code] = results[property];
             }
+          }
 
-            that.list = that.date ? resultsForDate : results;
-            that.fire('uqlibrary-api-term-dates', that.list);
-          });
-
+          this.list = this.date ? resultsForDate : results;
+          this.fire('uqlibrary-api-term-dates', this.list);
         },
 
         /**

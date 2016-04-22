@@ -14,7 +14,7 @@ Element providing stats for an academic
 -->
 <dom-module id="uqlibrary-api-academic-stats">
   <template>
-    <uqlibrary-api id="list"></uqlibrary-api>
+    <uqlibrary-api id="list" on-uqlibrary-api="fireResponse"></uqlibrary-api>
   </template>
   <script>
     (function () {
@@ -35,14 +35,9 @@ Element providing stats for an academic
          *
          * @event uqlibrary-api-academic-stats
          */
-        created: function () {
-        },
-        ready: function () {
-          var that = this;
-          this.$.list.addEventListener('uqlibrary-api', function (e) {
-            that.data = e.detail;
-            that.fire('uqlibrary-api-academic-stats-loaded', that.data);
-          });
+        fireResponse: function (e) {
+          this.data = e.detail;
+          this.fire('uqlibrary-api-academic-stats-loaded', this.data);
         },
         /**
          * Gets academic stats.
