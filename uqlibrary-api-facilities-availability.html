@@ -27,17 +27,105 @@ Element providing facilities availability.
           baseUri: {
             type: String,
             value: '/facilities_availability'
+          },
+          /**
+           * Whether to format the results coming from the API into a flat room list. Also fixes campus and building
+           * names that are incorrect.
+           */
+          processed: {
+            type: Object,
+            value: false
           }
         },
-        created: function () {
-        },
         ready: function () {
-          var that = this;
+          var self = this;
           this.$.facilities.addEventListener('uqlibrary-api', function (e) {
-            that.facilities = e.detail;
-            that.fire('uqlibrary-api-facilities-availability-loaded', that.facilities);
+            self.facilities = (self.processed ? self._processData(e.detail) : e.detail);
+            self.fire('uqlibrary-api-facilities-availability-loaded', self.facilities);
           });
         },
+        /**
+         * Takes the data from the api and returns a properly formatted list of rooms
+         */
+        _processData: function (data) {
+          var self = this;
+          var roomList = {};
+
+          _.forEach(data, function (facility) {
+            _.forEach(facility.resources, function (resource) {
+              _.forEach(resource.facilities, function (room) {
+                if (room.status == "u") { return; }
+                // Add room to general Rooms array
+                var buildingImageName = room.building.replace(/\s/g, '_').replace(/\W/g, '').toLowerCase();
+                var campusImageName = room.campus.replace(/\s/g, '_').replace(/\W/g, '').toLowerCase();
+
+                roomList[room.id] = {
+                  id: room.id,
+                  scheduleid: room.scheduleid,
+                  title: room.title,
+                  campus: self._fixCampusName(room),
+                  building: self._fixBuildingName(room),
+                  location: room.location,
+                  capacity: room.capacity,
+                  maxtime: room.maxtime,
+                  mintime: room.mintime,
+                  bookings: room.bookings,
+                  available_from: resource.schedule.available_from,
+                  available_to: resource.schedule.available_to,
+                  url: room.url,
+                  notes: room.notes,
+                  next_available_time: null,
+                  next_available_time_text: '',
+                  time_span: resource.schedule['time_span'],
+                  image : campusImageName + '/' + buildingImageName + '_thumb' + '.jpg',
+                  imageLarge : campusImageName + '/' + buildingImageName + '.jpg'
+                };
+              });
+            });
+          });
+
+          return roomList;
+        },
+        /**
+         * Fixes bad data from the API
+         */
+        _fixCampusName: function (room) {
+          var campusReplacements = {
+            "ST LUCIA": "St Lucia"
+          };
+
+          if (campusReplacements[room.campus]) {
+            return campusReplacements[room.campus];
+          } else {
+            return room.campus;
+          }
+        },
+        /**
+         * Fixes bad data from the API
+         */
+        _fixBuildingName: function (room) {
+          var buildingReplacements = {
+            "94": "Biological Sciences Library (#94)",
+            "Hawken Building 50": "Hawken Building (#50)",
+            "Hawken Bldg (#50)": "Hawken Building (#50)",
+            "2, Duhig Tower": "Duhig Bldg (#2)",
+            "Duhig North (12)": "Duhig North Bldg (#12)",
+            "Duhig North 12": "Duhig North Bldg (#12)",
+            "Duhig North": "Duhig North Bldg (#12)",
+            "Duhig North12": "Duhig North Bldg (#12)",
+            "Duhig Bldg (#12)": "Duhig North Bldg (#12)",
+            "": "Duhig North Bldg (#12)"
+          };
+
+          if (buildingReplacements[room.building]) {
+            return buildingReplacements[room.building];
+          } else {
+            return room.building;
+          }
+        },
+        /**
+         * Constructs the URL used by the API
+         */
         constructUrl: function (args, baseUrl) {
           var url = baseUrl;
           if (args && args.date) {
