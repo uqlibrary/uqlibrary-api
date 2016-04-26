@@ -1,8 +1,8 @@
 [
   {
     "id": "sc154b889de4d365",
-    "from": 1421415000,
-    "to": 1421416800,
+    "from": "{BOOKING_START_TIME}",
+    "to": "{BOOKING_END_TIME}",
     "resource": {
       "machid": "sc14a517a692d37d",
       "id": "sc14a5179d427848",
@@ -13,8 +13,8 @@
   },
   {
     "id": "sc154b889de4d366",
-    "from": 1421415000,
-    "to": 1421416800,
+    "from": "{BOOKING_START_TIME}",
+    "to": "{BOOKING_END_TIME}",
     "resource": {
       "machid": "sc149bda6ca15d30",
       "id": "sc149bdef7bb3d8c",
@@ -24,8 +24,8 @@
   },
   {
     "id": "sc154b889de4d367",
-    "from": 1421415000,
-    "to": 1421416800,
+    "from": "{BOOKING_START_TIME}",
+    "to": "{BOOKING_END_TIME}",
     "resource": {
       "machid": "sc14d4a385d2e1c6",
       "id": "sc14d4a3820e0860",

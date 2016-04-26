@@ -17,13 +17,13 @@ Element providing access to UQ Library's API.
 
   <template>
     <iron-ajax
-      id="ajax"
-      url="{{url}}"
-      headers="{{headers}}"
-      method="{{method}}"
-      handleAs="json"
-      on-response="handleResponse"
-      on-error="handleError"></iron-ajax>
+        id="ajax"
+        url="{{url}}"
+        headers="{{headers}}"
+        method="{{method}}"
+        handleAs="json"
+        on-response="handleResponse"
+        on-error="handleError"></iron-ajax>
 
   </template>
 
@@ -115,6 +115,14 @@ Element providing access to UQ Library's API.
                 }
 
                 response = response.replace(/{PTYPE}/g, ptype);
+              } else if (fileName.match(/facilities_bookings_get/g)) {
+                var now = new Date();
+                var startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
+                var bookingFrom = startOfDay / 1000 + 10 * 60 * 60;
+                var bookingTo = startOfDay / 1000 + 11 * 60 * 60;
+
+                response = response.replace(/"{BOOKING_START_TIME}"/g, bookingFrom);
+                response = response.replace(/"{BOOKING_END_TIME}"/g, bookingTo);
               }
 
               that.fire('uqlibrary-api', JSON.parse(response));
