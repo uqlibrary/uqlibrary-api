@@ -33,11 +33,11 @@
     {
       "label": "Come see us",
       "icon": "social:people",
-      "link": "https://www.library.uq.edu.au/locations-hours/service-points"
+      "link": "https://web.library.uq.edu.au/locations-hours/service-points"
     }
   ],
   "summary": {
     "label": "More ways to contact us",
-    "link": "https://www.library.uq.edu.au/contact-us"
+    "link": "https://web.library.uq.edu.au/contact-us"
   }
 }
