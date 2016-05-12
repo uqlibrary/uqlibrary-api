@@ -96,7 +96,8 @@
     "description": "View document delivery requests",
     "icon": "move-to-inbox",
     "link": "https://www.library.uq.edu.au/uqlais/login?relais_return=1",
-    "target": "_blank"
+    "target": "_blank",
+    "ptypes": [1, 2, 3, 9, 11, 15, 17, 18, 21, 22, 25, 31]
   },
   {
     "app": "uqlibrary-papercut",
