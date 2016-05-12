@@ -92,6 +92,13 @@
     "ptypes": [2, 22, 3, 17, 18]
   },
   {
+    "title": "Document Delivery",
+    "description": "View document delivery requests",
+    "icon": "move-to-inbox",
+    "link": "https://www.library.uq.edu.au/uqlais/login?relais_return=1",
+    "target": "_blank"
+  },
+  {
     "app": "uqlibrary-papercut",
     "title": "Printing",
     "description": "Manage my printing balance",
