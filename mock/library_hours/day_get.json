@@ -16,7 +16,7 @@
     "open": "00:00:00",
     "close": "24:00:00",
     "rev": "0",
-    "notes": "Walk in access from 7am to 8pm. Entry after 8pm UQ ID card necessary."
+    "notes": "Info: Walk in access from 7am to 8pm. Entry after 8pm UQ ID card necessary."
   },
   {
     "code": "bnd",
@@ -84,7 +84,7 @@
     "open": "08:30:00",
     "close": "16:30:00",
     "rev": "0",
-    "notes": "24x7 Swipe-card access for RCS Hervey Bay medical students."
+    "notes": "Info: 24x7 Swipe-card access for RCS Hervey Bay medical students."
   },
   {
     "code": "law",
