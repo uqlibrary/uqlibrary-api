@@ -23,15 +23,6 @@
     "ga": "ask-us"
   },
   {
-    "app": "uqlibrary-booking",
-    "title": "Booking",
-    "description": "View or manage my library bookings",
-    "icon": "event",
-    "link": "/booking",
-    "ptypes": [1, 31, 11, 21, 2, 22, 17, 18],
-    "ga": "FBS"
-  },
-  {
     "app": "uqlibrary-borrowing",
     "title": "Borrowing",
     "description": "View or manage my library loans, holds, and fines",
@@ -66,30 +57,13 @@
     "ga": "Computers"
   },
   {
-    "app": "uqlibrary-hours",
-    "title": "Hours",
-    "description": "View library opening hours",
-    "icon": "schedule",
-    "link": "/hours",
-    "ga": "Hours"
-  },
-  {
-    "app": "uqlibrary-courses",
-    "title": "Courses",
-    "description": "View course learning resources",
-    "icon": "social:school",
-    "link": "/courses",
-    "ga": "Courses",
-    "ptypes": [1, 3, 31, 11, 21, 17, 18, 2, 22]
-  },
-  {
-    "app": "uqlibrary-research",
-    "title": "Research",
-    "description": "View my research progress",
-    "icon": "assessment",
-    "link": "/research",
-    "ga": "Research",
-    "ptypes": [2, 22, 3, 17, 18]
+  "app": "uqlibrary-courses",
+  "title": "Course resources",
+  "description": "View course learning resources",
+  "icon": "social:school",
+  "link": "/courses",
+  "ga": "Courses",
+  "ptypes": [1, 3, 31, 11, 21, 17, 18, 2, 22]
   },
   {
     "title": "Document Delivery",
@@ -100,13 +74,12 @@
     "ptypes": [1, 2, 3, 9, 11, 15, 17, 18, 21, 22, 25, 31]
   },
   {
-    "app": "uqlibrary-papercut",
-    "title": "Printing",
-    "description": "Manage my printing balance",
-    "icon": "print",
-    "link": "/papercut",
-    "ga": "papercut",
-    "ptypes": [1, 31, 11, 21, 2, 22, 14, 4, 13, 5, 8, 17, 18]
+    "app": "uqlibrary-hours",
+    "title": "Hours",
+    "description": "View library opening hours",
+    "icon": "schedule",
+    "link": "/hours",
+    "ga": "Hours"
   },
   {
     "app": "uqlibrary-masquerade",
@@ -116,6 +89,33 @@
     "link": "/masquerade",
     "ga": "masquerade",
     "ptypes": [17,18]
+  },
+  {
+    "app": "uqlibrary-papercut",
+    "title": "Printing balance",
+    "description": "Manage my printing balance",
+    "icon": "print",
+    "link": "/papercut",
+    "ga": "papercut",
+    "ptypes": [1, 31, 11, 21, 2, 22, 14, 4, 13, 5, 8, 17, 18]
+  },
+  {
+    "app": "uqlibrary-research",
+    "title": "Publication metrics",
+    "description": "View my research progress",
+    "icon": "assessment",
+    "link": "/research",
+    "ga": "Research",
+    "ptypes": [2, 22, 3, 17, 18]
+  },
+  {
+    "app": "uqlibrary-booking",
+    "title": "Room bookings",
+    "description": "View or manage my library bookings",
+    "icon": "event",
+    "link": "/booking",
+    "ptypes": [1, 31, 11, 21, 2, 22, 17, 18],
+    "ga": "FBS"
   },
   {
     "isDivider": true
