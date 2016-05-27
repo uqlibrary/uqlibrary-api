@@ -10,6 +10,16 @@
   "canMasquerade": true,
   "classes": [
     {
+      "ACAD_CAREER" : "PGCW",
+      "ACAD_GROUP" : "HLBS",
+      "CAMPUS" : "HERST",
+      "CATALOG_NBR" : "7010",
+      "DESCR" : "Adv Skills for Clin Pharm Prac",
+      "INSTRUCTION_MODE" : "EX",
+      "STRM" : "6620",
+      "SUBJECT" : "PHRM"
+    },
+    {
       "ACAD_CAREER": "UGRD",
       "DESCR": "Financial Management",
       "SUBJECT": "FINM",
