@@ -98,7 +98,7 @@
     "icon": "print",
     "link": "/papercut",
     "ga": "papercut",
-    "ptypes": [1, 7, 31, 11, 21, 2, 22, 14, 4, 13, 5, 8, 17, 18]
+    "ptypes": [1, 2, 3, 11, 17, 18, 21, 22, 31]
   },
   {
     "app": "uqlibrary-research",
