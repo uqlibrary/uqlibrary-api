@@ -1,146 +1,184 @@
 [
   {
-    "library": "Architecture &amp; Music Library",
-    "buildingNumber": 51,
+    "library":"Architecture &amp; Music Library",
     "availability": {
       "Level 3": {
-        "Available": 33,
-        "Occupied": 11
+      "roomCode":"Lvl3",
+        "Available":17,
+        "Occupied":29
       }
-    }
+    },
+    "buildingCode":"Armus",
+    "buildingNumber":51
   },
   {
-    "library": "Biological Sciences Library",
-    "buildingNumber": 94,
-    "availability": {
-      "Level 1": {
-        "Available": 13,
-        "Occupied": 17
+    "library":"Biological Sciences Library",
+    "availability":{
+      "Level 1":{
+        "roomCode":"Lvl1",
+        "Available":4,
+        "Occupied":27
       },
-      "Level 2": {
-        "Available": 57,
-        "Occupied": 25
+      "Level 2":{
+        "roomCode":"Lvl2",
+        "Available":7,
+        "Occupied":83
       },
-      "Level 3": {
-        "Available": 28,
-        "Occupied": 5
+      "Level 3":{
+        "roomCode":"Lvl3",
+        "Available":4,
+        "Occupied":31
       },
-      "Level 4": {
-        "Available": 34,
-        "Occupied": 12
+      "Level 4":{
+        "roomCode":"Lvl4",
+        "Available":9,
+        "Occupied":36
       }
-    }
+    },
+    "buildingCode":"BSL",
+    "buildingNumber":94
   },
   {
-    "library": "D.H. Engineering &amp; Sciences Library",
-    "buildingNumber": 50,
-    "availability": {
-      "Level 1": {
-        "Available": 19,
-        "Occupied": 0
+    "library":"D.H. Engineering &amp; Sciences Library",
+    "availability":{
+      "Level 1":{
+        "roomCode":"Lvl1",
+        "Available":4,
+        "Occupied":14
       },
-      "Level 2": {
-        "Available": 48,
-        "Occupied": 12
+      "Level 2":{
+        "roomCode":"Lvl2",
+        "Available":23,
+        "Occupied":35
       },
-      "Level 3": {
-        "Available": 23,
-        "Occupied": 4
+      "Level 3":{
+        "roomCode":"Lvl3",
+        "Available":8,
+        "Occupied":21
       },
-      "Level 4": {
-        "Available": 1,
-        "Occupied": 1
+      "Level 4":{
+        "Occupied":2,
+        "roomCode":"Lvl4",
+        "Available":0
       }
-    }
+    },
+    "buildingCode":"DHESL",
+    "buildingNumber":50
   },
   {
-    "library": "Duhig Building",
-    "buildingNumber": 2,
-    "availability": {
-      "Level 1": {
-        "Available": 2,
-        "Occupied": 0
+    "library":"Duhig Building",
+    "availability":{
+      "Level 1":{
+        "roomCode":"Lvl1",
+        "Available":14,"Occupied":17
       },
-      "Level 2": {
-        "Available": 48,
-        "Occupied": 54
-      }
-    }
-  },
-  {
-    "library": "Graduate Economics &amp; Business Library",
-    "buildingNumber": 39,
-    "availability": {
-      "Level 2": {
-        "Available": 33,
-        "Occupied": 1
-      }
-    }
-  },
-  {
-    "library": "Gatton Campus Library",
-    "buildingNumber": 8102,
-    "availability": {
-      "Level 1": {
-        "Available": 63,
-        "Occupied": 4
+      "Level 2":{
+        "roomCode":"Lvl2",
+        "Available":7,
+        "Occupied":100
       },
-      "Level 2": {
-        "Available": 15,
-        "Occupied": 2
+      "Level 4":{
+        "roomCode":"Lvl4",
+        "Available":2,
+        "Occupied":12
+      },"Level 5":{
+        "roomCode":"Lvl5",
+          "Available":4,
+        "Occupied":25
       }
-    }
+    },
+    "buildingCode":"Duhig",
+    "buildingNumber":2
   },
   {
-    "library": "Herston Health Sciences Library",
-    "buildingNumber": null,
-    "availability": {
-      "Level 6": {
-        "Available": 32,
-        "Occupied": 10
+    "library":"Graduate Economics &amp; Business Library",
+    "availability":{
+      "Level 2":{
+        "roomCode":"Lvl2",
+        "Available":10,
+        "Occupied":25
       }
-    }
+    },
+    "buildingCode":"Ecob",
+    "buildingNumber":39
   },
   {
-    "library": "Mater Hospital Library",
-    "buildingNumber": null,
-    "availability": {
-      "Level 1": {
-        "Available": 23,
-        "Occupied": 3
+    "library":"Gatton Campus Library",
+    "availability":{
+      "Level 1":{
+        "roomCode":"Lvl1",
+        "Available":45,
+        "Occupied":18},
+      "Level 2":{
+        "roomCode":"Lvl2",
+        "Available":11,
+        "Occupied":7
       }
-    }
+    },
+    "buildingCode":"Gatton",
+    "buildingNumber":8102
   },
   {
-    "library": "PACE Health Sciences Library",
-    "buildingNumber": null,
-    "availability": {
-      "Level 6": {
-        "Available": 42,
-        "Occupied": 11
+    "library":"Herston Health Sciences Library",
+    "availability":{
+      "Level 6":{
+      "roomCode":"Lvl6",
+      "Available":28,
+        "Occupied":15
       }
-    }
+    },
+    "buildingCode":"HSL",
+    "buildingNumber":null
   },
   {
-    "library": "Social Sciences &amp; Humanities Library",
-    "buildingNumber": 12,
-    "availability": {
-      "Level 1 Entry": {
-        "Available": 24,
-        "Occupied": 32
+    "library":"Mater Hospital Library",
+    "availability":{
+      "Level 1":{
+        "roomCode":"Lvl1",
+        "Available":23,
+        "Occupied":4
+      }
+    },
+    "buildingCode":"Mater",
+    "buildingNumber":null
+  },
+  {
+    "library":"PACE Health Sciences Library",
+    "availability":{
+      "Level 6":{
+        "roomCode":"Lvl6",
+        "Available":39,
+        "Occupied":26
+      }
+    },
+    "buildingCode":"PACE",
+    "buildingNumber":null
+  },
+  {
+    "library":"Social Sciences &amp; Humanities Library",
+    "availability":{
+      "Level 1 Entry":{
+      "roomCode":"Link",
+      "Available":6,
+      "Occupied":52
+    },
+      "Level 2":{
+      "roomCode":"Lvl2",
+        "Available":1,
+        "Occupied":24
       },
-      "Level 2": {
-        "Available": 11,
-        "Occupied": 11
+      "Level 3":{
+        "roomCode":"Lvl3",
+        "Available":4,
+        "Occupied":28
       },
-      "Level 3": {
-        "Available": 15,
-        "Occupied": 5
-      },
-      "Level 4": {
-        "Available": 11,
-        "Occupied": 0
+      "Level 4":{
+        "Occupied":15,
+        "roomCode":"Lvl4",
+        "Available":0
       }
-    }
+    },
+    "buildingCode":"SSAH",
+    "buildingNumber":12
   }
 ]
