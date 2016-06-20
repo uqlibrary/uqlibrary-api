@@ -54,6 +54,176 @@
       "dateReturned": null,
       "description": "Test fine by Eric",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=1126899050003131"
+    },
+    {
+      "type": "Other",
+      "fineAmount": 1314.8,
+      "dateAssessed": "2016-03-10T10:59:00Z",
+      "description": "Outstanding fineAmount at conversion from Millennium",
+      "title": null,
+      "barcode": null,
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=802642680003131"
+    },
+    {
+      "type": "Lost item process fee",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:08:32.411Z",
+      "description": null,
+      "title": "Textbook on international law / Martin Dixon.",
+      "barcode": null,
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989379600003131"
+    },
+    {
+      "type": "Lost item replacement fee",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:08:32.444Z",
+      "description": null,
+      "title": "Textbook on international law / Martin Dixon.",
+      "barcode": null,
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989379610003131"
+    },
+    {
+      "type": "Lost item process fee",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:07:16.421Z",
+      "description": null,
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989360140003131",
+      "title": "Aircraft accident reconstruction and litigation / Barnes W. McCormick, M.P. Papadakis ; contributing authors, Joseph J. Asselta ... [et al.].",
+      "barcode": null
+    },
+    {
+      "type": "Lost item replacement fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989379610003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:07:16.503Z",
+      "description": null,
+      "title": "Aircraft accident reconstruction and litigation / Barnes W. McCormick, M.P. Papadakis ; contributing authors, Joseph J. Asselta ... [et al.].",
+      "barcode": null
+    },
+    {
+      "type": "Lost item process fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989360140003131",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:07:19.124Z",
+      "description": null,
+      "title": "The impact of international law on international cooperation : theoretical perspectives / edited by Eyal Benvenisti, Moshe Hirsch.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item replacement fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989360150003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:07:19.227Z",
+      "description": null,
+      "title": "The impact of international law on international cooperation : theoretical perspectives / edited by Eyal Benvenisti, Moshe Hirsch.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item process fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989360840003131",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:07:44.336Z",
+      "description": null,
+      "title": "Torts in New Zealand : cases and materials / Bill Atkin and Geoff McLay with the assistance of David Neild.",
+      "barcode": null
+    },
+    {
+      "type":  "Lost item replacement fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989360850003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:07:44.438Z",
+      "description": null,
+      "title": "Torts in New Zealand : cases and materials / Bill Atkin and Geoff McLay with the assistance of David Neild.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item process fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989367420003131",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:08:11.964Z",
+      "description": null,
+      "title": "An introduction to air law / I.H. Ph. Diederiks-Verschoor ; revised by Pablo Mendes de Leon in cooperation with Michael Butler.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item replacement fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989367430003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:08:12.002Z",
+      "description": null,
+      "title": "An introduction to air law / I.H. Ph. Diederiks-Verschoor ; revised by Pablo Mendes de Leon in cooperation with Michael Butler.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item process fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989373860003131",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:15:34.833Z",
+      "description": null,
+      "title": "Remedies in international law : the institutional dilemma / edited by Malcolm D. Evans.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item replacement fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989373870003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:15:34.956Z",
+      "description": null,
+      "title": "Remedies in international law : the institutional dilemma / edited by Malcolm D. Evans.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item process fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989487260003131",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:11:11.377Z",
+      "description": null,
+      "title": "Space debris : legal and policy implications / Howard A. Baker.",
+      "barcode": null
+    },
+    {
+      "type":  "Lost item replacement fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989487270003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:11:11.446Z",
+      "description": null,
+      "title": "Space debris : legal and policy implications / Howard A. Baker.",
+      "barcode": null
+    },
+    {
+      "type":  "Lost item process fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989421740003131",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:11:25.660Z",
+      "description": null,
+      "title": "Strict liability : legal and economic analysis / Frank J. Vandall.",
+      "barcode": null
+    },
+    {
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989421750003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:11:25.736Z",
+      "description": null,
+      "title": "Strict liability : legal and economic analysis / Frank J. Vandall.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item process fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989425530003131",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:13:15.711Z",
+      "description": null,
+      "title": "Outer space and legal liability / Morris D. Forkosch.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item replacement fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989453110003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:13:15.745Z",
+      "description": null,
+      "title": "Outer space and legal liability / Morris D. Forkosch.",
+      "barcode": null
     }
   ],
   "retrievedAt": "2016-06-16T14:04:26+10:00"
