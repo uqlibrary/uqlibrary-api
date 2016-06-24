@@ -1,124 +1,230 @@
 {
-  "recordNumber": "1234567",
+  "recordNumber": "s1234567",
   "checkedOut": [
     {
-      "title": "Pharmaceutics : the science of dosage form design",
-      "dueDate": "2014-12-06T04:00:00+10:00",
-      "url": "http:\/\/library.uq.edu.au\/record=i3349004",
-      "callNumber": "Q222 .T83 1990",
-      "barcodes": "34067027831923",
-      "itemStatus": "AVAILABLE"
+      "title": "Mastering Linux / Arman Danesh.",
+      "dueDate": "2016-09-05T23:59:00+10:00",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1126548850003131",
+      "callNumber": "QA76.76.O63 D35 1999",
+      "barcodes": "34067022452543",
+      "itemStatus": "NORMAL"
     },
     {
-      "title": "Physicochemical principles of pharmacy",
-      "dueDate": "2014-12-22T04:00:00+10:00",
-      "url": "http:\/\/library.uq.edu.au\/record=i3715828",
-      "callNumber": "Q222 .T83 1990",
-      "barcodes": "34067027831923",
-      "itemStatus": "AVAILABLE"
-    },
-    {
-      "title": "Pharmaceutics : the science of dosage form design",
-      "dueDate": "2014-10-06T04:00:00+10:00",
-      "url": "http:\/\/library.uq.edu.au\/record=i3349004",
-      "callNumber": "Q222 .T83 1990",
-      "barcodes": "34067027831923",
-      "itemStatus": "AVAILABLE"
-    },
-    {
-      "title": "Physicochemical principles of pharmacy",
-      "dueDate": "2014-12-24T04:00:00+10:00",
-      "url": "http:\/\/library.uq.edu.au\/record=i3715828",
-      "callNumber": "Q222 .T83 1990",
-      "barcodes": "34067027831923",
-      "itemStatus": "AVAILABLE"
-    },
-    {
-      "title": "Physicochemical principles of pharmacy",
-      "dueDate": "2014-12-26T04:00:00+10:00",
-      "url": "http:\/\/library.uq.edu.au\/record=i3715828",
-      "callNumber": "Q222 .T83 1990",
-      "barcodes": "34067027831923",
-      "itemStatus": "AVAILABLE"
-    },
-    {
-      "title": "Physicochemical principles of pharmacy",
-      "dueDate": "2014-11-22T04:00:00+10:00",
-      "url": "http:\/\/library.uq.edu.au\/record=i3715828",
-      "callNumber": "Q222 .T83 1990",
-      "barcodes": "34067027831923",
-      "itemStatus": "AVAILABLE"
-    },
-    {
-      "title": "Physicochemical principles of pharmacy",
-      "dueDate": "2014-10-28T04:00:00+10:00",
-      "url": "http:\/\/library.uq.edu.au\/record=i3715828",
-      "callNumber": "Q222 .T83 1990",
-      "barcodes": "34067027831923",
-      "itemStatus": "AVAILABLE"
+      "title": "Pro JavaScript design patterns / Ross Harmes and Dustin Diaz.",
+      "dueDate": "2016-09-05T23:59:00+10:00",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1126549360003131",
+      "callNumber": "QA76.73.J39 H35 2008",
+      "barcodes": "34067031780173",
+      "itemStatus": "NORMAL"
     }
   ],
   "holds": [
     {
-      "title": "Regression analysis of count data",
-      "datePlaced": "2014-11-22T14:00:00+10:00",
-      "url": "http:\/\/library.uq.edu.au\/record=i2673780",
-      "status": "onHold"
+      "title": "Distributed urbanism : cities after Google earth / edited by Gretchen Wilkins.",
+      "datePlaced": "2016-06-14T10:00:00+10:00",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountRequest.do?command=details&requestId=1126891940003131",
+      "status": "IN_PROCESS",
+      "pickupLocation": "PACE Health Sciences Library"
     },
     {
-      "title": "Regression analysis of count data. Part 2",
-      "datePlaced": "2014-02-12T14:00:00+10:00",
-      "url": "http:\/\/library.uq.edu.au\/record=i2673780",
-      "pickupLocation": "BSL - Level 3",
-      "status": "itemReady"
-    },
-    {
-      "title": "Image processing",
-      "datePlaced": "2013-12-30T14:00:00+10:00",
-      "url": "http:\/\/library.uq.edu.au\/record=i2673780",
-      "pickupLocation": "SS&H Library - High Use area",
-      "status": "itemTransit"
-    },
-    {
-      "title": "Regression analysis of count data",
-      "datePlaced": "2014-04-30T14:00:00+10:00",
-      "url": "http:\/\/library.uq.edu.au\/record=i2673780",
-      "pickupLocation": "SS&H Library - High Use area",
-      "status": "bibReady"
+      "title": "The apple / by Sir A. Daniel Hall and M.B. Crane.",
+      "datePlaced": "2016-06-14T10:00:00+10:00",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountRequest.do?command=details&requestId=1126891770003131",
+      "status": "IN_PROCESS",
+      "pickupLocation": "Social Sciences & Humanities"
     }
   ],
   "fines": [
     {
-      "title": "1. Human physiology : from cells to systems \/ Lauralee Sherwood.",
-      "fineAmount": 840,
-      "dueDate": "2014-04-08T04:00:00+10:00",
-      "dateReturned": "2014-04-14T14:02:05+10:00",
-      "dateAssessed": "2014-04-15T14:02:05+10:00",
-      "description": "Book loan overdue",
-      "fineType": "overdue",
-      "url": "http:\/\/library.uq.edu.au\/record=i3698283"
+      "title": null,
+      "fineAmount": 5,
+      "fineType": "Card renewal",
+      "dateAssessed": "2016-06-14T06:16:18.757Z",
+      "dueDate": null,
+      "dateReturned": null,
+      "description": "Test fine by Eric",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=1126899040003131"
     },
     {
-      "title": "2. Human physiology : from cells to systems \/ Lauralee Sherwood.",
-      "fineAmount": 160,
-      "dueDate": "2013-04-22T04:00:00+10:00",
-      "dateReturned": "2013-04-24T14:44:15+10:00",
-      "dateAssessed": "2013-04-25T14:02:05+10:00",
-      "description": "Book loan overdue and slight damage",
-      "fineType": "overdue",
-      "url": "http:\/\/library.uq.edu.au\/record=i3704585"
+      "title": "The apple / by Sir A. Daniel Hall and M.B. Crane.",
+      "fineAmount": 8,
+      "fineType": "Other",
+      "dateAssessed": "2016-06-14T06:16:42.726Z",
+      "dueDate": null,
+      "dateReturned": null,
+      "description": "Test fine by Eric",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=1126899050003131"
     },
     {
-      "title": "3. Human physiology : from cells to systems \/ Lauralee Sherwood.",
-      "fineAmount": 340,
-      "dueDate": "2014-04-08T04:00:00+10:00",
-      "dateReturned": "2014-04-14T14:02:05+10:00",
-      "dateAssessed": "2014-04-14T14:02:05+10:00",
-      "description": "Lost book",
-      "fineType": "lostBook",
-      "url": "http:\/\/library.uq.edu.au\/record=i3698283"
+      "type": "Other",
+      "fineAmount": 1314.8,
+      "dateAssessed": "2016-03-10T10:59:00Z",
+      "description": "Outstanding fineAmount at conversion from Millennium",
+      "title": null,
+      "barcode": null,
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=802642680003131"
+    },
+    {
+      "type": "Lost item process fee",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:08:32.411Z",
+      "description": null,
+      "title": "Textbook on international law / Martin Dixon.",
+      "barcode": null,
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989379600003131"
+    },
+    {
+      "type": "Lost item replacement fee",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:08:32.444Z",
+      "description": null,
+      "title": "Textbook on international law / Martin Dixon.",
+      "barcode": null,
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989379610003131"
+    },
+    {
+      "type": "Lost item process fee",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:07:16.421Z",
+      "description": null,
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989360140003131",
+      "title": "Aircraft accident reconstruction and litigation / Barnes W. McCormick, M.P. Papadakis ; contributing authors, Joseph J. Asselta ... [et al.].",
+      "barcode": null
+    },
+    {
+      "type": "Lost item replacement fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989379610003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:07:16.503Z",
+      "description": null,
+      "title": "Aircraft accident reconstruction and litigation / Barnes W. McCormick, M.P. Papadakis ; contributing authors, Joseph J. Asselta ... [et al.].",
+      "barcode": null
+    },
+    {
+      "type": "Lost item process fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989360140003131",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:07:19.124Z",
+      "description": null,
+      "title": "The impact of international law on international cooperation : theoretical perspectives / edited by Eyal Benvenisti, Moshe Hirsch.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item replacement fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989360150003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:07:19.227Z",
+      "description": null,
+      "title": "The impact of international law on international cooperation : theoretical perspectives / edited by Eyal Benvenisti, Moshe Hirsch.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item process fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989360840003131",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:07:44.336Z",
+      "description": null,
+      "title": "Torts in New Zealand : cases and materials / Bill Atkin and Geoff McLay with the assistance of David Neild.",
+      "barcode": null
+    },
+    {
+      "type":  "Lost item replacement fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989360850003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:07:44.438Z",
+      "description": null,
+      "title": "Torts in New Zealand : cases and materials / Bill Atkin and Geoff McLay with the assistance of David Neild.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item process fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989367420003131",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:08:11.964Z",
+      "description": null,
+      "title": "An introduction to air law / I.H. Ph. Diederiks-Verschoor ; revised by Pablo Mendes de Leon in cooperation with Michael Butler.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item replacement fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989367430003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:08:12.002Z",
+      "description": null,
+      "title": "An introduction to air law / I.H. Ph. Diederiks-Verschoor ; revised by Pablo Mendes de Leon in cooperation with Michael Butler.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item process fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989373860003131",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:15:34.833Z",
+      "description": null,
+      "title": "Remedies in international law : the institutional dilemma / edited by Malcolm D. Evans.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item replacement fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989373870003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:15:34.956Z",
+      "description": null,
+      "title": "Remedies in international law : the institutional dilemma / edited by Malcolm D. Evans.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item process fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989487260003131",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:11:11.377Z",
+      "description": null,
+      "title": "Space debris : legal and policy implications / Howard A. Baker.",
+      "barcode": null
+    },
+    {
+      "type":  "Lost item replacement fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989487270003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:11:11.446Z",
+      "description": null,
+      "title": "Space debris : legal and policy implications / Howard A. Baker.",
+      "barcode": null
+    },
+    {
+      "type":  "Lost item process fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989421740003131",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:11:25.660Z",
+      "description": null,
+      "title": "Strict liability : legal and economic analysis / Frank J. Vandall.",
+      "barcode": null
+    },
+    {
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989421750003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:11:25.736Z",
+      "description": null,
+      "title": "Strict liability : legal and economic analysis / Frank J. Vandall.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item process fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989425530003131",
+      "fineAmount": 20,
+      "dateAssessed": "2016-04-29T13:13:15.711Z",
+      "description": null,
+      "title": "Outer space and legal liability / Morris D. Forkosch.",
+      "barcode": null
+    },
+    {
+      "type": "Lost item replacement fee",
+      "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountFee.do?command=details&feeId=989453110003131",
+      "fineAmount": 125,
+      "dateAssessed": "2016-04-29T13:13:15.745Z",
+      "description": null,
+      "title": "Outer space and legal liability / Morris D. Forkosch.",
+      "barcode": null
     }
-
   ],
-  "retrievedAt": "2014-05-02T09:11:52+10:00"
+  "retrievedAt": "2016-06-16T14:04:26+10:00"
 }
