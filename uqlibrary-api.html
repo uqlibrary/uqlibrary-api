@@ -52,13 +52,24 @@ Element providing access to UQ Library's API.
 
         },
         useMockData: false,
+        isMasquerade: false,
         headers: {},
 
         ready: function() {
-          var cookie = this.getCookie('UQLMockData');
+          var cookie = this.getCookie('UQLMockData'),
+              UQLSSO = this.getCookie('UQLSSO'),
+              UQLSSOAuthToken = this.getCookie('UQLSSOAuthToken');
+
           if (typeof cookie !== "undefined") {
             this.useMockData = (cookie === 'enabled');
           }
+
+          // check if user is logged in through single sign on or via masquerade
+          // uqlais masquerade api will delete these two cookies
+          if (typeof UQLSSO === "undefined" && typeof UQLSSOAuthToken === "undefined") {
+            this.isMasquerade = true;
+          }
+
         },
 
         handleResponse: function (event) {
@@ -150,7 +161,7 @@ Element providing access to UQ Library's API.
             this.setHeaders();
             url = this.baseApiUrl + this.uri;
 
-            if (args && args.addTimestamp) {
+            if ((args && args.addTimestamp) || this.isMasquerade) {
               url += (url.indexOf('?') >= 0 ? '&' : '?');
               url += "timestamp=" + (new Date()).getTime();
             }
