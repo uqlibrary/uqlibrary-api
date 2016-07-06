@@ -66,15 +66,16 @@ Element providing access to UQ Library's API.
             this.useMockData = (cookie === 'enabled');
           }
 
+          this.isMasquerading();
+
         },
 
         isMasquerading: function (uid) {
           var UQLMasquerade = this.getCookie(this.masqueradeCookie);
 
           if (typeof UQLMasquerade !== "undefined") {
-            if (UQLMasquerade === uid) {
-              this.isMasquerade = true;
-            } else {
+            this.isMasquerade = true;
+            if (uid && UQLMasquerade !== uid) {
               this.isMasquerade = false;
               this.deleteMasqueradeCookie();
             }
