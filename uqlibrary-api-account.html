@@ -59,6 +59,7 @@ Element providing access to a user account.
           var that = this;
 
           this.$.account.addEventListener('uqlibrary-api', function(e) {
+            that.$.account.isMasquerading(e.detail.id);
             that.fire('uqlibrary-api-account-loaded', e.detail);
           });
 
@@ -94,6 +95,7 @@ Element providing access to a user account.
          */
         logout: function () {
           document.location.href = "https://www.library.uq.edu.au/logout";
+          document.cookie = "UQLMasquerade" + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
         }
       });
     })();

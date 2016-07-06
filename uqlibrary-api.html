@@ -48,28 +48,37 @@ Element providing access to UQ Library's API.
           baseApiUrl: {
             type: String,
             value: 'https://app.library.uq.edu.au/api'
-          }
+          },
 
+          masqueradeCookie: {
+            type: String,
+            value: 'UQLMasquerade'
+          }
         },
         useMockData: false,
         isMasquerade: false,
         headers: {},
 
         ready: function() {
-          var cookie = this.getCookie('UQLMockData'),
-              UQLSSO = this.getCookie('UQLSSO'),
-              UQLSSOAuthToken = this.getCookie('UQLSSOAuthToken');
+          var cookie = this.getCookie('UQLMockData');
 
           if (typeof cookie !== "undefined") {
             this.useMockData = (cookie === 'enabled');
           }
 
-          // check if user is logged in through single sign on or via masquerade
-          // uqlais masquerade api will delete these two cookies
-          if (typeof UQLSSO === "undefined" && typeof UQLSSOAuthToken === "undefined") {
-            this.isMasquerade = true;
-          }
+        },
 
+        isMasquerading: function (uid) {
+          var UQLMasquerade = this.getCookie(this.masqueradeCookie);
+
+          if (typeof UQLMasquerade !== "undefined") {
+            if (UQLMasquerade === uid) {
+              this.isMasquerade = true;
+            } else {
+              this.isMasquerade = false;
+              this.deleteMasqueradeCookie();
+            }
+          }
         },
 
         handleResponse: function (event) {
@@ -201,6 +210,16 @@ Element providing access to UQ Library's API.
               return cookieParts[1];
             }
           }
+        },
+        /**
+         * Delete a cookie by name
+         * @param name the name of the cookie to delete
+         */
+        deleteCookie: function (name) {
+          document.cookie = name + '=;expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+        },
+        deleteMasqueradeCookie: function () {
+          this.deleteCookie(this.masqueradeCookie);
         }
       });
     })();
