@@ -104,19 +104,6 @@
     "phone": ""
   },
   {
-    "id": 434317,
-    "title": "BEL SET - Jobs market presentations to university- Department of Employment",
-    "summary": "Jobs market presentations to university- Department of Employment",
-    "details": "<p>Presented by Ivan Neville<br>Labour Market Research and Analysis Branch<br>Department of Employment</p>",
-    "venue": "Schonell Theatre",
-    "startUtc": "2016-08-09T14:00:00+10:00",
-    "endUtc": "2016-08-09T17:00:00+10:00",
-    "start": "2016-08-10T00:00:00+10:00",
-    "end": "2016-08-10T03:00:00+10:00",
-    "email": "careers@bel.uq.edu.au",
-    "phone": "07 3365 4222"
-  },
-  {
     "id": 459968,
     "title": "Employers on Campus:  Chartered Accountants Australia and New Zealand",
     "summary": "Chartered Accountants Australia and New Zealand represents 100,000 current and aspiring business leaders.\r\n\r\nWe’re Australia and New Zealand’s only member of the Global Accounting Alliance (GAA) – Giving our members a network of over 1,000,0000 qualified accountants, working in 180 countries.",
@@ -128,6 +115,19 @@
     "end": "2016-08-10T01:30:00+10:00",
     "email": "",
     "phone": ""
+  },
+  {
+    "id": 434317,
+    "title": "BEL SET - Jobs market presentations to university- Department of Employment",
+    "summary": "Jobs market presentations to university- Department of Employment",
+    "details": "<p>Presented by Ivan Neville<br>Labour Market Research and Analysis Branch<br>Department of Employment</p>",
+    "venue": "Schonell Theatre",
+    "startUtc": "2016-08-09T14:00:00+10:00",
+    "endUtc": "2016-08-09T17:00:00+10:00",
+    "start": "2016-08-10T00:00:00+10:00",
+    "end": "2016-08-10T03:00:00+10:00",
+    "email": "careers@bel.uq.edu.au",
+    "phone": "07 3365 4222"
   },
   {
     "id": 444536,
