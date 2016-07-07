@@ -23,7 +23,7 @@ Element providing library training links
                 properties: {
                     baseUri: {
                         type: String,
-                        value: '/training'
+                        value: '/training_events'
                     }
                 },
                 /**
@@ -37,32 +37,21 @@ Element providing library training links
                     var that = this;
                     this.$.list.addEventListener('uqlibrary-api', function (e) {
                         that.list = e.detail;
+                        console.log(e.detail);
                         that.fire('uqlibrary-api-training', that.list);
                     });
                 },
                 /**
-                 * Gets training links
+                 * Gets training events
                  *
                  * @method get
                  */
                 get: function (args) {
-                    // Temporary
-                    var that = this;
-
-                    var xobj = new XMLHttpRequest();
-                    var fileName = this.resolveUrl('mock/training_get.json');
-                    xobj.open('GET', fileName, true);
-                    xobj.onreadystatechange = function () {
-                        if (xobj.readyState == 4 && xobj.status == "200") {
-                            var response = xobj.responseText;
-                            that.fire('uqlibrary-api-training', JSON.parse(response));
-                        }
-                    };
-                    xobj.send(null);
-
-                    // Use when live API is done
-                    //this.set('$.list.uri', this.baseUri + '/current');
-                    //this.$.list.get();
+                    if (args && args.mode) {
+                        this.mode = args.code;
+                    }
+                    this.set('$.list.uri', this.baseUri);
+                    this.$.list.get();
                 }
             });
         }());
