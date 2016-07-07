@@ -37,7 +37,6 @@ Element providing library training links
                     var that = this;
                     this.$.list.addEventListener('uqlibrary-api', function (e) {
                         that.list = e.detail;
-                        console.log(e.detail);
                         that.fire('uqlibrary-api-training', that.list);
                     });
                 },
