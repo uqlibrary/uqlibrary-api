@@ -49,14 +49,22 @@ Element providing library training links
                     var uri = this.baseUri;
                     if (args) {
                         var qs = this._serialize(args);
-                        if (qs != '?') uri += qs;
+                        if (qs != '') {
+                            uri += '?' + qs;
+                        }
                     }
-                    
+
                     this.set('$.list.uri', uri);
                     this.$.list.get();
                 },
-                _serialize( obj ) {
-                    return '?'+Object.keys(obj).reduce(function(a,k){a.push(k+'='+encodeURIComponent(obj[k]));return a},[]).join('&')
+                _serialize: function (obj) {
+                    var parts = [];
+                    for (var i in obj) {
+                        if (obj.hasOwnProperty(i)) {
+                            parts.push(encodeURIComponent(i) + "=" + encodeURIComponent(obj[i]));
+                        }
+                    }
+                    return parts.join("&");
                 }
             });
         }());
