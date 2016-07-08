@@ -47,9 +47,11 @@ Element providing library training links
                  */
                 get: function (args) {
                     var uri = this.baseUri;
-                    var qs = this._serialize(args);
-                    if (qs != '?') uri += qs;
-
+                    if (args) {
+                        var qs = this._serialize(args);
+                        if (qs != '?') uri += qs;
+                    }
+                    
                     this.set('$.list.uri', uri);
                     this.$.list.get();
                 },
