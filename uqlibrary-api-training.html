@@ -46,11 +46,15 @@ Element providing library training links
                  * @method get
                  */
                 get: function (args) {
-                    if (args && args.mode) {
-                        this.mode = args.code;
-                    }
-                    this.set('$.list.uri', this.baseUri);
+                    var uri = this.baseUri;
+                    var qs = this._serialize(args);
+                    if (qs != '?') uri += qs;
+
+                    this.set('$.list.uri', uri);
                     this.$.list.get();
+                },
+                _serialize( obj ) {
+                    return '?'+Object.keys(obj).reduce(function(a,k){a.push(k+'='+encodeURIComponent(obj[k]));return a},[]).join('&')
                 }
             });
         }());
