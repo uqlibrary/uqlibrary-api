@@ -60,7 +60,11 @@ Element providing library training links
                 _serialize: function (obj) {
                     var parts = [];
                     for (var i in obj) {
-                        if (obj.hasOwnProperty(i)) {
+                        if (obj[i] instanceof Array) {
+                            for (var j = 0; j < obj[i].length; j++) {
+                                parts.push(encodeURIComponent(i) + "[]=" + encodeURIComponent(obj[i][j]));
+                            }
+                        } else {
                             parts.push(encodeURIComponent(i) + "=" + encodeURIComponent(obj[i]));
                         }
                     }
