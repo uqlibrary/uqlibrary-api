@@ -1,0 +1,47 @@
+<link rel="import" href="elements.html">
+
+<!--
+Element providing library online chat status
+
+##### Example
+
+    <uqlibrary-api-chat-status></uqlibrary-api-chat-status>
+
+@element uqlibrary-api-chat-status
+@blurb Element providing chat status.
+@status alpha
+@homepage https://github.com/uqlibrary/uqlibrary-api
+-->
+<dom-module id="uqlibrary-api-chat-status">
+  <template>
+    <uqlibrary-api id="chatstatus" uri="/chat_status"></uqlibrary-api>
+  </template>
+  <script>
+    (function () {
+      Polymer({
+        is: 'uqlibrary-api-chat-status',
+
+        /**
+         * Fired when the object has loaded.
+         *
+         * @event uqlibrary-api-chat-status
+         */
+
+        ready: function () {
+          var that = this;
+          this.$.chatstatus.addEventListener('uqlibrary-api', function (e) {
+            that.fire('uqlibrary-api-chat-status', e.detail);
+          });
+        },
+        /**
+         * Gets learning resources.
+         *
+         * @method get
+         */
+        get: function () {
+          this.$.chatstatus.get();
+        }
+      });
+    }());
+  </script>
+</dom-module>
