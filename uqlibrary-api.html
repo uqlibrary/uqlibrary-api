@@ -133,11 +133,19 @@ Element providing access to UQ Library's API.
                 var timein10minutes = new Date();
                 timein10minutes.setMinutes(timein10minutes.getMinutes() + 10);
 
-                var timelater= new Date();
-                timelater.setMonth(timelater.getMonth() + 1);
+                var timeinOneDay= new Date();
+                timeinOneDay.setDate(timeinOneDay.getDate() + 1);
+
+                var timeinOneWeek= new Date();
+                timeinOneWeek.setDate(timeinOneWeek.getDate() + 7);
+
+                var timeinOneMonth= new Date();
+                timeinOneMonth.setMonth(timeinOneMonth.getMonth() + 1);
 
                 response = response.replace(/"{LESSTHANONEHOUR}"/g, timein10minutes);
-                response = response.replace(/"{AFTERONEHOUR}"/g, timelater);
+                response = response.replace(/"{AFTERONEDAY}"/g, timelater);
+                response = response.replace(/"{AFTERONEWEEK}"/g, timelater);
+                response = response.replace(/"{AFTERONEMONTH}"/g, timelater);
               }
               else if (fileName.match(/account_get/)) {
                 //get user role from a cookie
