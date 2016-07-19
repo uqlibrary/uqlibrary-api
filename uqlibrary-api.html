@@ -143,9 +143,9 @@ Element providing access to UQ Library's API.
                 timeinOneMonth.setMonth(timeinOneMonth.getMonth() + 1);
 
                 response = response.replace(/"{LESSTHANONEHOUR}"/g, timein10minutes);
-                response = response.replace(/"{AFTERONEDAY}"/g, timelater);
-                response = response.replace(/"{AFTERONEWEEK}"/g, timelater);
-                response = response.replace(/"{AFTERONEMONTH}"/g, timelater);
+                response = response.replace(/"{AFTERONEDAY}"/g, timeinOneDay);
+                response = response.replace(/"{AFTERONEWEEK}"/g, timeinOneWeek);
+                response = response.replace(/"{AFTERONEMONTH}"/g, timeinOneMonth);
               }
               else if (fileName.match(/account_get/)) {
                 //get user role from a cookie
