@@ -4,7 +4,7 @@
   [
     {
       "title": "The contemporary conflict resolution reader / [edited by] Tom Woodhouse, Hugh Miall, Oliver Ramsbotham and Christopher Mitchell.",
-      "dueDate": "2016-07-12T18:00:00+10:00",
+      "dueDate": "{LESSTHANONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1744351460003131",
       "callNumber": "HM1126 .C66 2015",
       "barcodes": "34067034393289",
@@ -12,7 +12,7 @@
     },
     {
       "title": "Feminist research practice : a primer / Sharlene Nagy Hesse-Biber, Boston College.",
-      "dueDate": "2016-07-12T18:00:00+10:00",
+      "dueDate": "{AFTERONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1744441500003131",
       "callNumber": "HQ1180 .H47 2014",
       "barcodes": "34067033965012",
@@ -20,7 +20,7 @@
     },
     {
       "title": "Te Puāwai o Ngāi Tahu : twelve contemporary Ngāi Tahu artists / [curators, Jonathan Mane-Wheoki, Felicity Milburn, Megan Tamati-Quennell].",
-      "dueDate": "2016-07-05T18:00:00+10:00",
+      "dueDate": "{AFTERONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1744575920003131",
       "callNumber": "N7406.7 .T4 2003",
       "barcodes": "34067031145104",
@@ -28,7 +28,7 @@
     },
     {
       "title": "Hostile shores : catastrophic events in prehistoric New Zealand and their impact on Māori coastal communities / Bruce McFadgen.",
-      "dueDate": "2016-07-05T18:00:00+10:00",
+      "dueDate": "{AFTERONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1744621800003131",
       "callNumber": "DU423.A55 M53 2007",
       "barcodes": "34067030835671",
@@ -36,7 +36,7 @@
     },
     {
       "title": "Emergent conflict and peaceful change / Hugh Miall.",
-      "dueDate": "2016-07-12T18:00:00+10:00",
+      "dueDate": "{AFTERONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1744636220003131",
       "callNumber": "HM1121 .M52 2007",
       "barcodes": "34067030767197",
@@ -44,7 +44,7 @@
     },
     {
       "title": "Taonga Māori.",
-      "dueDate": "2016-07-07T18:00:00+10:00",
+      "dueDate": "{AFTERONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1744680840003131",
       "callNumber": "DU423.I53 M97 2006",
       "barcodes": "34067030250046",
@@ -52,7 +52,7 @@
     },
     {
       "title": "Feminist perspectives on social research / edited by Sharlene Nagy Hesse-Biber, Michelle L. Yaiser.",
-      "dueDate": "2016-07-12T18:00:00+10:00",
+      "dueDate": "{AFTERONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1744906600003131",
       "callNumber": "HQ1180 .F455 2004",
       "barcodes": "34067027390789",
@@ -60,7 +60,7 @@
     },
     {
       "title": "The evolution of cooperation / Robert Axelrod ; foreword by Richard Dawkins.",
-      "dueDate": "2016-07-12T18:00:00+10:00",
+      "dueDate": "{AFTERONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1745150060003131",
       "callNumber": "HM131 .A89 1990",
       "barcodes": "34067021865083",
@@ -68,7 +68,7 @@
     },
     {
       "title": "Te Iwi Maori : a New Zealand population past, present & projected / Ian Pool.",
-      "dueDate": "2016-07-07T18:00:00+10:00",
+      "dueDate": "{AFTERONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1745306040003131",
       "callNumber": "DU423.P66 P67 1991",
       "barcodes": "34067017769471",
@@ -76,7 +76,7 @@
     },
     {
       "title": "Maori symbolism : being an account of the origin, migration, and culture of the New Zealand Maori as recorded in certain sacred legends / report made by Ettie A. Rout from the evidence of Hohepa Te Rake (an Arawa noble) ; with a preface by Sir William Arbuthnot Lane.",
-      "dueDate": "2016-07-07T18:00:00+10:00",
+      "dueDate": "{AFTERONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1745370260003131",
       "callNumber": "DU423.A1 H67 1926",
       "barcodes": "34067005333462",
@@ -84,7 +84,7 @@
     },
     {
       "title": "Traditions and superstitions of the New Zealanders : with illustrations of their manners and customs / by Edward Shortland.",
-      "dueDate": "2016-07-07T18:00:00+10:00",
+      "dueDate": "{AFTERONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1745386120003131",
       "callNumber": "DU423.A1 S45 1980",
       "barcodes": "34067004078837",
@@ -92,7 +92,7 @@
     },
     {
       "title": "Economics of the New Zealand Maori / by Raymond Firth ; with a preface by R.H. Tawney.",
-      "dueDate": "2016-07-07T18:00:00+10:00",
+      "dueDate": "{AFTERONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1745390140003131",
       "callNumber": "DU423.E3 F57 1959",
       "barcodes": "34067016405002",
@@ -100,7 +100,7 @@
     },
     {
       "title": "Fishing methods and devices of the Maori / by Elsdon Best.",
-      "dueDate": "2016-07-05T18:00:00+10:00",
+      "dueDate": "{AFTERONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1745486440003131",
       "callNumber": "DU423.F5 B47 1977",
       "barcodes": "34067002960119",
