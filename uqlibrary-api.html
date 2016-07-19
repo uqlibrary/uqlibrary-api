@@ -130,22 +130,58 @@ Element providing access to UQ Library's API.
                 response = response.replace(/"{BOOKING_END_TIME}"/g, bookingTo);
               }
               else if (fileName.match(/loans_get/)) {
-                var timein10minutes = new Date();
-                timein10minutes.setMinutes(timein10minutes.getMinutes() + 10);
+                // dates need to be supplied with format eg 2016-07-12T18:00:00+10:00
+                // solution from http://stackoverflow.com/questions/17415579/how-to-iso-8601-format-a-date-with-timezone-offset-in-javascript
+                var now = new Date(),
+                        tzo = -now.getTimezoneOffset(),
+                        dif = tzo >= 0 ? '+' : '-',
+                        pad = function(num) {
+                          var norm = Math.abs(Math.floor(num));
+                          return (norm < 10 ? '0' : '') + norm;
+                        };
+console.log(now);
+                var timePlus10minutes = now.getFullYear()
+                        + '-' + pad(now.getMonth())
+                        + '-' + pad(now.getDate())
+                        + 'T' + pad(now.getHours())
+                        + ':' + pad(now.getMinutes() + 10)
+                        + ':' + pad(now.getSeconds())
+                        + dif + pad(tzo / 60)
+                        + ':' + pad(tzo % 60);
+console.log(timePlus10minutes);
+                var timePlusOneDay = now.getFullYear()
+                        + '-' + pad(now.getMonth())
+                        + '-' + pad(now.getDate() + 1)
+                        + 'T' + pad(now.getHours())
+                        + ':' + pad(now.getMinutes())
+                        + ':' + pad(now.getSeconds())
+                        + dif + pad(tzo / 60)
+                        + ':' + pad(tzo % 60);
+console.log(timePlus10minutes);
 
-                var timeinOneDay= new Date();
-                timeinOneDay.setDate(timeinOneDay.getDate() + 1);
+                var timePlusOneWeek = now.getFullYear()
+                        + '-' + pad(now.getMonth())
+                        + '-' + pad(now.getDate() + 7)
+                        + 'T' + pad(now.getHours())
+                        + ':' + pad(now.getMinutes())
+                        + ':' + pad(now.getSeconds())
+                        + dif + pad(tzo / 60)
+                        + ':' + pad(tzo % 60);
 
-                var timeinOneWeek= new Date();
-                timeinOneWeek.setDate(timeinOneWeek.getDate() + 7);
+                var timePlusOneMonth = now.getFullYear()
+                        + '-' + pad(now.getMonth() + 1)
+                        + '-' + pad(now.getDate())
+                        + 'T' + pad(now.getHours())
+                        + ':' + pad(now.getMinutes())
+                        + ':' + pad(now.getSeconds())
+                        + dif + pad(tzo / 60)
+                        + ':' + pad(tzo % 60);
 
-                var timeinOneMonth= new Date();
-                timeinOneMonth.setMonth(timeinOneMonth.getMonth() + 1);
 
-                response = response.replace(/"{LESSTHANONEHOUR}"/g, timein10minutes);
-                response = response.replace(/"{AFTERONEDAY}"/g, timeinOneDay);
-                response = response.replace(/"{AFTERONEWEEK}"/g, timeinOneWeek);
-                response = response.replace(/"{AFTERONEMONTH}"/g, timeinOneMonth);
+                response = response.replace(/"{LESSTHANONEHOUR}"/g, timePlus10minutes);
+                response = response.replace(/"{AFTERONEDAY}"/g, timePlusOneDay);
+                response = response.replace(/"{AFTERONEWEEK}"/g, timePlusOneWeek);
+                response = response.replace(/"{AFTERONEMONTH}"/g, timePlusOneMonth);
               }
               else if (fileName.match(/account_get/)) {
                 //get user role from a cookie
