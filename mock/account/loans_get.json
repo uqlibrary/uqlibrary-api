@@ -12,7 +12,7 @@
     },
     {
       "title": "Feminist research practice : a primer / Sharlene Nagy Hesse-Biber, Boston College.",
-      "dueDate": "{AFTERONEDAY}",
+      "dueDate": "{LESSTHANONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1744441500003131",
       "callNumber": "HQ1180 .H47 2014",
       "barcodes": "34067033965012",
@@ -20,7 +20,7 @@
     },
     {
       "title": "Te Puāwai o Ngāi Tahu : twelve contemporary Ngāi Tahu artists / [curators, Jonathan Mane-Wheoki, Felicity Milburn, Megan Tamati-Quennell].",
-      "dueDate": "{AFTERONEDAY}",
+      "dueDate": "{LESSTHANONEHOUR}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1744575920003131",
       "callNumber": "N7406.7 .T4 2003",
       "barcodes": "34067031145104",
@@ -36,7 +36,7 @@
     },
     {
       "title": "Emergent conflict and peaceful change / Hugh Miall.",
-      "dueDate": "{AFTERONEWEEK}",
+      "dueDate": "{AFTERONEDAY}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1744636220003131",
       "callNumber": "HM1121 .M52 2007",
       "barcodes": "34067030767197",
@@ -44,7 +44,7 @@
     },
     {
       "title": "Taonga Māori.",
-      "dueDate": "{AFTERONEWEEK}",
+      "dueDate": "{AFTERONEDAY}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1744680840003131",
       "callNumber": "DU423.I53 M97 2006",
       "barcodes": "34067030250046",
@@ -60,7 +60,7 @@
     },
     {
       "title": "The evolution of cooperation / Robert Axelrod ; foreword by Richard Dawkins.",
-      "dueDate": "{AFTERONEMONTH}",
+      "dueDate": "{AFTERONEWEEK}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1745150060003131",
       "callNumber": "HM131 .A89 1990",
       "barcodes": "34067021865083",
@@ -68,7 +68,7 @@
     },
     {
       "title": "Te Iwi Maori : a New Zealand population past, present & projected / Ian Pool.",
-      "dueDate": "{AFTERONEMONTH}",
+      "dueDate": "{AFTERONEWEEK}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1745306040003131",
       "callNumber": "DU423.P66 P67 1991",
       "barcodes": "34067017769471",
@@ -76,7 +76,7 @@
     },
     {
       "title": "Maori symbolism : being an account of the origin, migration, and culture of the New Zealand Maori as recorded in certain sacred legends / report made by Ettie A. Rout from the evidence of Hohepa Te Rake (an Arawa noble) ; with a preface by Sir William Arbuthnot Lane.",
-      "dueDate": "{AFTERONEMONTH}",
+      "dueDate": "{AFTERONEWEEK}",
       "url": "http://search.library.uq.edu.au/primo_library/libweb/action/myAccountLoan.do?command=details&loanID=1745370260003131",
       "callNumber": "DU423.A1 H67 1926",
       "barcodes": "34067005333462",

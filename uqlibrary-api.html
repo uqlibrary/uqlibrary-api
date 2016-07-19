@@ -139,47 +139,55 @@ Element providing access to UQ Library's API.
                           var norm = Math.abs(Math.floor(num));
                           return (norm < 10 ? '0' : '') + norm;
                         };
-                var timePlus10minutes = now.getFullYear()
-                        + '-' + pad(now.getMonth())
-                        + '-' + pad(now.getDate())
-                        + 'T' + pad(now.getHours())
-                        + ':' + pad(now.getMinutes() + 10)
-                        + ':' + pad(now.getSeconds())
+                var timein10minutes = new Date();
+                timein10minutes.setMinutes(timein10minutes.getMinutes() + 10);
+                timePlus10minutes = timein10minutes.getFullYear()
+                        + '-' + pad(timein10minutes.getMonth()+1)
+                        + '-' + pad(timein10minutes.getDate())
+                        + 'T' + pad(timein10minutes.getHours())
+                        + ':' + pad(timein10minutes.getMinutes())
+                        + ':' + pad(timein10minutes.getSeconds())
                         + dif + pad(tzo / 60)
                         + ':' + pad(tzo % 60);
 
-                var timePlusOneDay = now.getFullYear()
-                        + '-' + pad(now.getMonth())
-                        + '-' + pad(now.getDate() + 1)
-                        + 'T' + pad(now.getHours())
-                        + ':' + pad(now.getMinutes())
-                        + ':' + pad(now.getSeconds())
+                var timePlusOneDay = new Date();
+                timePlusOneDay.setDate(timePlusOneDay.getDate() + 1);
+                timePlusOneDay = timePlusOneDay.getFullYear()
+                        + '-' + pad(timePlusOneDay.getMonth()+1)
+                        + '-' + pad(timePlusOneDay.getDate())
+                        + 'T' + pad(timePlusOneDay.getHours())
+                        + ':' + pad(timePlusOneDay.getMinutes())
+                        + ':' + pad(timePlusOneDay.getSeconds())
                         + dif + pad(tzo / 60)
                         + ':' + pad(tzo % 60);
 
-                var timePlusOneWeek = now.getFullYear()
-                        + '-' + pad(now.getMonth())
-                        + '-' + pad(now.getDate() + 7)
-                        + 'T' + pad(now.getHours())
-                        + ':' + pad(now.getMinutes())
-                        + ':' + pad(now.getSeconds())
+                var timePlusOneWeek = new Date();
+                timePlusOneWeek.setDate(timePlusOneWeek.getDate() + 7);
+                timePlusOneWeek = timePlusOneWeek.getFullYear()
+                        + '-' + pad(timePlusOneWeek.getMonth()+1)
+                        + '-' + pad(timePlusOneWeek.getDate())
+                        + 'T' + pad(timePlusOneWeek.getHours())
+                        + ':' + pad(timePlusOneWeek.getMinutes())
+                        + ':' + pad(timePlusOneWeek.getSeconds())
                         + dif + pad(tzo / 60)
                         + ':' + pad(tzo % 60);
 
-                var timePlusOneMonth = now.getFullYear()
-                        + '-' + pad(now.getMonth() + 1)
-                        + '-' + pad(now.getDate())
-                        + 'T' + pad(now.getHours())
-                        + ':' + pad(now.getMinutes())
-                        + ':' + pad(now.getSeconds())
+                var timePlusOneMonth = new Date();
+                timePlusOneMonth.setMonth(timePlusOneMonth.getMonth() + 1);
+                timePlusOneMonth = timePlusOneMonth.getFullYear()
+                        + '-' + pad(timePlusOneMonth.getMonth()+1)
+                        + '-' + pad(timePlusOneMonth.getDate())
+                        + 'T' + pad(timePlusOneMonth.getHours())
+                        + ':' + pad(timePlusOneMonth.getMinutes())
+                        + ':' + pad(timePlusOneMonth.getSeconds())
                         + dif + pad(tzo / 60)
                         + ':' + pad(tzo % 60);
 
 
-                response = response.replace(/"{LESSTHANONEHOUR}"/g, timePlus10minutes);
-                response = response.replace(/"{AFTERONEDAY}"/g, timePlusOneDay);
-                response = response.replace(/"{AFTERONEWEEK}"/g, timePlusOneWeek);
-                response = response.replace(/"{AFTERONEMONTH}"/g, timePlusOneMonth);
+                response = response.replace(/{LESSTHANONEHOUR}/g, timePlus10minutes);
+                response = response.replace(/{AFTERONEDAY}/g, timePlusOneDay);
+                response = response.replace(/{AFTERONEWEEK}/g, timePlusOneWeek);
+                response = response.replace(/{AFTERONEMONTH}/g, timePlusOneMonth);
               }
               else if (fileName.match(/account_get/)) {
                 //get user role from a cookie
