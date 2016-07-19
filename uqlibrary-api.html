@@ -139,7 +139,6 @@ Element providing access to UQ Library's API.
                           var norm = Math.abs(Math.floor(num));
                           return (norm < 10 ? '0' : '') + norm;
                         };
-console.log(now);
                 var timePlus10minutes = now.getFullYear()
                         + '-' + pad(now.getMonth())
                         + '-' + pad(now.getDate())
@@ -148,7 +147,7 @@ console.log(now);
                         + ':' + pad(now.getSeconds())
                         + dif + pad(tzo / 60)
                         + ':' + pad(tzo % 60);
-console.log(timePlus10minutes);
+
                 var timePlusOneDay = now.getFullYear()
                         + '-' + pad(now.getMonth())
                         + '-' + pad(now.getDate() + 1)
@@ -157,7 +156,6 @@ console.log(timePlus10minutes);
                         + ':' + pad(now.getSeconds())
                         + dif + pad(tzo / 60)
                         + ':' + pad(tzo % 60);
-console.log(timePlus10minutes);
 
                 var timePlusOneWeek = now.getFullYear()
                         + '-' + pad(now.getMonth())
