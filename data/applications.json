@@ -123,7 +123,7 @@
     "title": "Saved items",
     "description": "View Primo Saved items and alerts",
     "icon": "notification:folder-special",
-    "link": "http://search.library.uq.edu.au/primo_library/libweb/action/query.do?fn=display&vid=61UQ",
+    "link": "http://search.library.uq.edu.au/primo_library/libweb/action/basket.do?fn=display&vid=61UQ&fromPreferences=false&fromLink=mylibrary",
     "target": "_blank",
     "ga": "SavedItems"
   },
@@ -132,7 +132,7 @@
     "title": "Saved searches",
     "description": "View Primo Saved searches",
     "icon": "find-replace",
-    "link": "http://search.library.uq.edu.au/primo_library/libweb/action/basket.do?fn=display&vid=61UQ&fromPreferences=false&fromLink=mylibrary",
+    "link": "http://search.library.uq.edu.au/primo_library/libweb/action/query.do?fn=display&vid=61UQ",
     "target": "_blank",
     "ga": "SavedSearches"
   },
