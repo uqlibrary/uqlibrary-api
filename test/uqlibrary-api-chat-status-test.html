@@ -20,37 +20,36 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
     <link rel="import" href="../../test-fixture/test-fixture.html">
 
     <!-- Import the element to test -->
-    <link rel="import" href="../uqlibrary-api-spotlights.html">
+    <link rel="import" href="../uqlibrary-api-chat-status.html">
 
 </head>
 <body>
 
 <test-fixture id="basic">
     <template>
-        <uqlibrary-api-spotlights id="app"></uqlibrary-api-spotlights>
+        <uqlibrary-api-chat-status id="app"></uqlibrary-api-chat-status>
     </template>
 </test-fixture>
 
 <script>
 
-    suite('uqlibrary-api-spotlights tests', function () {
+    suite('uqlibrary-api-chat-status tests', function () {
         var app;
 
         setup(function () {
             app = fixture('basic');
         });
 
-        test('load library spotlights data', function (done) {
+        test('load chat status data', function (done) {
 
             var apiLoaded = function(result) {
-                assert.equal('06aebfc0-d45d-11e5-bd89-f5f201a1931c', result.detail[2].id);
-                assert.equal(3, result.detail[3].weight);
+                assert.isTrue(result.detail.online);
                 done();
             };
 
             setTimeout(function(){
 
-                app.addEventListener('uqlibrary-api-spotlights', apiLoaded);
+                app.addEventListener('uqlibrary-api-chat-status-loaded', apiLoaded);
                 app.get();
 
             }, 100);

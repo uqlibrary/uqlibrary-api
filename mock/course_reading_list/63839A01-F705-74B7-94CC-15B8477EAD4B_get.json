@@ -8,14 +8,13 @@
     },
     {
       "referenceType": "Book",
-      "title": "System analysis and design",
+      "title": "System analysis and design - I am an example where the link to talis wasnt able to be associated",
       "importance": "Required",
       "author": "Dennis, Alan; Wixom, Barbara Haley; Roth, Roberta M.",
       "publisher": "John Wiley",
       "year": "c2012",
       "placePublished": "Hoboken, NJ",
       "isbn": "1118057627; 9781118057629",
-      "catalogueRecordId": "b3117929",
-      "itemLink": "http://lr.library.uq.edu.au/items/3265CA51-C19F-5F29-AAED-3E6EF5270ED5.html"
+      "catalogueRecordId": "b3117929"
     }
   ]

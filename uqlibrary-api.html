@@ -129,6 +129,66 @@ Element providing access to UQ Library's API.
                 response = response.replace(/"{BOOKING_START_TIME}"/g, bookingFrom);
                 response = response.replace(/"{BOOKING_END_TIME}"/g, bookingTo);
               }
+              else if (fileName.match(/loans_get/)) {
+                // dates need to be supplied with format eg 2016-07-12T18:00:00+10:00
+                // solution from http://stackoverflow.com/questions/17415579/how-to-iso-8601-format-a-date-with-timezone-offset-in-javascript
+                var now = new Date(),
+                        tzo = -now.getTimezoneOffset(),
+                        dif = tzo >= 0 ? '+' : '-',
+                        pad = function(num) {
+                          var norm = Math.abs(Math.floor(num));
+                          return (norm < 10 ? '0' : '') + norm;
+                        };
+                var timein10minutes = new Date();
+                timein10minutes.setMinutes(timein10minutes.getMinutes() + 10);
+                timePlus10minutes = timein10minutes.getFullYear()
+                        + '-' + pad(timein10minutes.getMonth()+1)
+                        + '-' + pad(timein10minutes.getDate())
+                        + 'T' + pad(timein10minutes.getHours())
+                        + ':' + pad(timein10minutes.getMinutes())
+                        + ':' + pad(timein10minutes.getSeconds())
+                        + dif + pad(tzo / 60)
+                        + ':' + pad(tzo % 60);
+
+                var timePlusOneDay = new Date();
+                timePlusOneDay.setDate(timePlusOneDay.getDate() + 1);
+                timePlusOneDay = timePlusOneDay.getFullYear()
+                        + '-' + pad(timePlusOneDay.getMonth()+1)
+                        + '-' + pad(timePlusOneDay.getDate())
+                        + 'T' + pad(timePlusOneDay.getHours())
+                        + ':' + pad(timePlusOneDay.getMinutes())
+                        + ':' + pad(timePlusOneDay.getSeconds())
+                        + dif + pad(tzo / 60)
+                        + ':' + pad(tzo % 60);
+
+                var timePlusOneWeek = new Date();
+                timePlusOneWeek.setDate(timePlusOneWeek.getDate() + 7);
+                timePlusOneWeek = timePlusOneWeek.getFullYear()
+                        + '-' + pad(timePlusOneWeek.getMonth()+1)
+                        + '-' + pad(timePlusOneWeek.getDate())
+                        + 'T' + pad(timePlusOneWeek.getHours())
+                        + ':' + pad(timePlusOneWeek.getMinutes())
+                        + ':' + pad(timePlusOneWeek.getSeconds())
+                        + dif + pad(tzo / 60)
+                        + ':' + pad(tzo % 60);
+
+                var timePlusOneMonth = new Date();
+                timePlusOneMonth.setMonth(timePlusOneMonth.getMonth() + 1);
+                timePlusOneMonth = timePlusOneMonth.getFullYear()
+                        + '-' + pad(timePlusOneMonth.getMonth()+1)
+                        + '-' + pad(timePlusOneMonth.getDate())
+                        + 'T' + pad(timePlusOneMonth.getHours())
+                        + ':' + pad(timePlusOneMonth.getMinutes())
+                        + ':' + pad(timePlusOneMonth.getSeconds())
+                        + dif + pad(tzo / 60)
+                        + ':' + pad(tzo % 60);
+
+
+                response = response.replace(/{LESSTHANONEHOUR}/g, timePlus10minutes);
+                response = response.replace(/{AFTERONEDAY}/g, timePlusOneDay);
+                response = response.replace(/{AFTERONEWEEK}/g, timePlusOneWeek);
+                response = response.replace(/{AFTERONEMONTH}/g, timePlusOneMonth);
+              }
               else if (fileName.match(/account_get/)) {
                 //get user role from a cookie
                 var ptype = that.getCookie('UQLMockData-PType');
