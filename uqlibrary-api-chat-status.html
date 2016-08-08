@@ -14,7 +14,7 @@ Element providing library online chat status
 -->
 <dom-module id="uqlibrary-api-chat-status">
   <template>
-    <uqlibrary-api id="chatStatus" uri="/chat_status"></uqlibrary-api>
+    <uqlibrary-api id="chatStatus" uri="{{uri}}"></uqlibrary-api>
   </template>
   <script>
     (function () {
@@ -26,7 +26,14 @@ Element providing library online chat status
          *
          * @event uqlibrary-api-chat-status
          */
+        properties: {
 
+          uri: {
+            type : String,
+            value: '/chat_status'
+          }
+
+        },
         ready: function () {
           var that = this;
           this.$.chatStatus.addEventListener('uqlibrary-api', function (e) {
@@ -39,6 +46,9 @@ Element providing library online chat status
          * @method get
          */
         get: function () {
+          var now = new Date().getTime();
+          this.uri += ('?' + now);
+
           this.$.chatStatus.get();
         }
       });
