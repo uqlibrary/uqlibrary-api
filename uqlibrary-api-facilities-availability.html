@@ -58,6 +58,7 @@ Element providing facilities availability.
                 room.building = self._fixBuildingName(room);
                 // Add room to general Rooms array
                 var buildingImageName = room.building.replace(/\s/g, '_').replace(/\W/g, '').toLowerCase();
+                buildingImageName = self._fixBuildingImage(buildingImageName);
                 var campusImageName = room.campus.replace(/\s/g, '_').replace(/\W/g, '').toLowerCase();
 
                 roomList[room.id] = {
@@ -129,9 +130,9 @@ Element providing facilities availability.
          */
         _fixBuildingImage: function (image) {
           var imageReplacements = {
-            "duhig_north_bldg_12.jpg": "duhig_bldg_12_12a.jpg",
-            "dorothy_hill_engineering_&_sciences_library_50": "hawken_bldg_50"
-           };
+            "duhig_north_bldg_12": "duhig_bldg_12_12a",
+            "dorothy_hill_engineering__sciences_library_50": "hawken_bldg_50"
+          };
 
           if (imageReplacements[image]) {
             return imageReplacements[image];
