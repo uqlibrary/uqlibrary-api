@@ -55,6 +55,7 @@ Element providing facilities availability.
             _.forEach(facility.resources, function (resource) {
               _.forEach(resource.facilities, function (room) {
                 if (room.status == "u") { return; }
+                room.building = self._fixBuildingName(room);
                 // Add room to general Rooms array
                 var buildingImageName = room.building.replace(/\s/g, '_').replace(/\W/g, '').toLowerCase();
                 var campusImageName = room.campus.replace(/\s/g, '_').replace(/\W/g, '').toLowerCase();
@@ -64,7 +65,7 @@ Element providing facilities availability.
                   scheduleid: room.scheduleid,
                   title: room.title,
                   campus: self._fixCampusName(room),
-                  building: self._fixBuildingName(room),
+                  building: room.building,
                   location: room.location,
                   capacity: room.capacity,
                   maxtime: room.maxtime,
@@ -121,6 +122,21 @@ Element providing facilities availability.
             return buildingReplacements[room.building];
           } else {
             return room.building;
+          }
+        },
+        /**
+         * Fixes bad data from the API
+         */
+        _fixBuildingImage: function (image) {
+          var imageReplacements = {
+            "duhig_north_bldg_12.jpg": "duhig_bldg_12_12a.jpg",
+            "dorothy_hill_engineering_&_sciences_library_50": "hawken_bldg_50"
+           };
+
+          if (imageReplacements[image]) {
+            return imageReplacements[image];
+          } else {
+            return image;
           }
         },
         /**
