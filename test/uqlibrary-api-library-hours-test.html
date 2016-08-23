@@ -43,8 +43,8 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
         test('load library hours data', function (done) {
 
             var apiLoaded = function(result) {
-                assert.equal('Arch Music', result.detail[0].abbr);
-                assert.equal('08:00:00', result.detail[0].open);
+                assert.equal('Arch Music', result.detail['locations'][0].abbr);
+                assert.equal('08:00:00', result.detail['locations'][0]['departments'][0].open);
                 done();
             };
 
@@ -52,6 +52,23 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
                 app.addEventListener('uqlibrary-api-library-hours', apiLoaded);
                 app.get();
+
+            }, 100);
+        });
+
+        test('load library hours week data', function (done) {
+
+            var apiLoaded = function(result) {
+                assert.equal('Arch Music', result.detail['locations'][0].abbr);
+                assert.equal('08:00:00', result.detail['locations'][0]['departments'][0]['weeks'][0]['Monday'].open);
+                assert.equal('closed', result.detail['locations'][0]['departments'][0]['weeks'][0]['Sunday']['times']['status']);
+                done();
+            };
+
+            setTimeout(function(){
+
+                app.addEventListener('uqlibrary-api-library-hours', apiLoaded);
+                app.get({mode:'week'});
 
             }, 100);
         });
