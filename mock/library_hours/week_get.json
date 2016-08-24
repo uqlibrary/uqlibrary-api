@@ -2597,14 +2597,14 @@
                   "status": "open",
                   "hours": [
                     {
-                      "from": "8pm",
+                      "from": "8am",
                       "to": "7:45pm"
                     }
                   ]
                 },
                 "date": "2016-08-22",
-                "rendered": "8pm - 7:45pm",
-                "open": "20:00:00",
+                "rendered": "8am - 7:45pm",
+                "open": "08:00:00",
                 "close": "19:45:00"
               },
               "Tuesday": {
@@ -2613,14 +2613,14 @@
                   "status": "open",
                   "hours": [
                     {
-                      "from": "8pm",
+                      "from": "8am",
                       "to": "7:45pm"
                     }
                   ]
                 },
                 "date": "2016-08-23",
-                "rendered": "8pm - 7:45pm",
-                "open": "20:00:00",
+                "rendered": "8am - 7:45pm",
+                "open": "08:00:00",
                 "close": "19:45:00"
               },
               "Wednesday": {
@@ -2629,14 +2629,14 @@
                   "status": "open",
                   "hours": [
                     {
-                      "from": "8pm",
+                      "from": "8am",
                       "to": "7:45pm"
                     }
                   ]
                 },
                 "date": "2016-08-24",
-                "rendered": "8pm - 7:45pm",
-                "open": "20:00:00",
+                "rendered": "8am - 7:45pm",
+                "open": "08:00:00",
                 "close": "19:45:00"
               },
               "Thursday": {
@@ -2645,14 +2645,14 @@
                   "status": "open",
                   "hours": [
                     {
-                      "from": "8pm",
+                      "from": "8am",
                       "to": "7:45pm"
                     }
                   ]
                 },
                 "date": "2016-08-25",
-                "rendered": "8pm - 7:45pm",
-                "open": "20:00:00",
+                "rendered": "8am - 7:45pm",
+                "open": "08:00:00",
                 "close": "19:45:00"
               },
               "Friday": {
@@ -2661,14 +2661,14 @@
                   "status": "open",
                   "hours": [
                     {
-                      "from": "8pm",
+                      "from": "8am",
                       "to": "7:45pm"
                     }
                   ]
                 },
                 "date": "2016-08-26",
-                "rendered": "8pm - 7:45pm",
-                "open": "20:00:00",
+                "rendered": "8am - 7:45pm",
+                "open": "08:00:00",
                 "close": "19:45:00"
               },
               "Saturday": {

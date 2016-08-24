@@ -643,13 +643,13 @@
             "status": "open",
             "hours": [
               {
-                "from": "8pm",
+                "from": "8am",
                 "to": "7:45pm"
               }
             ]
           },
-          "rendered": "8pm - 7:45pm",
-          "open": "20:00:00",
+          "rendered": "8am - 7:45pm",
+          "open": "08:00:00",
           "close": "19:45:00"
         },
         {
