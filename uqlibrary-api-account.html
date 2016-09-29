@@ -85,7 +85,7 @@ Element providing access to a user account.
          * @param url
          */
         login: function (url) {
-          document.location.href = "https://www.library.uq.edu.au/uqlais/login?return=" + window.btoa(url);
+          document.location.href = "https://auth.library.uq.edu.au/login?return=" + window.btoa(url);
         },
 
         /**
@@ -94,7 +94,7 @@ Element providing access to a user account.
          * @param url
          */
         logout: function () {
-          document.location.href = "https://www.library.uq.edu.au/logout";
+          document.location.href = "https://auth.library.uq.edu.au/logout";
           this.$.account.deleteMasqueradeCookie();
         }
       });
