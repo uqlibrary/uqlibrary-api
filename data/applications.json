@@ -70,7 +70,7 @@
     "title": "Document delivery",
     "description": "View document delivery requests",
     "icon": "move-to-inbox",
-    "link": "https://www.library.uq.edu.au/uqlais/login?relais_return=1",
+    "link": "https://auth.library.uq.edu.au/login?relais_return=1",
     "ptypes": [1, 2, 3, 9, 11, 15, 17, 18, 21, 22, 25, 31]
   },
   {
