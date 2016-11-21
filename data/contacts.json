@@ -8,7 +8,7 @@
     {
       "label": "Chat",
       "icon": "communication:chat",
-      "link": "https://v2.libanswers.com/chati.php?iid=1193&hash=fdbdf3c1190c1b6147b92d38c20194a8&online=true&referer=https%3A%2F%2Fwww.library.uq.edu.au%2F",
+      "link": "http://uqapplications--tst1.custhelp.com/app/chat/chat_landing/request_source/8/p/45/",
       "disabled": "chat-offline",
       "target": "chatWindow",
       "targetOptions": "width=400, height=400"
