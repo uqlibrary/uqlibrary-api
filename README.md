@@ -1,5 +1,8 @@
 uqlibrary-api
 ================
+[![Dependency Status](https://david-dm.org/uqlibrary/uqlibrary-api.svg)](https://david-dm.org/uqlibrary/uqlibrary-api)
+[![Dev Dependency Status](https://david-dm.org/uqlibrary/uqlibrary-api/dev-status.svg)](https://david-dm.org/uqlibrary/uqlibrary-api?type=dev)
+
 
 Web components for UQ Library API
 See [component page](http://uqlibrary.github.io/uqlibrary-api/components/uqlibrary-api/) for more information.
