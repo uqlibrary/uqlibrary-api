@@ -2,6 +2,7 @@
   "name": "uqlibrary-api",
   "version": "1.0.0",
   "description": "Web component to make calls for data",
+  "license": "ISC",
   "main": "index.html",
   "directories": {
     "test": "test"
@@ -22,9 +23,9 @@
     "url": "https://github.com/uqlibrary/uqlibrary-api/issues"
   },
   "devDependencies": {
-    "web-component-tester": "~4.2.2"
+    "web-component-tester": "~5.0.0"
   },
   "dependencies": {
-    "bower": "~1.7.7"
+    "bower": "~1.8.0"
   }
 }
