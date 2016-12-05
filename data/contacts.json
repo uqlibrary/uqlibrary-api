@@ -11,7 +11,7 @@
       "link": "http://uqapplications--tst1.custhelp.com/app/chat/chat_landing/request_source/8/p/45/",
       "disabled": "chat-offline",
       "target": "chatWindow",
-      "targetOptions": "width=400, height=400"
+      "targetOptions": "width=400, height=460"
     },
     {
       "label": "Email",
