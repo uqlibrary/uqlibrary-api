@@ -3,12 +3,12 @@
     {
       "label": "FAQ",
       "icon": "communication:import-contacts",
-      "link": "http://assets.library.uq.edu.au/rightnow/pages/rightnow-faq.html"
+      "link": "https://uqcurrent.custhelp.com/app/library/lib_answers"
     },
     {
       "label": "Chat",
       "icon": "communication:chat",
-      "link": "http://uqapplications--tst1.custhelp.com/app/chat/chat_landing/request_source/8/p/45/",
+      "link": "https://uqcurrent.custhelp.com/app/chat/chat_launch_lib",
       "disabled": "chat-offline",
       "target": "chatWindow",
       "targetOptions": "width=400, height=460"
@@ -28,7 +28,7 @@
     {
       "label": "Contact form",
       "icon": "device:dvr",
-      "link": "http://assets.library.uq.edu.au/rightnow/pages/rightnow-contact.html"
+      "link": "https://uqcurrent.custhelp.com/app/library/contact"
     },
     {
       "label": "Come see us",
