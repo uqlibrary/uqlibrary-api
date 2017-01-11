@@ -21,7 +21,7 @@
     {
       "label": "Phone",
       "icon": "communication:call",
-      "link": "https://www.library.uq.edu.au/contact-us",
+      "link": "https://web.library.uq.edu.au/contact-us",
       "linkMobile": "tel: +61733464312",
       "disabled": "chat-offline"
     },
