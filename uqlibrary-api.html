@@ -28,7 +28,6 @@ Element providing access to UQ Library's API.
   </template>
 
   <script>
-    document.cookie="UQLMockData=enabled";
     (function() {
       Polymer({
 
@@ -48,7 +47,7 @@ Element providing access to UQ Library's API.
 
           baseApiUrl: {
             type: String,
-            value: 'https://app-testing.library.uq.edu.au/api'
+            value: 'https://app.library.uq.edu.au/api'
           },
 
           masqueradeCookie: {
@@ -56,7 +55,7 @@ Element providing access to UQ Library's API.
             value: 'UQLMasquerade'
           }
         },
-        useMockData: true,
+        useMockData: false,
         isMasquerade: false,
         headers: {},
 
