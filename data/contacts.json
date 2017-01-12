@@ -8,10 +8,10 @@
     {
       "label": "Chat",
       "icon": "communication:chat",
-      "link": "https://uqcurrent.custhelp.com/app/chat/chat_launch_lib",
+      "link": "https://uqcurrent.custhelp.com/app/chat/chat_launch_lib/p/45",
       "disabled": "chat-offline",
       "target": "chatWindow",
-      "targetOptions": "width=400, height=460"
+      "targetOptions": "width=474, height=600"
     },
     {
       "label": "Email",
