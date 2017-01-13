@@ -1,4 +1,11 @@
 {
+  "6460": {
+    "code": "6460",
+    "begin": "2014-07-07",
+    "end": "2017-12-31",
+    "cut_off": "2014-08-31",
+    "comment": "each year update the end date to the new year in this entry to make the tests pass"
+  },
   "1234": {
     "code": "1234",
     "begin": "2013-06-19",
@@ -214,12 +221,6 @@
     "begin": "2014-09-08",
     "end": "2015-12-12",
     "cut_off": "2014-10-03"
-  },
-  "6460": {
-    "code": "6460",
-    "begin": "2014-07-07",
-    "end": "2016-12-31",
-    "cut_off": "2014-08-31"
   },
   "6475": {
     "code": "6475",
