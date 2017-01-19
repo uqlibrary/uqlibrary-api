@@ -203,6 +203,27 @@ Element providing access to UQ Library's API.
                 }
 
                 response = response.replace(/{PTYPE}/g, ptype);
+
+                //x7xx - corresponds to year of start, eg 2017
+                //x6xx - corresponds to year of start, eg 2016
+                //xx80 - sem 3 - 6680 - Summer semester of 2016/2017
+                //xx20 - sem 1 - 6720 - Sem 1, 2017
+                //xx60 - sem 2 - 6760 - Sem 2, 2017
+
+                var today = new Date();
+                var currentSemester = 6000 + parseInt(today.getFullYear().toString().substring(3, 4)) * 100;
+
+                response = response.replace(/\{SEMESTER1\}/g, (currentSemester + 20));
+                response = response.replace(/\{SEMESTER2\}/g, (currentSemester + 60));
+
+                if (today.getMonth() >= 10) {
+                  currentSemester += 80;
+                } else {
+                  currentSemester += 80;
+                  currentSemester -= 100;
+                }
+                response = response.replace(/\{SEMESTER3\}/g, currentSemester);
+
               } else if (fileName.match(/facilities_bookings_get/g)) {
                 var now = new Date();
                 var startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());

@@ -10,36 +10,6 @@
   "canMasquerade": true,
   "classes": [
     {
-      "ACAD_CAREER" : "PGCW",
-      "ACAD_GROUP" : "HLBS",
-      "CAMPUS" : "HERST",
-      "CATALOG_NBR" : "7010",
-      "DESCR" : "Adv Skills for Clin Pharm Prac",
-      "INSTRUCTION_MODE" : "EX",
-      "STRM" : "6620",
-      "SUBJECT" : "PHRM"
-    },
-    {
-      "ACAD_CAREER": "UGRD",
-      "DESCR": "Financial Management",
-      "SUBJECT": "FINM",
-      "CATALOG_NBR": "2401",
-      "CAMPUS": "STLUC",
-      "INSTRUCTION_MODE": "IN",
-      "ACAD_GROUP": "BEL",
-      "STRM":"6460"
-    },
-    {
-      "ACAD_CAREER": "UGRD",
-      "DESCR": "Elect Commerce Systems Dev",
-      "SUBJECT": "INFS",
-      "CATALOG_NBR": "2244",
-      "CAMPUS": "STLUC",
-      "INSTRUCTION_MODE": "IN",
-      "ACAD_GROUP": "BEL",
-      "STRM":"6460"
-    },
-    {
       "ACAD_CAREER": "UGRD",
       "DESCR": "Working with Groups & Teams",
       "SUBJECT": "MGTS",
@@ -47,7 +17,7 @@
       "CAMPUS": "GATTN",
       "INSTRUCTION_MODE": "EX",
       "ACAD_GROUP": "SCI",
-      "STRM":"6520"
+      "STRM":"{SEMESTER3}"
     },
     {
       "ACAD_CAREER": "UGRD",
@@ -57,7 +27,7 @@
       "CAMPUS": "STLUC",
       "INSTRUCTION_MODE": "IN",
       "ACAD_GROUP": "BEL",
-      "STRM":"6520"
+      "STRM":"{SEMESTER3}"
     },
     {
       "ACAD_CAREER": "UGRD",
@@ -67,7 +37,68 @@
       "CAMPUS": "STLUC",
       "INSTRUCTION_MODE": "IN",
       "ACAD_GROUP": "BEL",
-      "STRM":"6520"
+      "STRM":"{SEMESTER3}"
+    },
+    {
+      "ACAD_CAREER": "UGRD",
+      "DESCR": "Working with Groups & Teams",
+      "SUBJECT": "MGTS",
+      "CATALOG_NBR": "2961",
+      "CAMPUS": "GATTN",
+      "INSTRUCTION_MODE": "EX",
+      "ACAD_GROUP": "SCI",
+      "STRM":"{SEMESTER1}"
+    },
+    {
+      "ACAD_CAREER": "UGRD",
+      "DESCR": "Civil Procedure",
+      "SUBJECT": "LAWS",
+      "CATALOG_NBR": "5215",
+      "CAMPUS": "STLUC",
+      "INSTRUCTION_MODE": "IN",
+      "ACAD_GROUP": "BEL",
+      "STRM":"{SEMESTER1}"
+    },
+    {
+      "ACAD_CAREER": "UGRD",
+      "DESCR": "Elect Com Infrastructure Mgmt",
+      "SUBJECT": "MGTS",
+      "CATALOG_NBR": "7801",
+      "CAMPUS": "STLUC",
+      "INSTRUCTION_MODE": "IN",
+      "ACAD_GROUP": "BEL",
+      "STRM":"{SEMESTER1}"
+    },
+    {
+      "ACAD_CAREER": "UGRD",
+      "DESCR": "Working with Groups & Teams",
+      "SUBJECT": "MGTS",
+      "CATALOG_NBR": "2961",
+      "CAMPUS": "GATTN",
+      "INSTRUCTION_MODE": "EX",
+      "ACAD_GROUP": "SCI",
+      "STRM":"{SEMESTER2}"
+    },
+    {
+      "ACAD_CAREER": "UGRD",
+      "DESCR": "Civil Procedure",
+      "SUBJECT": "LAWS",
+      "CATALOG_NBR": "5215",
+      "CAMPUS": "STLUC",
+      "INSTRUCTION_MODE": "IN",
+      "ACAD_GROUP": "BEL",
+      "STRM":"{SEMESTER2}"
+    },
+    {
+      "ACAD_CAREER": "UGRD",
+      "DESCR": "Elect Com Infrastructure Mgmt",
+      "SUBJECT": "MGTS",
+      "CATALOG_NBR": "7801",
+      "CAMPUS": "STLUC",
+      "INSTRUCTION_MODE": "IN",
+      "ACAD_GROUP": "BEL",
+      "STRM":"{SEMESTER2}"
     }
+
   ]
 }
