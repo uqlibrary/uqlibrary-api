@@ -38,13 +38,13 @@ subject to an additional IP rights grant found at http://polymer.github.io/PATEN
 
         setup(function () {
             document.cookie = "UQLMockData=enabled";
-
             app = fixture('basic');
         });
 
-        test('load term dates data', function (done) {
+        test('should load 3 term dates for this year (mock data)', function (done) {
             var apiLoaded = function(event) {
-                expect(event.detail['1234'].code).to.equal('1234');
+                app.removeEventListener('uqlibrary-api-term-dates', apiLoaded);
+                expect(Object.getOwnPropertyNames(event.detail).length).to.equal(3);
                 done();
             };
 
