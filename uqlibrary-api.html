@@ -224,7 +224,8 @@ Element providing access to UQ Library's API.
                 }
                 response = response.replace(/\{SEMESTER3\}/g, currentSemester);
 
-              } else if (fileName.match(/facilities_bookings_get/g)) {
+              }
+              else if (fileName.match(/facilities_bookings_get/g)) {
                 var now = new Date();
                 var startOfDay = new Date(now.getFullYear(), now.getMonth(), now.getDate());
                 var bookingFrom = startOfDay / 1000 + 10 * 60 * 60;
@@ -233,6 +234,30 @@ Element providing access to UQ Library's API.
                 response = response.replace(/"{BOOKING_START_TIME}"/g, bookingFrom);
                 response = response.replace(/"{BOOKING_END_TIME}"/g, bookingTo);
               }
+              else if (fileName.match(/term_dates_get/g)) {
+                var today = new Date();
+                var currentSemester = 6000 + parseInt(today.getFullYear().toString().substring(3, 4)) * 100;
+
+                response = response.replace(/\{SEMESTER1\}/g, (currentSemester + 20));
+                response = response.replace(/\{SEMESTER2\}/g, (currentSemester + 60));
+
+                if (today.getMonth() >= 10) {
+                  currentSemester += 80;
+                  response = response.replace(/\{SUMMER_YEAR_START\}/g, today.getFullYear());
+                  response = response.replace(/\{SUMMER_YEAR_END\}/g, today.getFullYear() + 1);
+                } else {
+                  currentSemester += 80;
+                  currentSemester -= 100;
+
+                  response = response.replace(/\{SUMMER_YEAR_START\}/g, today.getFullYear() - 1);
+                  response = response.replace(/\{SUMMER_YEAR_END\}/g, today.getFullYear());
+                }
+
+                response = response.replace(/\{SEMESTER3\}/g, currentSemester);
+                response = response.replace(/\{YEAR\}/g, today.getFullYear());
+
+                console.log(response);
+             }
 
               that.fire('uqlibrary-api', JSON.parse(response));
             }
