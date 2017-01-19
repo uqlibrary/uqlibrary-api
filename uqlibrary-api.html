@@ -255,8 +255,6 @@ Element providing access to UQ Library's API.
 
                 response = response.replace(/\{SEMESTER3\}/g, currentSemester);
                 response = response.replace(/\{YEAR\}/g, today.getFullYear());
-
-                console.log(response);
              }
 
               that.fire('uqlibrary-api', JSON.parse(response));
