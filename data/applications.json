@@ -28,18 +28,18 @@
     "description": "View or manage my library loans, holds, and fines",
     "icon": "maps:local-library",
     "link": "/borrowing",
-    "ptypes": [1, 31, 11, 21, 2, 22, 3, 32, 17, 18, 25, 14, 4, 9, 13, 10, 12, 27, 7, 15, 5, 8],
+    "ptypes": [1, 31, 11, 21, 2, 22, 3, 33, 34, 32, 17, 18, 25, 14, 4, 9, 13, 10, 12, 27, 7, 15, 5, 8],
     "ga": "Borrowing",
     "subApplications": [
       {
         "app": "Loans",
         "title": "Loans",
-        "ptypes": [1, 31, 11, 21, 2, 22, 3, 32, 17, 18, 25, 14, 4, 9, 13, 10, 12, 27, 7, 15, 5, 8]
+        "ptypes": [1, 31, 11, 21, 2, 22, 3, 33, 34, 32, 17, 18, 25, 14, 4, 9, 13, 10, 12, 27, 7, 15, 5, 8]
       },
       {
         "app": "Holds",
         "title": "Holds",
-        "ptypes": [1, 31, 11, 21, 2, 22, 3, 32, 17, 18, 25, 14, 4, 9, 7, 15, 8]
+        "ptypes": [1, 31, 11, 21, 2, 22, 3, 33, 34, 32, 17, 18, 25, 14, 4, 9, 7, 15, 8]
       },
       {
         "app": "Fines",
@@ -64,14 +64,14 @@
     "icon": "social:school",
     "link": "/courses",
     "ga": "Courses",
-    "ptypes": [1, 3, 31, 11, 21, 17, 18, 2, 22]
+    "ptypes": [1, 3, 33, 34, 31, 11, 21, 17, 18, 2, 22]
   },
   {
     "title": "Document delivery",
     "description": "View document delivery requests",
     "icon": "move-to-inbox",
     "link": "https://auth.library.uq.edu.au/login?relais_return=1",
-    "ptypes": [1, 2, 3, 9, 11, 15, 17, 18, 21, 22, 25, 31]
+    "ptypes": [1, 2, 3, 33, 34, 9, 11, 15, 17, 18, 21, 22, 25, 31]
   },
   {
     "app": "uqlibrary-hours",
@@ -97,7 +97,7 @@
     "icon": "print",
     "link": "/papercut",
     "ga": "papercut",
-    "ptypes": [1, 2, 3, 11, 17, 18, 21, 22, 31]
+    "ptypes": [1, 2, 3, 33, 34, 11, 17, 18, 21, 22, 31]
   },
   {
     "app": "uqlibrary-research",
@@ -106,7 +106,7 @@
     "icon": "assessment",
     "link": "/research",
     "ga": "Research",
-    "ptypes": [2, 22, 3, 17, 18]
+    "ptypes": [2, 22, 3, 33, 34, 17, 18]
   },
   {
     "app": "uqlibrary-booking",
