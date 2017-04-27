@@ -44,4 +44,7 @@ npm install -g web-component-tester
 wct
 ```
 
+## End to End testing
 
+Sometimes a back end change is made that requires preview in the browser.
+Notes on the process are in the [uqlibrary-pages readme](https://github.com/uqlibrary/uqlibrary-pages/blob/master/README.md#functionality-testing) in the functionality testing section
