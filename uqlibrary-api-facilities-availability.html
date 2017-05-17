@@ -55,6 +55,7 @@ Element providing facilities availability.
             _.forEach(facility.resources, function (resource) {
               _.forEach(resource.facilities, function (room) {
                 if (room.status == "u") { return; }
+                room.building = self._fixBuildingName(room);
                 // Add room to general Rooms array
                 var buildingImageName = room.building.replace(/\s/g, '_').replace(/\W/g, '').toLowerCase();
                 buildingImageName = self._fixBuildingImage(buildingImageName);
@@ -99,6 +100,31 @@ Element providing facilities availability.
             return campusReplacements[room.campus];
           } else {
             return room.campus;
+          }
+        },
+        /**
+         * Fixes bad data from the API
+         */
+
+        _fixBuildingName: function (room) {
+          var buildingReplacements = {
+            "94": "Biological Sciences Library (#94)",
+            "Hawken Building 50": "Dorothy Hill Engineering & Sciences Library 50",
+            "Hawken Bldg (#50)": "Dorothy Hill Engineering & Sciences Library 50",
+            "2, Duhig Tower": "Duhig Bldg 2",
+            "Duhig North (12)": "Duhig North 12",
+            "Duhig North 12": "Duhig North 12",
+            "Duhig North": "Duhig North 12",
+            "Duhig North12": "Duhig North 12",
+            "Duhig Bldg (#12)": "Duhig North 12",
+            "": "Duhig North 12"
+          };
+
+
+          if (buildingReplacements[room.building]) {
+            return buildingReplacements[room.building];
+          } else {
+            return room.building;
           }
         },
         /**
