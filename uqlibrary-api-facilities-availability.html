@@ -55,7 +55,7 @@ Element providing facilities availability.
             _.forEach(facility.resources, function (resource) {
               _.forEach(resource.facilities, function (room) {
                 if (room.status == "u") { return; }
-                room.building = self._fixBuildingName(room);
+                room.building = self.room;
                 // Add room to general Rooms array
                 var buildingImageName = room.building.replace(/\s/g, '_').replace(/\W/g, '').toLowerCase();
                 buildingImageName = self._fixBuildingImage(buildingImageName);
@@ -104,7 +104,7 @@ Element providing facilities availability.
         },
         /**
          * Fixes bad data from the API
-         */
+
         _fixBuildingName: function (room) {
           var buildingReplacements = {
             "94": "Biological Sciences Library (#94)",
@@ -119,12 +119,14 @@ Element providing facilities availability.
             "": "Duhig North Bldg (#12)"
           };
 
+
           if (buildingReplacements[room.building]) {
             return buildingReplacements[room.building];
           } else {
             return room.building;
           }
         },
+         */
         /**
          * Fixes bad data from the API
          */
