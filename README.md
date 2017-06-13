@@ -48,3 +48,13 @@ wct
 
 Sometimes a back end change is made that requires preview in the browser.
 Notes on the process are in the [uqlibrary-pages readme](https://github.com/uqlibrary/uqlibrary-pages/blob/master/README.md#functionality-testing) in the functionality testing section
+
+## Notes
+
+/data/application.json provides the navigation in mylibrary
+
+Links can be sent via single signon by providing a `return` parameter, eg
+
+https://auth.library.uq.edu.au/login?return=aHR0cHM6Ly9zZWFyY2gubGlicmFyeS51cS5lZHUuYXUvcHJpbW8tZXhwbG9yZS9mYXZvcml0ZXM/dmlkPTYxVVEmbGFuZz1lbl9VUyZzZWN0aW9uPWl0ZW1z
+
+prompts for SSO and, if successful, lands on https://search.library.uq.edu.au/primo-explore/favorites?vid=61UQ&lang=en_US&section=items - base64 encode the url before appending to the root path (PHP function: base64_encode(string); ; javascript function: btoa(string); )

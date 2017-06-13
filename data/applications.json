@@ -122,7 +122,7 @@
     "title": "Saved items",
     "description": "View Primo Saved items and alerts",
     "icon": "notification:folder-special",
-    "link": "http://search.library.uq.edu.au/primo_library/libweb/action/basket.do?fn=display&vid=61UQ&fromPreferences=false&fromLink=mylibrary",
+    "link": "https://auth.library.uq.edu.au/login?return=aHR0cHM6Ly9zZWFyY2gubGlicmFyeS51cS5lZHUuYXUvcHJpbW8tZXhwbG9yZS9mYXZvcml0ZXM/dmlkPTYxVVEmbGFuZz1lbl9VUyZzZWN0aW9uPWl0ZW1z",
     "ga": "SavedItems"
   },
   {
@@ -130,8 +130,16 @@
     "title": "Saved searches",
     "description": "View Primo Saved searches",
     "icon": "find-replace",
-    "link": "http://search.library.uq.edu.au/primo_library/libweb/action/query.do?fn=display&vid=61UQ",
+    "link": "https://search.library.uq.edu.au/primo-explore/favorites?vid=61UQ&lang=en_US&section=queries",
     "ga": "SavedSearches"
+  },
+  {
+    "app": "uqlibrary-savedsearches-old",
+    "title": "Saved searches (old)",
+    "description": "View Old Primo Saved searches",
+    "icon": "find-replace",
+    "link": "http://search.library.uq.edu.au/primo_library/libweb/action/query.do?fn=display&vid=61UQ",
+    "ga": "SavedSearchesOld"
   },
   {
     "isDivider": true
