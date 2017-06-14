@@ -135,7 +135,7 @@
   },
   {
     "app": "uqlibrary-savedsearches-old",
-    "title": "Saved searches (old)",
+    "title": "Old saved searches",
     "description": "View Old Primo Saved searches",
     "icon": "find-replace",
     "link": "http://search.library.uq.edu.au/primo_library/libweb/action/query.do?fn=display&vid=61UQ",
