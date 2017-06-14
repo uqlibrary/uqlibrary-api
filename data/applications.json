@@ -122,7 +122,7 @@
     "title": "Saved items",
     "description": "View Primo Saved items and alerts",
     "icon": "notification:folder-special",
-    "link": "https://auth.library.uq.edu.au/login?return=aHR0cHM6Ly9zZWFyY2gubGlicmFyeS51cS5lZHUuYXUvcHJpbW8tZXhwbG9yZS9mYXZvcml0ZXM/dmlkPTYxVVEmbGFuZz1lbl9VUyZzZWN0aW9uPWl0ZW1z",
+    "link": "https://search.library.uq.edu.au/primo-explore/favorites?vid=61UQ&lang=en_US&section=items",
     "ga": "SavedItems"
   },
   {
