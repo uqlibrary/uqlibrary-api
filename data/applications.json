@@ -113,9 +113,9 @@
     "title": "Room bookings",
     "description": "View or manage my library bookings",
     "icon": "event",
-    "link": "/booking",
+    "link": "https://uqbookit.uq.edu.au/#/app/booking-types/77b52dde-d704-4b6d-917e-e820f7df07cb",
     "ptypes": [1, 31, 11, 21, 2, 22, 17, 18],
-    "ga": "FBS"
+    "ga": "BookRoom"
   },
   {
     "app": "uqlibrary-saveditems",
