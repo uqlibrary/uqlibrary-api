@@ -264,6 +264,20 @@ Element providing access to UQ Library's API.
         },
 
         /**
+         * extract the query string from the api call
+         */
+        getPrefix: function () {
+          var prefixTag = 'prefix=';
+          var prefixTagLocation = this.uri.indexOf(prefixTag);
+          var prefix = this.uri.substring(prefixTagLocation + prefixTag.length);
+          if (prefix.indexOf('&') >= 0) {
+            // if there is another parameters after the prefix parameter
+            prefix = prefix.substring(0, prefix.indexOf('&'));
+          }
+          return prefix;
+        },
+
+        /**
          * Submits request
          * args - optional parameters
          * args = {
@@ -277,7 +291,21 @@ Element providing access to UQ Library's API.
             this.loadMockData();
           } else {
             this.setHeaders();
-            url = this.baseApiUrl + this.uri;
+            if(this.uri.indexOf('/search_suggestions') >= 0
+              && (
+                this.uri.indexOf('type=primoLocal') >= 0
+                ||
+                this.uri.indexOf('type=primoAll') >= 0
+              )) {
+              // Library frontend components using autosuggest to primo should call primo 'apis' directly rather than
+              // going via library API backends because they so unstable we can't trust them
+              // sample api call: https://api.library.uq.edu.au/v1/search_suggestions?type=primo&prefix=frogs
+              var rowCount = 10;
+              var primo_path = 'https://primo-instant-apac.hosted.exlibrisgroup.com/solr/ac';
+              url = primo_path + '?q=' + this.getPrefix() + '&facet=off&fq=scope:()+AND+context:(B)&rows=' + rowCount + '&wt=json';
+            } else {
+              url = this.baseApiUrl + this.uri;
+            }
 
             if ((args && args.addTimestamp) || this.isMasquerade) {
               url += (url.indexOf('?') >= 0 ? '&' : '?');
