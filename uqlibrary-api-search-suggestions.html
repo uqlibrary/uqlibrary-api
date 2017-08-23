@@ -46,6 +46,11 @@ Other autosuggest calls use api.library
             value: '/search_suggestions'
           },
 
+          basePrimoApiUrl: {
+            type: String,
+            value: 'https://primo-instant-apac.hosted.exlibrisgroup.com/solr/ac'
+          },
+
           type: {
             type: String,
             value: '',
@@ -80,17 +85,6 @@ Other autosuggest calls use api.library
           }
 
           this.isMasquerading();
-
-          if (this.callingPrimo()) {
-            this.$.suggestions.addEventListener('byutv-jsonp', function (e) {
-              that.fire('uqlibrary-api-search-suggestions-loaded', e.detail);
-            })
-          } else {
-            var that = this;
-            this.$.suggestions.addEventListener('uqlibrary-api', function (e) {
-              that.fire('uqlibrary-api-search-suggestions-loaded', e.detail);
-            });
-          }
         },
 
         isMasquerading: function (uid) {
@@ -161,8 +155,10 @@ Other autosuggest calls use api.library
             this.loadMockData();
           } else {
             if (this.type !== '' && typeof args !== 'undefined' && args.trim() !== '') {
+              var url;
+              var callbackKey;
               if (this.callingPrimo()) {
-                url = 'https://primo-instant-apac.hosted.exlibrisgroup.com/solr/ac';
+                url = this.basePrimoApiUrl;
 
                 var rowCount = 10;
                 params = {
@@ -172,9 +168,9 @@ Other autosuggest calls use api.library
                   , rows: rowCount
                   , wt: "json"
                 };
-                // set this for the primo call - applying it in the byutv-jsonp element stops api.library from replying :(
-                this.set('$.suggestions.callbackKey', "json.wrf");
+                callbackKey = "json.wrf";
               } else {
+                // will call api.library.uq.edu.au
                 url = this.baseLibraryApiUrl + this.baseLibrarySearchUri;
                 params = {
                   type: this.type
@@ -183,9 +179,10 @@ Other autosuggest calls use api.library
                 if ((args && args.addTimestamp) || this.isMasquerade) {
                   params.timestamp = (new Date()).getTime();
                 }
-
+                callbackKey = "callback";
               }
 
+              this.set('$.suggestions.callbackKey', callbackKey);
               this.set('$.suggestions.url', url);
               this.set('$.suggestions.params', params);
             }
