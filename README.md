@@ -51,10 +51,15 @@ Notes on the process are in the [uqlibrary-pages readme](https://github.com/uqli
 
 ## Notes
 
-/data/application.json provides the navigation in mylibrary
+* /data/application.json provides the navigation in mylibrary
 
-Links can be sent via single signon by providing a `return` parameter, eg
+* Links can be sent via single signon by providing a `return` parameter, eg
 
-https://auth.library.uq.edu.au/login?return=aHR0cHM6Ly9zZWFyY2gubGlicmFyeS51cS5lZHUuYXUvcHJpbW8tZXhwbG9yZS9mYXZvcml0ZXM/dmlkPTYxVVEmbGFuZz1lbl9VUyZzZWN0aW9uPWl0ZW1z
+`https://auth.library.uq.edu.au/login?return=aHR0cHM6Ly9zZWFyY2gubGlicmFyeS51cS5lZHUuYXUvcHJpbW8tZXhwbG9yZS9mYXZvcml0ZXM/dmlkPTYxVVEmbGFuZz1lbl9VUyZzZWN0aW9uPWl0ZW1z`
 
-prompts for SSO and, if successful, lands on https://search.library.uq.edu.au/primo-explore/favorites?vid=61UQ&lang=en_US&section=items - base64 encode the url before appending to the root path (PHP function: base64_encode(string); ; javascript function: btoa(string); )
+    prompts for SSO and, if successful, lands on https://search.library.uq.edu.au/primo-explore/favorites?vid=61UQ&lang=en_US&section=items - base64 encode the url before appending to the root path (PHP function: base64_encode(string); ; javascript function: btoa(string); )
+
+* There is an issue with web_compoent_tester in dev:
+It does not honour .bowerrc, so it expects to find the bower_components folder under uqlibrary.
+This is only a local issue in dev as these tests run on codeship within uqlibrary-pages which uses bower_components.
+Dev fix: after bower update, copy (or symlink) all the folders into a bower_components folder under uqlibrary_api

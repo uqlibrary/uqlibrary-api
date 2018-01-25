@@ -22,10 +22,10 @@
   "devDependencies": {
     "iron-component-page": "PolymerElements/iron-component-page#^1.1.4",
     "test-fixture": "PolymerElements/test-fixture#^1.0.0",
-    "web-component-tester": "^6.0.0"
+    "web-component-tester": "^6.5.0"
   },
   "resolutions": {
     "test-fixture": "^3.0.0-rc.1",
-    "web-component-tester": "^6.0.0"
+    "web-component-tester": "^6.5.0"
   }
 }

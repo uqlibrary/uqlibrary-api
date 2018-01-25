@@ -1,0 +1,69 @@
+<link rel="import" href="elements.html">
+
+<!--
+Element providing collection file addresses.
+
+##### Example
+
+    <uqlibrary-api-file></uqlibrary-api-file>
+
+@element uqlibrary-api-file
+@blurb Element providing encoded urls for S3 access on aws
+@homepage https://github.com/uqlibrary/uqlibrary-api
+ -->
+<dom-module id="uqlibrary-api-collection-encoded-url">
+  <template>
+    <uqlibrary-api id="collection"></uqlibrary-api>
+  </template>
+  <script>
+    (function () {
+      Polymer({
+        is: 'uqlibrary-api-collection-encoded-url',
+        properties: {
+          baseUri: {
+            type: String,
+            value: '/file/collection'
+          },
+          publicUrl: {
+            type: String,
+            value: ''
+          }
+        },
+        /**
+         * Fired when the object has loaded.
+         *
+         * @event uqlibrary-api-account-loans-loaded
+         */
+        created: function () {
+        },
+        ready: function () {
+console.log('in ready');
+          var that = this;
+          this.$.collection.addEventListener('uqlibrary-api', function (e) {
+console.log('addEventListener returns');
+            that.collection = e.detail; //.url;
+console.log(that.collection);
+            if (that.collection) {
+              that.fire('uqlibrary-api-collection-encoded-url', that.collection);
+            }
+          });
+        },
+        /**
+         * @method get
+         */
+        get: function (args) {
+console.log('in get');
+console.log(args);
+          if (args && args.code) {
+console.log('code: ' + args.code);
+            this.publicUrl = args.code;
+console.log('this.publicUrl: ' + this.publicUrl);
+            this.set('$.collection.uri', this.baseUri + '/' + args.code);
+            this.$.collection.get();
+          }
+        }
+      });
+    }());
+  </script>
+</dom-module>
+
