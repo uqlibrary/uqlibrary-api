@@ -37,12 +37,9 @@ Element providing collection file addresses.
         created: function () {
         },
         ready: function () {
-console.log('in ready');
           var that = this;
           this.$.collection.addEventListener('uqlibrary-api', function (e) {
-console.log('addEventListener returns');
             that.collection = e.detail; //.url;
-console.log(that.collection);
             if (that.collection) {
               that.fire('uqlibrary-api-collection-encoded-url', that.collection);
             }
@@ -52,13 +49,9 @@ console.log(that.collection);
          * @method get
          */
         get: function (args) {
-console.log('in get');
-console.log(args);
-          if (args && args.code) {
-console.log('code: ' + args.code);
-            this.publicUrl = args.code;
-console.log('this.publicUrl: ' + this.publicUrl);
-            this.set('$.collection.uri', this.baseUri + '/' + args.code);
+          if (args && args.plainUrl) {
+            this.publicUrl = args.plainUrl;
+            this.set('$.collection.uri', this.baseUri + '/' + args.plainUrl);
             this.$.collection.get();
           }
         }
