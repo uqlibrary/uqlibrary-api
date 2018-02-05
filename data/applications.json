@@ -134,14 +134,6 @@
     "ga": "SavedSearches"
   },
   {
-    "app": "uqlibrary-savedsearches-old",
-    "title": "Old saved searches",
-    "description": "View Old Primo Saved searches",
-    "icon": "find-replace",
-    "link": "http://search.library.uq.edu.au/primo_library/libweb/action/login.do?loginFn=signin&vid=61UQ&targetURL=http%3A%2F%2Fsearch.library.uq.edu.au%2Fprimo_library%2Flibweb%2Faction%2Fquery.do%3Ffn%3Ddisplay%26vid%3D61UQ",
-    "ga": "SavedSearchesOld"
-  },
-  {
     "isDivider": true
   },
   {
