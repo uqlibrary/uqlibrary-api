@@ -1,6 +1,6 @@
 {
   "name": "uqlibrary-api",
-  "version": "1.5.8",
+  "version": "1.5.9",
   "description": "Elements providing access to a UQ Library's API.",
   "main": "uqlibrary-api.html",
   "license": "MIT",
