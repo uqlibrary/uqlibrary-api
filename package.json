@@ -23,7 +23,7 @@
     "url": "https://github.com/uqlibrary/uqlibrary-api/issues"
   },
   "devDependencies": {
-    "web-component-tester": "^6.0.0"
+    "web-component-tester": "^6.9.1"
   },
   "dependencies": {
     "bower": "~1.8.0"
