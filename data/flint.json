@@ -1,10 +1,10 @@
 [
   {
-    "title": "UQ Library Home",
-    "description": "Return to UQ Library Home",
+    "title": "Library Home",
+    "description": "Return to Library Home",
     "icon": "home",
     "link": "https://www.library.uq.edu.au/",
-    "ga": "UQ Library"
+    "ga": "Library"
   },
   {
     "title": "My Library",
