@@ -1,6 +1,6 @@
 {
   "name": "uqlibrary-api",
-  "version": "1.5.11",
+  "version": "1.5.12",
   "description": "Elements providing access to a UQ Library's API.",
   "main": "uqlibrary-api.html",
   "license": "MIT",
@@ -17,12 +17,12 @@
   ],
   "dependencies": {
     "polymer": "Polymer/polymer#^1.2.0",
-    "iron-elements": "PolymerElements/iron-elements#^1.0.0"
+    "iron-elements": "PolymerElements/iron-elements#^1.0.0",
+    "iron-component-page": "PolymerElements/iron-component-page#^1.1.4"
   },
   "devDependencies": {
-    "iron-component-page": "PolymerElements/iron-component-page#^1.1.4",
-    "test-fixture": "PolymerElements/test-fixture#^1.0.0",
-    "web-component-tester": "*"
+    "web-component-tester": "*",
+    "test-fixture": "PolymerElements/test-fixture#^1.0.0"
   },
   "resolutions": {
     "test-fixture": "^1.0.0"
