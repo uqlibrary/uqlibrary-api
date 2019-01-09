@@ -3,7 +3,7 @@
 [![Dependency Status](https://david-dm.org/uqlibrary/uqlibrary-api.svg)](https://david-dm.org/uqlibrary/uqlibrary-api)
 [![Dev Dependency Status](https://david-dm.org/uqlibrary/uqlibrary-api/dev-status.svg)](https://david-dm.org/uqlibrary/uqlibrary-api?type=dev)
 
-Web components for UQ Library API. See [component page](http://uqlibrary.github.io/uqlibrary-api/components/uqlibrary-api/) for more information.
+Web components for UQ Library API. See [component page](http://uqlibrary.github.io/uqlibrary-api/uqlibrary-api/) for more information.
 
 ## Configuration
 
@@ -30,6 +30,10 @@ Mock files contain data in json format in same format as live API file names sho
 * API path to `/account/facilities_bookings` mock file should be `/mock/account/facilities_bookings_get.json`.
 * API path to `/facilities_availability` mock file should be `/mock/facilities_availability_get.json`
 
+## API Documentation
+
+API Docs in GitHub pages need to regenerated after every commit to the `polymer1.0` branch by running `bin/generate-gh-pages.sh`. This updates the `gh-pages` branch.
+
 ## Testing Elements
 
 ### web-component-tester
@@ -50,7 +54,7 @@ Notes on the process are in the [uqlibrary-pages readme](https://github.com/uqli
 
 ## Notes
 
-* /data/application.json provides the navigation in mylibrary
+* /data/application.json provides the navigation in [mylibrary](https://www.library.uq.edu.au/mylibrary/)
 
 * Links can be sent via single signon by providing a `return` parameter, for example:
 
