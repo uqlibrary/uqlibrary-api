@@ -29,7 +29,7 @@
   },
   "engines": {
     "npm": "^6.5.0",
-    "node": "^11.3.0"
+    "node": "^11.6.0"
   },
   "engine-strict": true
 }

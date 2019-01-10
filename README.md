@@ -41,7 +41,7 @@ API Docs in GitHub pages need to regenerated after every commit to the `polymer1
 The tests are compatible with [web-component-tester](https://github.com/Polymer/web-component-tester). You can run them on multiple local browsers via:
 
 ```sh
-npm install -g web-component-tester
+npm install -g bower web-component-tester
 npm install
 bower install
 npm test
