@@ -1,5 +1,6 @@
 # uqlibrary-api
 
+[![Codeship Status for uqlibrary/uqlibrary-api](https://app.codeship.com/projects/f19bd6a0-f6b4-0136-b568-56b1a4204b31/status?branch=polymer1.0)](https://codeship.com/projects/321067)
 [![Dependency Status](https://david-dm.org/uqlibrary/uqlibrary-api.svg)](https://david-dm.org/uqlibrary/uqlibrary-api)
 [![Dev Dependency Status](https://david-dm.org/uqlibrary/uqlibrary-api/dev-status.svg)](https://david-dm.org/uqlibrary/uqlibrary-api?type=dev)
 
