@@ -32,7 +32,8 @@ Mock files contain data in json format in same format as live API file names sho
 
 ## API Documentation
 
-API Docs in GitHub pages need to regenerated after every commit to the `polymer1.0` branch by running `bin/generate-gh-pages.sh`. This updates the `gh-pages` branch.
+* API Docs in GitHub pages need to regenerated after every commit to the `polymer1.0` branch by running `bin/generate-gh-pages.sh`. This updates the `gh-pages` branch.
+* The docs can be viewed locally by running `npm start`. Use the second URL from the command output.
 
 ## Testing Elements
 
@@ -41,7 +42,7 @@ API Docs in GitHub pages need to regenerated after every commit to the `polymer1
 The tests are compatible with [web-component-tester](https://github.com/Polymer/web-component-tester). You can run them on multiple local browsers via:
 
 ```sh
-npm install -g bower web-component-tester
+npm install -g bower web-component-tester polymer-cli
 npm install
 bower install
 npm test
@@ -54,8 +55,7 @@ Notes on the process are in the [uqlibrary-pages readme](https://github.com/uqli
 
 ## Notes
 
-* /data/application.json provides the navigation in [mylibrary](https://www.library.uq.edu.au/mylibrary/)
-
+* `/data/application.json` provides the navigation in [mylibrary](https://www.library.uq.edu.au/mylibrary/)
 * Links can be sent via single signon by providing a `return` parameter, for example:
 
   `https://auth.library.uq.edu.au/login?return=aHR0cHM6Ly9zZWFyY2gubGlicmFyeS51cS5lZHUuYXUvcHJpbW8tZXhwbG9yZS9mYXZvcml0ZXM/dmlkPTYxVVEmbGFuZz1lbl9VUyZzZWN0aW9uPWl0ZW1z`
