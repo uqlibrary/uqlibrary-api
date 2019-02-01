@@ -566,7 +566,7 @@
     },
     {
       "lid": 3842,
-      "name": "Social Sciences & Humanities Library",
+      "name": "Central Library",
       "category": "library",
       "day": "Wednesday",
       "desc": "",
@@ -582,7 +582,7 @@
         "text": " "
       },
       "rendered": " ",
-      "abbr": "SSAH",
+      "abbr": "Central",
       "departments": [
         {
           "lid": 3843,

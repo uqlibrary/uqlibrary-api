@@ -177,7 +177,7 @@
     "buildingNumber": null
   },
   {
-    "library": "Social Sciences &amp; Humanities Library",
+    "library": "Central Library",
     "availability": {
       "Level 1 Entry": {
         "roomCode": "Link",
@@ -204,7 +204,7 @@
         "floorplan": false
       }
     },
-    "buildingCode": "SSAH",
+    "buildingCode": "Central",
     "buildingNumber": 12
   }
 ]

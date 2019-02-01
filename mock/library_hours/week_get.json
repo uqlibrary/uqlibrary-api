@@ -2332,7 +2332,7 @@
     },
     {
       "lid": 3842,
-      "name": "Social Sciences & Humanities Library",
+      "name": "Central Library",
       "category": "library",
       "desc": "",
       "url": "https://web.library.uq.edu.au/locations-hours/social-sciences-humanities-library",
@@ -2408,7 +2408,7 @@
           }
         }
       ],
-      "abbr": "SSAH",
+      "abbr": "Central",
       "departments": [
         {
           "lid": 3843,
