@@ -44,6 +44,37 @@
     "buildingNumber": 94
   },
   {
+    "library": "Central Library",
+    "availability": {
+      "Level 1 Entry": {
+        "roomCode": "Link",
+        "Available": 6,
+        "Occupied": 52,
+        "floorplan": false
+      },
+      "Level 2": {
+        "roomCode": "Lvl2",
+        "Available": 1,
+        "Occupied": 24,
+        "floorplan": false
+      },
+      "Level 3": {
+        "roomCode": "Lvl3",
+        "Available": 4,
+        "Occupied": 28,
+        "floorplan": false
+      },
+      "Level 4": {
+        "Occupied": 15,
+        "roomCode": "Lvl4",
+        "Available": 0,
+        "floorplan": false
+      }
+    },
+    "buildingCode": "Central",
+    "buildingNumber": 12
+  },
+  {
     "library": "D.H. Engineering &amp; Sciences Library",
     "availability": {
       "Level 1": {
@@ -175,36 +206,5 @@
     },
     "buildingCode": "PACE",
     "buildingNumber": null
-  },
-  {
-    "library": "Central Library",
-    "availability": {
-      "Level 1 Entry": {
-        "roomCode": "Link",
-        "Available": 6,
-        "Occupied": 52,
-        "floorplan": false
-      },
-      "Level 2": {
-        "roomCode": "Lvl2",
-        "Available": 1,
-        "Occupied": 24,
-        "floorplan": false
-      },
-      "Level 3": {
-        "roomCode": "Lvl3",
-        "Available": 4,
-        "Occupied": 28,
-        "floorplan": false
-      },
-      "Level 4": {
-        "Occupied": 15,
-        "roomCode": "Lvl4",
-        "Available": 0,
-        "floorplan": false
-      }
-    },
-    "buildingCode": "Central",
-    "buildingNumber": 12
   }
 ]
