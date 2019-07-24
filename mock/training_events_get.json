@@ -36,7 +36,8 @@
       "campus": [
         "St Lucia"
       ]
-    }
+    },
+    "isOnlineClass": true
   },
   {
     "entityId": 464166,
@@ -75,7 +76,8 @@
       "campus": [
         "St Lucia"
       ]
-    }
+    },
+    "isOnlineClass": false
   },
   {
     "entityId": 442519,
@@ -119,7 +121,8 @@
       "campus": [
         "St Lucia"
       ]
-    }
+    },
+    "isOnlineClass": true
   },
   {
     "entityId": 464167,
@@ -158,7 +161,8 @@
       "campus": [
         "St Lucia"
       ]
-    }
+    },
+    "isOnlineClass": false
   },
   {
     "entityId": 442520,
@@ -202,7 +206,8 @@
       "campus": [
         "St Lucia"
       ]
-    }
+    },
+    "isOnlineClass": false
   },
   {
     "entityId": 466168,
@@ -241,7 +246,8 @@
       "campus": [
         "St Lucia"
       ]
-    }
+    },
+    "isOnlineClass": true
   },
   {
     "entityId": 460364,
@@ -273,7 +279,8 @@
       "campus": [
         "St Lucia"
       ]
-    }
+    },
+    "isOnlineClass": false
   },
   {
     "entityId": 460365,
@@ -305,7 +312,8 @@
       "campus": [
         "St Lucia"
       ]
-    }
+    },
+    "isOnlineClass": true
   },
   {
     "entityId": 460366,
@@ -337,7 +345,8 @@
       "campus": [
         "St Lucia"
       ]
-    }
+    },
+    "isOnlineClass": true
   },
   {
     "entityId": 460367,
@@ -369,6 +378,7 @@
       "campus": [
         "St Lucia"
       ]
-    }
+    },
+    "isOnlineClass": true
   }
 ]
