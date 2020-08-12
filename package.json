@@ -1,6 +1,6 @@
 {
   "name": "uqlibrary-api",
-  "version": "1.5.25",
+  "version": "1.5.26",
   "description": "Web component to make calls for data",
   "license": "ISC",
   "main": "index.html",

@@ -29,6 +29,11 @@
       "label": "Contact form",
       "icon": "device:dvr",
       "link": "https://support.my.uq.edu.au/app/library/contact"
+    },
+    {
+      "label": "Exam support",
+      "icon": "social:people",
+      "link": "https://web.library.uq.edu.au/contact-us"
     }
   ],
   "summary": {
