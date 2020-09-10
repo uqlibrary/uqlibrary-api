@@ -182,19 +182,6 @@
     "buildingNumber": null
   },
   {
-    "library": "Mater Hospital Library",
-    "availability": {
-      "Level 1": {
-        "roomCode": "Lvl1",
-        "Available": 23,
-        "Occupied": 4,
-        "floorplan": false
-      }
-    },
-    "buildingCode": "Mater",
-    "buildingNumber": null
-  },
-  {
     "library": "PACE Health Sciences Library",
     "availability": {
       "Level 6": {
