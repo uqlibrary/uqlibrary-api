@@ -443,54 +443,6 @@
       ]
     },
     {
-      "lid": 3966,
-      "name": "Mater McAuley Library",
-      "category": "library",
-      "day": "Wednesday",
-      "desc": "",
-      "url": "https://web.library.uq.edu.au/locations-hours/uqmater-mcauley-library",
-      "contact": "",
-      "fn": "",
-      "lat": "",
-      "long": "",
-      "color": "#0E6E0E",
-      "times": {
-        "currently_open": false,
-        "status": "text",
-        "text": " "
-      },
-      "rendered": " ",
-      "abbr": "Mater",
-      "departments": [
-        {
-          "lid": 3968,
-          "name": "AskUs Service Point",
-          "category": "department",
-          "day": "Wednesday",
-          "desc": "",
-          "url": "",
-          "contact": "",
-          "lat": "",
-          "long": "",
-          "color": "#000000",
-          "parent_lid": 3966,
-          "times": {
-            "currently_open": true,
-            "status": "open",
-            "hours": [
-              {
-                "from": "8am",
-                "to": "6pm"
-              }
-            ]
-          },
-          "rendered": "8am - 6pm",
-          "open": "08:00:00",
-          "close": "18:00:00"
-        }
-      ]
-    },
-    {
       "lid": 3967,
       "name": "PACE Health Sciences Library",
       "category": "library",
