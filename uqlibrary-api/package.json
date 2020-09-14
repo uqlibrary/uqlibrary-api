@@ -1,0 +1,38 @@
+{
+  "name": "uqlibrary-api",
+  "version": "1.5.28",
+  "description": "Web component to make calls for data",
+  "license": "ISC",
+  "main": "index.html",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "postinstall": "bower update",
+    "test": "polymer test",
+    "start": "polymer serve",
+    "cleandeps": "THISDIR=${PWD##*/}; BOWERDEPS=$(ls ../ --hide=$THISDIR); cd ..; rm -rf $BOWERDEPS $THISDIR/node_modules"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/uqlibrary/uqlibrary-api.git"
+  },
+  "keywords": [
+    "research",
+    "uq",
+    "library"
+  ],
+  "bugs": {
+    "url": "https://github.com/uqlibrary/uqlibrary-api/issues"
+  },
+  "devDependencies": {
+    "bower": "^1.8.8",
+    "chai": "^4.2.0",
+    "web-component-tester": "*"
+  },
+  "engines": {
+    "npm": "^6",
+    "node": "11.10.1"
+  },
+  "engine-strict": true
+}
